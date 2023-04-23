@@ -1,5 +1,16 @@
+/* box-shadow: 0 0.5rem 1rem rgba(var(--bs-body-color-rgb),.4)!important; */
+
+.btn-dark{
+  background-color: #282A2E;
+}
+
 :root {
   --gold: #94806f;
+}
+
+#page-numbers>a{
+  width: 45px;
+  height: 45px;
 }
 
 /* --------- FONTS --------- */
@@ -59,7 +70,12 @@
 }
 
 .footer-border-gradient-gold {
-  border-image-source: linear-gradient(to right, var(--gold), #bb9c80) !important;
+  border-image-source : -moz-linear-gradient(0% 50% 0deg,rgba(148, 128, 111, 1) 0%,rgba(255, 188, 113, 1) 50%,rgba(128, 106, 77, 1) 100%);
+  border-image-source : -webkit-linear-gradient(0deg, rgba(148, 128, 111, 1) 0%, rgba(255, 188, 113, 1) 50%, rgba(128, 106, 77, 1) 100%);
+  border-image-source : -webkit-gradient(linear,0% 50% ,100% 50% ,color-stop(0,rgba(148, 128, 111, 1) ),color-stop(0.5,rgba(255, 188, 113, 1) ),color-stop(1,rgba(128, 106, 77, 1) ));
+  border-image-source : -o-linear-gradient(0deg, rgba(148, 128, 111, 1) 0%, rgba(255, 188, 113, 1) 50%, rgba(128, 106, 77, 1) 100%);
+  border-image-source : -ms-linear-gradient(0deg, rgba(148, 128, 111, 1) 0%, rgba(255, 188, 113, 1) 50%, rgba(128, 106, 77, 1) 100%);
+  border-image-source : linear-gradient(90deg, rgba(148, 128, 111, 1) 0%, rgba(255, 188, 113, 1) 50%, rgba(128, 106, 77, 1) 100%);
 }
 
 .icon-gold{
