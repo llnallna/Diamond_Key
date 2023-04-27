@@ -1,5 +1,6 @@
-23.04.2023
+26.04.2023
 + service 01 ve 03'te sayfa kenarı boşluğu alamadım :(
+    ikisinde de maindeki width:100% kapatılınca düzeliyor da...
 + header eklenecek
 
 #### 1-HOME PAGE
@@ -10,14 +11,19 @@
 #### 3- TURKEY GUIDE
 #### 4- REAL ESTATE
 ##### main
-+ dropdown için background, aradaki boşlukları alamadım p/m-0 çözmüyor.
-+ diamond 01 shadow özelleştirilmeli gibi duruyor???
+
+
+##### detail
++ detail'de amenities ikonlarını dışa aktaramıyoruz.
++ soldaki sliderda ftğrf boyutu değişirse diye en boy sabitlemeli miyiz?
 
 
 #### 5- CITIZENSHIP PROGRAM
 #### 6- SERVICES
 + 3 sayfa tamamlandı,  2'sinde yatayda scrollbar çıkıyor.
 
-#### 7- PROPERTY MANAGMENT
+#### 7- PROPERTY MANAGEMENT
++ 2 fotoğrafı alamadım
+
 #### 8- BLOG
 #### 9- CONTACT
