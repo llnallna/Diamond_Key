@@ -1,16 +1,21 @@
-/* box-shadow: 0 0.5rem 1rem rgba(var(--bs-body-color-rgb),.4)!important; */
-
-.btn-dark{
-  background-color: #282A2E;
-}
-
 :root {
   --gold: #94806f;
+  --light-bg: #808070;
+  --dark-bg: #333333;
 }
 
-#page-numbers>a{
+#page-numbers > a {
   width: 45px;
   height: 45px;
+}
+
+.border-gold {
+  border-color: var(--gold);
+}
+
+.border-20 {
+  border-style: solid;
+  border-top-width: 20px;
 }
 
 /* --------- FONTS --------- */
@@ -35,7 +40,7 @@
 }
 
 .mt-n3 {
-  margin-top: -25px !important;
+  margin-top: -35px !important;
 }
 
 .bg-negative-white {
@@ -70,19 +75,51 @@
 }
 
 .footer-border-gradient-gold {
-  border-image-source : -moz-linear-gradient(0% 50% 0deg,rgba(148, 128, 111, 1) 0%,rgba(255, 188, 113, 1) 50%,rgba(128, 106, 77, 1) 100%);
-  border-image-source : -webkit-linear-gradient(0deg, rgba(148, 128, 111, 1) 0%, rgba(255, 188, 113, 1) 50%, rgba(128, 106, 77, 1) 100%);
-  border-image-source : -webkit-gradient(linear,0% 50% ,100% 50% ,color-stop(0,rgba(148, 128, 111, 1) ),color-stop(0.5,rgba(255, 188, 113, 1) ),color-stop(1,rgba(128, 106, 77, 1) ));
-  border-image-source : -o-linear-gradient(0deg, rgba(148, 128, 111, 1) 0%, rgba(255, 188, 113, 1) 50%, rgba(128, 106, 77, 1) 100%);
-  border-image-source : -ms-linear-gradient(0deg, rgba(148, 128, 111, 1) 0%, rgba(255, 188, 113, 1) 50%, rgba(128, 106, 77, 1) 100%);
-  border-image-source : linear-gradient(90deg, rgba(148, 128, 111, 1) 0%, rgba(255, 188, 113, 1) 50%, rgba(128, 106, 77, 1) 100%);
+  border-image-source: -moz-linear-gradient(
+    0% 50% 0deg,
+    rgba(148, 128, 111, 1) 0%,
+    rgba(255, 188, 113, 1) 50%,
+    rgba(128, 106, 77, 1) 100%
+  );
+  border-image-source: -webkit-linear-gradient(
+    0deg,
+    rgba(148, 128, 111, 1) 0%,
+    rgba(255, 188, 113, 1) 50%,
+    rgba(128, 106, 77, 1) 100%
+  );
+  border-image-source: -webkit-gradient(
+    linear,
+    0% 50%,
+    100% 50%,
+    color-stop(0, rgba(148, 128, 111, 1)),
+    color-stop(0.5, rgba(255, 188, 113, 1)),
+    color-stop(1, rgba(128, 106, 77, 1))
+  );
+  border-image-source: -o-linear-gradient(
+    0deg,
+    rgba(148, 128, 111, 1) 0%,
+    rgba(255, 188, 113, 1) 50%,
+    rgba(128, 106, 77, 1) 100%
+  );
+  border-image-source: -ms-linear-gradient(
+    0deg,
+    rgba(148, 128, 111, 1) 0%,
+    rgba(255, 188, 113, 1) 50%,
+    rgba(128, 106, 77, 1) 100%
+  );
+  border-image-source: linear-gradient(
+    90deg,
+    rgba(148, 128, 111, 1) 0%,
+    rgba(255, 188, 113, 1) 50%,
+    rgba(128, 106, 77, 1) 100%
+  );
 }
 
-.icon-gold{
+.icon-gold {
   color: var(--gold) !important;
 }
 
-/* --------- INDEX --------- */
+/* --------- 1- INDEX --------- */
 .section-about-us {
   font-family: "Poppins", sans-serif;
 }
@@ -147,7 +184,7 @@
   height: 950px;
 }
 
-/* --------- ABOUT US --------- */
+/* --------- 2- ABOUT US --------- */
 .about-us-header-bg {
   background-image: url("../img/img-index/home-header-bg.jpg");
   background-size: cover;
@@ -226,42 +263,224 @@
   transition: all .2s ease-in; */
 }
 
-
 /* --------- 4-REAL ESTATE MAIN --------- */
 
-.bg-gold{
+.bg-gold {
   background-color: var(--gold);
 }
 
-.text-gold{
+.bg-transparent {
+  opacity: 0.5;
+}
+
+.text-gold {
   color: var(--gold);
 }
 
+.real-est-shadow {
+  box-shadow: 0 0.5rem 1rem rgba(var(--bs-body-color-rgb), 0.4);
+}
+
+.btn-dark {
+  background-color: #282a2e;
+}
+
+.res-overlay {
+  top: 20px;
+  left: 20px;
+}
+
+.res-select {
+  background: none;
+}
+
+.res-select-col {
+  position: relative;
+}
+
+.res-select-col:after {
+  width: 0;
+  height: 0;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 6px solid #fff;
+  position: absolute;
+  top: 40%;
+  right: 45px;
+  content: "";
+  z-index: 98;
+}
+
+/* --------- 5- CITIZENSHIP PROGRAM --------- */
+.citizenship-light-bg {
+  background-color: var(--light-bg);
+}
+
+.citizenship-dark-bg {
+  background-color: var(--dark-bg);
+}
+
+.citizenship-section-introduction-country-bg {
+  /* margin: 0;
+  padding: 0; */
+  background-image: url("../img/img-citizenship-program/tr-citizenship-bg.jpg");
+  background-color: #bdc94c;
+  background-size: cover;
+  background-position: center;
+  /* position: absolute; */
+  /* background-attachment: fixed; */
+  /* width: 1920px; */
+  height: 1517px; /* burası olmazsa fotoğrafın kendi boyutunun tamamını kullanması gerekmez mi, neden kırpıyor yüksekliği sabitlemezsem? */
+}
+
+/* --------- 8-BLOG --------- */
+.rotate-vertical {
+  rotate: -90deg;
+}
+
+.text-gray {
+  color: #c4c4c4;
+}
+
+.vr-black {
+  color: black;
+}
+
+.rigt-side-bar {
+  position: absolute;
+  height: 60%;
+  background-color: #0b0b0b;
+  display: block;
+  width: 2px;
+  bottom: 10%;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
+.blog-sidebar-border {
+  position: relative;
+  height: 2px;
+  background-color: #c4c4c4;
+  margin-bottom: 20px;
+  display: block;
+}
+
+.blog-sidebar-border::before {
+  content: "";
+  position: absolute;
+  width: 35%;
+  background-color: #232428;
+  height: 2px;
+  left: 0;
+  top: 0;
+}
+
+.blog-vertical-title {
+  font-size: 115px;
+  transform-origin: center;
+  transform: translatex(-95px);
+}
+
+/* --------- 7- PROJECT MANAGEMENT --------- */
+.prop-management-bg-input {
+  /* margin: 0;
+  padding: 0; */
+  background-image: url("../img/img-propety-management/property-management-sea.jpg");
+  background-color: #bdc94c;
+  background-size: cover;
+  background-position: center;
+  /* position: absolute; */
+  /* background-attachment: fixed; */
+  /* width: 1920px; */
+  height: 675px; /* burası olmazsa fotoğrafın kendi boyutunun tamamını kullanması gerekmez mi, neden kırpıyor yüksekliği sabitlemezsem? */
+}
+
+.prop-management-bg-button {
+  background-color: #0d6289;
+}
 
 /* --------- BACKGROUNDS FROM Ai ---------*/
 
-.bg-gold-gradient{
-  background : -moz-linear-gradient(0% 50% 0deg,rgba(148, 128, 111, 1) 0%,rgba(128, 126, 94, 1) 48.85%,rgba(128, 106, 77, 1) 100%);
-  background : -webkit-linear-gradient(0deg, rgba(148, 128, 111, 1) 0%, rgba(128, 126, 94, 1) 48.85%, rgba(128, 106, 77, 1) 100%);
-  background : --webkit-gradient(linear,0% 50% ,100% 50% ,color-stop(0,rgba(148, 128, 111, 1) ),color-stop(0.4885,rgba(128, 126, 94, 1) ),color-stop(1,rgba(128, 106, 77, 1) ));
-  background : -o-linear-gradient(0deg, rgba(148, 128, 111, 1) 0%, rgba(128, 126, 94, 1) 48.85%, rgba(128, 106, 77, 1) 100%);
-  background : -ms-linear-gradient(0deg, rgba(148, 128, 111, 1) 0%, rgba(128, 126, 94, 1) 48.85%, rgba(128, 106, 77, 1) 100%);
+.bg-gold-gradient {
+  background: -moz-linear-gradient(
+    0% 50% 0deg,
+    rgba(148, 128, 111, 1) 0%,
+    rgba(128, 126, 94, 1) 48.85%,
+    rgba(128, 106, 77, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    0deg,
+    rgba(148, 128, 111, 1) 0%,
+    rgba(128, 126, 94, 1) 48.85%,
+    rgba(128, 106, 77, 1) 100%
+  );
+  background: --webkit-gradient(
+    linear,
+    0% 50%,
+    100% 50%,
+    color-stop(0, rgba(148, 128, 111, 1)),
+    color-stop(0.4885, rgba(128, 126, 94, 1)),
+    color-stop(1, rgba(128, 106, 77, 1))
+  );
+  background: -o-linear-gradient(
+    0deg,
+    rgba(148, 128, 111, 1) 0%,
+    rgba(128, 126, 94, 1) 48.85%,
+    rgba(128, 106, 77, 1) 100%
+  );
+  background: -ms-linear-gradient(
+    0deg,
+    rgba(148, 128, 111, 1) 0%,
+    rgba(128, 126, 94, 1) 48.85%,
+    rgba(128, 106, 77, 1) 100%
+  );
   -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#94806F', endColorstr='#806A4D' ,GradientType=0)";
-  background : linear-gradient(90deg, rgba(148, 128, 111, 1) 0%, rgba(128, 126, 94, 1) 48.85%, rgba(128, 106, 77, 1) 100%);
+  background: linear-gradient(
+    90deg,
+    rgba(148, 128, 111, 1) 0%,
+    rgba(128, 126, 94, 1) 48.85%,
+    rgba(128, 106, 77, 1) 100%
+  );
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#94806F',endColorstr='#806A4D' , GradientType=1);
 }
 
-.real-estate-dark-blue-gradient{
-  background : -moz-linear-gradient(0% 50% 0deg,rgba(0, 25, 42, 1) 0.06%,rgba(28, 49, 108, 1) 100%);
-  background : -webkit-linear-gradient(0deg, rgba(0, 25, 42, 1) 0.06%, rgba(28, 49, 108, 1) 100%);
-  background : --webkit-gradient(linear,0% 50% ,100% 50% ,color-stop(0.0006,rgba(0, 25, 42, 1) ),color-stop(1,rgba(28, 49, 108, 1) ));
-  background : -o-linear-gradient(0deg, rgba(0, 25, 42, 1) 0.06%, rgba(28, 49, 108, 1) 100%);
-  background : -ms-linear-gradient(0deg, rgba(0, 25, 42, 1) 0.06%, rgba(28, 49, 108, 1) 100%);
+.real-estate-dark-blue-gradient {
+  background: -moz-linear-gradient(
+    0% 50% 0deg,
+    rgba(0, 25, 42, 1) 0.06%,
+    rgba(28, 49, 108, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    0deg,
+    rgba(0, 25, 42, 1) 0.06%,
+    rgba(28, 49, 108, 1) 100%
+  );
+  background: --webkit-gradient(
+    linear,
+    0% 50%,
+    100% 50%,
+    color-stop(0.0006, rgba(0, 25, 42, 1)),
+    color-stop(1, rgba(28, 49, 108, 1))
+  );
+  background: -o-linear-gradient(
+    0deg,
+    rgba(0, 25, 42, 1) 0.06%,
+    rgba(28, 49, 108, 1) 100%
+  );
+  background: -ms-linear-gradient(
+    0deg,
+    rgba(0, 25, 42, 1) 0.06%,
+    rgba(28, 49, 108, 1) 100%
+  );
   -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#00192A', endColorstr='#1C316C' ,GradientType=0)";
-  background : linear-gradient(90deg, rgba(0, 25, 42, 1) 0.06%, rgba(28, 49, 108, 1) 100%);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 25, 42, 1) 0.06%,
+    rgba(28, 49, 108, 1) 100%
+  );
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00192A',endColorstr='#1C316C' , GradientType=1);
 }
-
 
 .list-group-item-bg-blue {
   background: -moz-linear-gradient(
