@@ -1,4 +1,4 @@
-26.04.2023
+27.04.2023
 + service 01 ve 03'te sayfa kenarı boşluğu alamadım :(
     ikisinde de maindeki width:100% kapatılınca düzeliyor da...
 + header eklenecek
@@ -10,7 +10,7 @@
 
 #### 3- TURKEY GUIDE
 #### 4- REAL ESTATE
-##### main
+##### main  &check;
 
 
 ##### detail
@@ -19,11 +19,9 @@
 
 
 #### 5- CITIZENSHIP PROGRAM
-#### 6- SERVICES
+#### 6- SERVICES  &check;
 + 3 sayfa tamamlandı,  2'sinde yatayda scrollbar çıkıyor.
 
-#### 7- PROPERTY MANAGEMENT
-+ 2 fotoğrafı alamadım
-
-#### 8- BLOG
-#### 9- CONTACT
+#### 7- PROPERTY MANAGEMENT     &check;
+#### 8- BLOG  &check;
+#### 9- CONTACT  &check;
