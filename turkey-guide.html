@@ -1,3 +1,9 @@
+<!-- swiper class isimlerini tr-guide-myswiper filan yap anıl -->
+<!-- soldaki listeden marmara region tıklanınca fotoğraf değil sayfa açılmalı ya da img açılınca kapatma eklenmeli -->
+<!-- fotoğraf tıklanınca ekranın tamamında değil de haritalı olanın sadece swiper alanında açılmasını sağlayabilir miyiz Süha? -->
+
+<!-- listede active çalışmıyor ama tıklanınca sadece fotoğraf olarak gelecekse zaten görünmüyor, iptal edebiliriz Süha -->
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -160,107 +166,123 @@
     </header>
 
     <section id="section-services">
-      <div class="container-fluid font-poppins text-center">
-        <div class="row row-cols-6">
-          <a href="#">
-            <i class="icon-gold fs-2 bi bi-chevron-left"></i>
-          </a>
-          <a href="#">
-            <i class="icon-gold fs-2 bi bi-chevron-right"></i>
-          </a>
-        </div>
+      <div class="container-fluid font-poppins fw-light text-center">
+        <div
+          class="swiper-button-prev icon-gold fs-2 tr-guide-position-right tr-guide-swp-btn-position-top"
+        ></div>
+        <div
+          class="swiper-button-next icon-gold fs-2 tr-guide-swp-btn-position-top"
+        ></div>
         <div class="row align-items-center">
-          <div class="col-2 fs-5 fw-light">
-            <!-- h-100'e tepki vermiyor! -->
-
-            <div class="list-group">
-              <a
-                href="#"
-                class="list-group-item list-group-item-action active list-group-item-bg-blue text-white border-0"
-                >Marmara Region</a
-              >
-              <a href="#" class="list-group-item active border-0"
-                >Aegeon Region</a
-              >
+          <div class="col-2 fs-5 p-0">
+            <div class="position-absolute z-n1 tr-guide-position-ab-top">
+              <img
+                src="./img/img-turkey-guide/tr-guide-diamond.jpg"
+                alt="diamond"
+              />
             </div>
 
-            <!-- <ul class="list-group rounded-0">
-              <li class="list-group-item list-group-item-action list-group-item-bg-blue text-white border-0" aria-current="true">
-                Mamara Region
-              </li>
-              <li class="list-group-item border-0" aria-current="true">
-                Aegeon Region
-              </li>
-              <li class="list-group-item border-0" aria-current="true">
-                Mediterranean Region
-              </li>
-              <li class="list-group-item border-0" aria-current="true">
-                Central Anatolia Region
-              </li>
-              <li class="list-group-item border-0" aria-current="true">
-                Eastern Anatolia Region
-              </li>
-              <li class="list-group-item border-0" aria-current="true">
-                Black Sea Region
-              </li>
-            </ul> -->
+            <div class="text-center">
+              <ul class="list-unstyled p-0">                
+                <li>
+                  <a href="./img/img-turkey-guide/tr-guide-marmara-opened.jpg" class="btn rounded-0 border-0 active tr-guide-list-active fw-light text-decoration-none" role="button" data-bs-toggle="button" aria-pressed="true">Marmara Region</a></li>
+                <br>
+                <li><a href="./img/img-turkey-guide/tr-guide-marmara-opened.jpg" class="btn rounded-0 border-0 active  fw-light text-decoration-none">Aegeon Region</a></li>
+                <br>
+                <li><a href="./img/img-turkey-guide/tr-guide-marmara-opened.jpg" class="btn rounded-0 border-0 active  fw-light text-decoration-none">Mediterranean Region</a></li>
+                <br>
+                <li><a href="./img/img-turkey-guide/tr-guide-marmara-opened.jpg" class="btn rounded-0 border-0 active  fw-light text-decoration-none">Central Anatolia Region</a></li>
+                <br>
+                <li><a href="./img/img-turkey-guide/tr-guide-marmara-opened.jpg" class="btn rounded-0 border-0 active  fw-light text-decoration-none">Eastern Anatolia Region</a></li>
+                <br>
+                <li><a href="./img/img-turkey-guide/tr-guide-marmara-opened.jpg" class="btn rounded-0 border-0 active  fw-light text-decoration-none">Black Sea Region</a></li>
+                <br>                
+              </ul>              
+            </div>
           </div>
 
-          <!-- !!!!!!!!!!!!!!!!!!!!!! mevcut img alabiliyoruz da 6 bölge var 3'üne ait img var??? aynı filtreyle mi oluşturalım??? oluşturamayız hepsinde farklı filtre varmış, tasarımcı mı çözecek? !!!!!!!!!!!!!!!!!!!! -->
-          <div class="col-10">
-            <div class="swiper mySwiper">
+          <div class="col-10 p-0">
+            <div class="swiper tr-guide-mySwiper">
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                  <div class="card text-bg-dark rounded-0 p-0">
-                    <img
-                      src="./img/img-turkey-guide/guide-aegean-bgVarlık 1-100.jpg"
-                      class="card-img rounded-0"
-                      alt="Black Sea Reagion"
-                    />
-                    <div
-                      class="col card-img-overlay d-flex align-items-center justify-content-center"
+                  <div class="card text-bg-dark border-0 rounded-0 p-0">
+                    <a
+                      data-fancybox=""
+                      href="./img/img-turkey-guide/tr-guide-blackSea.jpg"
                     >
-                      <h3 class="card-title fw-light">Black Sea Region</h3>
+                      <img
+                        src="./img/img-turkey-guide/tr-guide-blackSea.jpg"
+                        class="card-img rounded-0"
+                        alt="Black Sea Region"
+                    /></a>
+                    <div
+                      class="card-img-overlay pointer-events-none"
+                    >
+                      <h3 class="card-title fw-light h-50 d-flex align-items-end justify-content-center">Black Sea Region</h3>
+                      <div class="h-50 d-flex align-items-end justify-content-end">
+                        <img
+                          class="text-end"
+                          src="./img/img-icons/icon-arrow-right-white.png"
+                          alt="arrow-right"
+                        />
+                      </div>
                     </div>
                   </div>
                 </div>
                 <div class="swiper-slide">
-                  <div class="card text-bg-dark rounded-0 p-0">
-                    <img
-                      src="./img/img-turkey-guide/guide-aegean-bgVarlık 1-100.jpg"
-                      class="card-img rounded-0"
-                      alt="Black Sea Reagion"
-                    />
-                    <div
-                      class="col card-img-overlay d-flex align-items-center justify-content-center"
+                  <div class="card text-bg-dark border-0 rounded-0 p-0">
+                    <a
+                      data-fancybox=""
+                      href="./img/img-turkey-guide/tr-guide-marmara-opened.jpg"
                     >
-                      <h3 class="card-title fw-light">Black Sea Region</h3>
+                      <img
+                        src="./img/img-turkey-guide/tr-guide-marmara.jpg"
+                        class="card-img rounded-0"
+                        alt="Marmara Region"
+                    /></a>
+                    <div
+                      class="card-img-overlay pointer-events-none"
+                    >
+                      <h3 class="card-title fw-light h-50 d-flex align-items-end justify-content-center">Marmara Region</h3>
+                      <div class="h-50 d-flex align-items-end justify-content-end">
+                        <img
+                          class="text-end"
+                          src="./img/img-icons/icon-arrow-right-white.png"
+                          alt="arrow-right"
+                        />
+                      </div>
                     </div>
                   </div>
                 </div>
                 <div class="swiper-slide">
-                  <div class="card text-bg-dark rounded-0 p-0">
-                    <img
-                      src="./img/img-turkey-guide/guide-aegean-bgVarlık 1-100.jpg"
-                      class="card-img rounded-0"
-                      alt="Black Sea Reagion"
-                    />
-                    <div
-                      class="col card-img-overlay d-flex align-items-center justify-content-center"
+                  <div class="card text-bg-dark border-0 rounded-0 p-0">
+                    <a
+                      data-fancybox=""
+                      href="./img/img-turkey-guide/tr-guide-aegean.jpg"
                     >
-                      <h3 class="card-title fw-light">Black Sea Region</h3>
+                      <img
+                        src="./img/img-turkey-guide/tr-guide-aegean.jpg"
+                        class="card-img rounded-0"
+                        alt="Aegean Region"
+                    /></a>
+                    <div
+                      class="card-img-overlay pointer-events-none"
+                    >
+                      <h3 class="card-title fw-light h-50 d-flex align-items-end justify-content-center">Aegean Region</h3>
+                      <div class="h-50 d-flex align-items-end justify-content-end">
+                        <img
+                          class="text-end"
+                          src="./img/img-icons/icon-arrow-right-white.png"
+                          alt="arrow-right"
+                        />
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="swiper-button-next"></div>
-              <div class="swiper-button-prev"></div>
             </div>
-
-            <!-- card üzerinde tıklanınca bölge detayının slider gibi gelmesini istiyor gibi; direkt 2. bir sayfaya link vermeden sayfayı slider gibi çalıştırabilir miyiz ki :S -->
           </div>
         </div>
-        <div class="row invisible">arrow right&left gold</div>
       </div>
     </section>
 
@@ -332,8 +354,17 @@
       crossorigin="anonymous"
     ></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"
+    />
+
     <script>
-      var swiper = new Swiper(".mySwiper", {
+      Fancybox.bind("[data-fancybox]");
+
+      var swiper = new Swiper(".tr-guide-mySwiper", {
         spaceBetween: 0,
         centeredSlides: true,
         initialSlide: 0,
