@@ -497,18 +497,17 @@ body {
   padding: 100px 0;
 }
 
-.ctz-mySwiper .swiper-slide {
-  transform: scale(1);
-  z-index: 0;
-  position: relative;
-  transition: all .3s ease-in;
+.ctz-mySwiper .swiper-slide:nth-child(1n) {
+  transform: translateY(30px);
+}
+.ctz-mySwiper .swiper-slide:nth-child(2n) {
+  transform: translateY(-100px);
+}
+.ctz-mySwiper .swiper-slide:nth-child(3n) {
+  transform: translateY(-20px);
 }
 
 .ctz-mySwiper .swiper-slide:hover {
-  transform: scale(1.1);
-  z-index: 1;
-  transition: all .3s ease-in;
-  box-shadow: 0 0.5rem 1rem rgba(var(--bs-body-color-rgb), 0.9);
 }
 
 .ctz-list-gold {
