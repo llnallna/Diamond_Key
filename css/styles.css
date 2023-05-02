@@ -370,8 +370,45 @@
   background-color: var(--gold);
 }
 
+.real-estate-dark-blue-gradient {
+  background: -moz-linear-gradient(
+    0% 50% 0deg,
+    rgba(0, 25, 42, 1) 0.06%,
+    rgba(28, 49, 108, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    0deg,
+    rgba(0, 25, 42, 1) 0.06%,
+    rgba(28, 49, 108, 1) 100%
+  );
+  background: -webkit-gradient(
+    linear,
+    0% 50%,
+    100% 50%,
+    color-stop(0.0006, rgba(0, 25, 42, 1)),
+    color-stop(1, rgba(28, 49, 108, 1))
+  );
+  background: -o-linear-gradient(
+    0deg,
+    rgba(0, 25, 42, 1) 0.06%,
+    rgba(28, 49, 108, 1) 100%
+  );
+  background: -ms-linear-gradient(
+    0deg,
+    rgba(0, 25, 42, 1) 0.06%,
+    rgba(28, 49, 108, 1) 100%
+  );
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#00192A', endColorstr='#1C316C' ,GradientType=0)";
+  background: linear-gradient(
+    90deg,
+    rgba(0, 25, 42, 1) 0.06%,
+    rgba(28, 49, 108, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00192A',endColorstr='#1C316C' , GradientType=1);
+}
+
 /* REAL ESTATE DETAIL */
-/* swiper1 */
+/* swiper 1*/
 /* html,
 body {
   position: relative;
@@ -407,6 +444,26 @@ body {
   height: 100%;
   object-fit: cover;
 } */
+/* --------- res-det-swiper 2 --------- */
+.res-det-apt-inner-mySwiper {
+  padding: 100px 0;
+}
+
+.res-det-apt-inner-mySwiper .swiper-slide {
+  transform: scale(1);
+  z-index: 0;
+  position: relative;
+  transition: all .3s ease-in;
+}
+
+.res-det-apt-inner-mySwiper .swiper-slide:hover {
+  transform: scale(1.1);
+  z-index: 1;
+  transition: all .3s ease-in;
+  box-shadow: 0 0.5rem 1rem rgba(var(--bs-body-color-rgb), 0.9);
+}
+
+
 
 /* --------- 5- CITIZENSHIP PROGRAM --------- */
 .citizenship-light-bg {
@@ -417,31 +474,26 @@ body {
   background-color: var(--dark-bg);
 }
 
-.ctz-section-int-stKitts-bg-left {
-  background-image: url("../img/img-citizenship-program/stKitts&Nevis/stKitts-introducing-bg.png");
-  background-color: #bdc94c;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: left;
+.ctz-swp-btn-position-bottom {
+  bottom: 0%;
 }
 
-.ctz-section-int-stKitts-bg-left-text {
-  background : -moz-linear-gradient(0% 50% 0deg,rgba(43, 37, 38, 0) 0%,rgba(52, 43, 38, 0.18) 18.43%,rgba(61, 49, 38, 0.53) 52.98%,rgba(64, 51, 38, 1) 100%);
-  background : -webkit-linear-gradient(0deg, rgba(43, 37, 38, 0) 0%, rgba(52, 43, 38, 0.18) 18.43%, rgba(61, 49, 38, 0.53) 52.98%, rgba(64, 51, 38, 1) 100%);
-  background : -webkit-gradient(linear,0% 50% ,100% 50% ,color-stop(0,rgba(43, 37, 38, 0) ),color-stop(0.1843,rgba(52, 43, 38, 0.18) ),color-stop(0.5298,rgba(61, 49, 38, 0.53) ),color-stop(1,rgba(64, 51, 38, 1) ));
-  background : -o-linear-gradient(0deg, rgba(43, 37, 38, 0) 0%, rgba(52, 43, 38, 0.18) 18.43%, rgba(61, 49, 38, 0.53) 52.98%, rgba(64, 51, 38, 1) 100%);
-  background : -ms-linear-gradient(0deg, rgba(43, 37, 38, 0) 0%, rgba(52, 43, 38, 0.18) 18.43%, rgba(61, 49, 38, 0.53) 52.98%, rgba(64, 51, 38, 1) 100%);
-  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#2B2526', endColorstr='#403326' ,GradientType=0)";
-  background : linear-gradient(90deg, rgba(43, 37, 38, 0) 0%, rgba(52, 43, 38, 0.18) 18.43%, rgba(61, 49, 38, 0.53) 52.98%, rgba(64, 51, 38, 1) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#2B2526',endColorstr='#403326' , GradientType=1);
+.ctz-mySwiper {
+  padding: 100px 0;
 }
 
-.ctz-section-int-stKitts-bg-right {
-  background-image: url("../img/img-citizenship-program/stKitts&Nevis/stKitts-introducing-right.jpg");
-  background-color: #bdc94c;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: right bottom;
+.ctz-mySwiper .swiper-slide {
+  transform: scale(1);
+  z-index: 0;
+  position: relative;
+  transition: all .3s ease-in;
+}
+
+.ctz-mySwiper .swiper-slide:hover {
+  transform: scale(1.1);
+  z-index: 1;
+  transition: all .3s ease-in;
+  box-shadow: 0 0.5rem 1rem rgba(var(--bs-body-color-rgb), 0.9);
 }
 
 .ctz-list-gold {
@@ -556,41 +608,6 @@ td img {
 }
 
 
-.real-estate-dark-blue-gradient {
-  background: -moz-linear-gradient(
-    0% 50% 0deg,
-    rgba(0, 25, 42, 1) 0.06%,
-    rgba(28, 49, 108, 1) 100%
-  );
-  background: -webkit-linear-gradient(
-    0deg,
-    rgba(0, 25, 42, 1) 0.06%,
-    rgba(28, 49, 108, 1) 100%
-  );
-  background: -webkit-gradient(
-    linear,
-    0% 50%,
-    100% 50%,
-    color-stop(0.0006, rgba(0, 25, 42, 1)),
-    color-stop(1, rgba(28, 49, 108, 1))
-  );
-  background: -o-linear-gradient(
-    0deg,
-    rgba(0, 25, 42, 1) 0.06%,
-    rgba(28, 49, 108, 1) 100%
-  );
-  background: -ms-linear-gradient(
-    0deg,
-    rgba(0, 25, 42, 1) 0.06%,
-    rgba(28, 49, 108, 1) 100%
-  );
-  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#00192A', endColorstr='#1C316C' ,GradientType=0)";
-  background: linear-gradient(
-    90deg,
-    rgba(0, 25, 42, 1) 0.06%,
-    rgba(28, 49, 108, 1) 100%
-  );
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00192A',endColorstr='#1C316C' , GradientType=1);
-}
+
 
 

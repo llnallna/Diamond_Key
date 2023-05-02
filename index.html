@@ -1,3 +1,6 @@
+<!-- font kontrol et son hali yorumundan önce Anıl -->
+<!-- filter area eklenecek -->
+<!-- bg h olmadan kullanacak şekilde düzenle css kodlarını -->
 
 <!-- services hr
   <div class="col-2 offset-1 d-flex align-items-end border-bottom border-white  border-1 opacity-99">
@@ -12,26 +15,6 @@
 -->
 
 <!-- sayfanın genişliği 1920'yi aşıyor, ne taşıyor bulamadım, container-fluid'de g-0 çözmedi. çözdü gibi oldu, olmamış tekrar bakılacak. -->
-
-<!-- 
-    home sayfası region section ------ 6 bölge kendini çok tekrarlıyor bootstrap yerine external mı tercih edilmeli?
- -->
-
-<!--
-    header ve footer component gibi dosya oluşturulup kullanılabilir mi?
-    reha bilge'de class'a header verilmiş fakat css dosyalarında öyle bir class tanımlanmamış!!
-    iconları icon olarak kullanıyım mı burada fonticon yapmalı mıyım? ne zmn hangisini tercih ediyoruz? -- ***illustratordan al!!
-
-    Ai'da sayfayı gride bölmeli miyim? ***gerek yok
-
-    boyut için width:%100 ve height px ile mi ilerlemeliyim; vm-vh ile veya başka birşey?
-    font; px, rem,em? ***px ile devam et
--->
-
-<!-- 
-  ---------------------------------Ai birim değişikliği, in->px; pt->px nasıl yapılıyor, yapsam bozulur mu?
- -->
-
 
 <!-- breakpoints ----- ders:3 - 28' -->
 
@@ -49,21 +32,29 @@
       integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
       crossorigin="anonymous"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+
+    <!-- Bootstrap Icons CSS -->
+    <link rel="stylesheet" href="./css/bootstrap-icons.css" />
+
     <!-- Custom CSS -->
     <link rel="stylesheet" href="./css/styles.css" />
     <link rel="stylesheet" href="./css/responsive.css" />
 
-    <!-- Documentation extras -->
+    <!-- Documentation Extras -->
 
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins:wght@100;200;300;400;500;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
 
-    <title>Diamond Key | DK</title>
+    <title>Diamond Key</title>
   </head>
 
   <body>
@@ -189,15 +180,16 @@
       </section>
     </header>
     <main>
+      <!-- ----------- DETAILED FILTER ------------ -->
       <section id="section-filter"></section>
       <!-- ----------- ABOUT US ------------ -->
       <section id="section-about-us">
         <div class="container-fluid">
           <div class="row">
-            <div class="col-7">
+            <div class="col-7 p-0">
               <img
                 class="img-fluid"
-                src="./img/img-index/home-ic-mekan.jpg"
+                src="./img/img-index/room-1.jpg"
                 alt="home-ic-mekan"
               />
             </div>
@@ -376,9 +368,6 @@
               <div class="col fs-2">CITIZENSHIP PROGRAM</div>
             </div>
             <div class="row mb-4 font-playfair-display fw-medium text-al-jstfy">
-              <!-- fw regular kullanılmış bootstrapteki normal değil mi o -->
-              <!-- bu başlık aslında alttaki resimle doğru hizalanmış değil ama verilen font size bu olduğu için container-fluid kullanıp ortaladım. bu mu yoksa doğru hizalanmış küçük font mu? -->
-              <!-- burada text-al-jstfy neden çalışmıyor? -->
               <h1 class="display-5">How To Get Turkish Citizenship?</h1>
               <!-- <div  style="font-size: 68px">
                 How To Get Turkish Citizenship?
@@ -397,81 +386,101 @@
             </div>
           </div>
         </div>
-        <div class="container-fluid d-flex flex-column">
-          <div class="card text-bg-dark rounded-0">
-            <img
-              src="./img/img-index/index-sec-citizenship.jpg"
-              class="card-img"
-              alt="passport"
-            />
-
-            <div
-              class="container card-img-overlay mt-5 font-poppins text-center lh-sm"
-            >
-              <div class="row">
-                <div class="col-5 offset-7 pt-4 pe-0 ps-4 mt-5">
-                  <h5 class="col-10 card-title fs-4 fw-medium">
-                    Real Estate Investment
-                  </h5>
-                  <p class="card-text fs-5 text-start ps-5">
-                    Buying a property or properties which
-                    <br />
-                    value exceeds 400 thousand dollars.
-                  </p>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-2 offset-10 text-nowrap pt-5 ps-4 mt-5">
-                  <h5 class="col-4 offset-8 card-title fs-4 fw-medium">
-                    Investing in Turkey
-                  </h5>
-                  <p class="card-text fs-5 ps-5">
-                    By investing in a project with a capital
-                    <br />
-                    of at least 500 thousand US dollars.
-                  </p>
-                </div>
-              </div>
-
-              <div class="row h-25"></div>
-
-              <div class="row">
-                <div class="col-4 offset-9">
-                  <h5 class="card-title fs-4 fw-medium">Bank Deposit</h5>
-                  <p class="card-text fs-5 text-start ps-3">
-                    By depositing at least 500 thousand US dollars in a Turkish
-                    bank for 3 years.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div
-              class="row h-100 card-img-overlay justify-content-end align-items-end pb-5"
-            >
-              <div class="col-1 text-center pb-4">
-                <img src="./img/img-index/arrow-right.jpg" alt="" />
-              </div>
-            </div>
-          </div>
+        <div class="container-fluid p-0">
+          <img
+            src="./img/img-index/index-sec-ctz-intro.png"
+            alt="citizenship-program"
+          />
         </div>
       </section>
       <!-- ----------- PROPERTY MANAGEMENT ------------ -->
       <section id="section-property-management">
         <div class="container-fluid">
-          <div class="row">
+          <div
+            id="input-area"
+            class="row prop-management-bg-input text-white align-items-center justify-content-center"
+          >
             <div class="col-3 p-5 d-flex flex-column">
               <div class="page-name">
                 <div class="col-4">
-                  <hr class="border border-dark border-1 opacity-100" />
+                  <hr class="border border-white border-1 opacity-100" />
                 </div>
                 <div class="col offset-2 fs-2">PROPERTY MANAGEMENT</div>
               </div>
             </div>
             <div class="col-2"></div>
-            <div class="col-4">
-              <form>doldururuz bunu sonra</form>
+
+            <div class="col-4 text-center mb-4">
+              <h2>Let's Us Call You</h2>
+              <form>
+                <fieldset class="d-flex justify-content-center">
+                  <div class="mb-3 mx-1">
+                    <label
+                      for="InputMessage1"
+                      class="form-label d-flex justify-content-start d-flex justify-content-start"
+                      >How can we help you?</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="InputMessage1"
+                    />
+                  </div>
+                  <div class="mb-3 mx-1">
+                    <label
+                      for="InputFirstName"
+                      class="form-label d-flex justify-content-start"
+                      >First Name</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="InputFirstName"
+                    />
+                  </div>
+                  <div class="mb-3 mx-1">
+                    <label
+                      for="InputLastName"
+                      class="form-label d-flex justify-content-start"
+                      >Last Name</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="InputLastName"
+                    />
+                  </div>
+                </fieldset>
+                <fieldset class="d-flex justify-content-center">
+                  <div class="mb-3 mx-1">
+                    <label
+                      for="InputEmail"
+                      class="form-label d-flex justify-content-start"
+                      >Email</label
+                    >
+                    <input type="email" class="form-control" id="InputEmail" />
+                  </div>
+                  <div class="mb-3 mx-1">
+                    <label
+                      for="InputTel"
+                      class="form-label d-flex justify-content-start"
+                      >Phone Number</label
+                    >
+                    <input type="tel" class="form-control" id="InputTel" />
+                  </div>
+                  <div class="mb-3 mx-1 mt-4">
+                    <button
+                      type="submit"
+                      class="btn prop-management-bg-button text-white"
+                      style="width: 195px"
+                    >
+                      Send
+                    </button>
+                  </div>
+                </fieldset>
+              </form>
             </div>
+
             <div class="col-3">
               <div class="col-1 offset-7">ikon</div>
             </div>
@@ -484,13 +493,17 @@
           <div class="row">
             <div class="col-4 index-sec-services-bg text-white">
               <div class="row h-100">
-                <div class="col-2 offset-1">
-                  <hr class="border border-white border-1 opacity-100" />
+                <div
+                  class="col-2 offset-1 d-flex align-items-end border-bottom border-white border-2 opacity-100"
+                >
+                  <hr />
                 </div>
 
                 <div class="container offset-3">
                   <div class="row align-items-center">
-                    <div class="col ps-5 font-playfair-display fw-semibold">
+                    <div
+                      class="col ps-5 font-playfair-display fw-semibold position-relative z-1"
+                    >
                       <h1 class="" style="font-size: 150px">Services</h1>
                     </div>
                     <div
@@ -508,21 +521,6 @@
                   </div>
                 </div>
               </div>
-
-              <!-- <div class="row">
-                <div class="page-name">
-                  <div class="col-4">
-                    <hr class="border border-dark border-1 opacity-100" />
-                  </div>                  
-                </div>
-                <div class="container">
-                  <div class="row">
-                    <div class="col-8 offset-2 font-playfair-display fw-semibold">
-                      <h1 class="display-1">Services</h1>
-                    </div>
-                  </div>
-                </div>                
-              </div> -->
             </div>
 
             <div class="col-8">
@@ -721,103 +719,138 @@
         </div>
       </section>
 
-      <!-- ----------- REFERANCES ------------ -->
-      <section id="section-referances"></section>
+      <!-- ----------- REFERENCES ------------ -->
+      <section
+        id="section-references"
+        class="container-fluid index-references-bg"
+      >
+        <div class="page-name row p-5 align-items-center">
+          <div class="col-1">
+            <hr class="border border-dark border-1 opacity-100" />
+          </div>
+          <div class="col fs-2">REFERENCES</div>
+        </div>
+      </section>
 
       <!-- ----------- SATISFACTION ------------ -->
-      <section id="section-satisfaction"></section>
+      <section id="section-satisfaction" class="container-fluid my-5 py-5">
+        <div
+          class="page-name row p-5 align-items-center justify-content-center"
+        >
+          <div class="col-1">
+            <hr class="border border-dark border-1 opacity-100" />
+          </div>
+          <div class="col-2 fs-2">SATISFACTION</div>
+        </div>
+        <div class="row justify-content-between">
+          <div
+            class="col-1 index-satisfaction-bg text-white text-al-jstfy p-5 ps-0"
+          >
+            <!-- <img src="./img/img-index/index-satisfaction-icon-manVarlık 2-100.jpg" alt=""> -->
+            <p>
+              Lorem ipsum dolor sit amet, consectetuer sed diam nonummy nibh
+              euismod
+            </p>
+            <!-- <img src="./img/img-index/index-satisfaction-icon-manVarlık 2-100.jpg" alt="">Ahmed Velhazır -->
+          </div>
+
+          <div class="col-3 index-satisfaction-bg text-white text-al-jstfy p-5">
+            <img
+              src="./img/img-index/index-satisfaction-icon-manVarlık 2-100.jpg"
+              alt=""
+            />
+            <p>
+              Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+              nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam
+              erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci
+              tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo
+              consequat.
+            </p>
+            <img
+              src="./img/img-index/index-satisfaction-icon-manVarlık 2-100.jpg"
+              alt=""
+            />Ahmed Velhazır
+          </div>
+          <div class="col-3 index-satisfaction-bg text-white text-al-jstfy p-5">
+            <img
+              src="./img/img-index/index-satisfaction-icon-manVarlık 2-100.jpg"
+              alt=""
+            />
+            <p>
+              Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+              nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam
+              erat volutpat.
+            </p>
+            <img
+              src="./img/img-index/index-satisfaction-icon-manVarlık 2-100.jpg"
+              alt=""
+            />Davud Hapito
+          </div>
+          <div class="col-3"></div>
+        </div>
+      </section>
     </main>
 
-    <!-- footer -->
-    <!-- bu neden tek container içinde 2 tane row olarak tanımlayınca çalışmaz?  -->
-    <!-- container neden direkt footer yüksekliğini almıyor da h tanımlamak gerekiyor? footer'a container vermediğin için!!-->
-    <footer class="footer-bg text-white">
-      <div class="container-fluid footer-content text-center">
-        <div class="row h-100 align-items-center">
-          <h1 class="display-4">Looking For More?</h1>
+    <!-- ----------- FOOTER ----------- -->
+    <footer
+      class="container-fluid footer-bg text-white font-poppins fw-medium fs-5 lh-sm"
+    >
+      <div class="text-center h-25">
+        <div class="row h-100 align-items-end">
+          <h1 class="display-4 font-playfair-display fw-normal">
+            Looking For More?
+          </h1>
         </div>
       </div>
-      <div class="container-fluid footer-communication text-center">
-        <div class="row justify-content-center">
-          <div class="col-3 border border-warning">
-            <div class="mt-3 mb-3">
-              <h5>ADDRESS</h5>
-              <!--bunu css dosyasında verdim  address'teki kullanım gibi her h5'e burada class tanımlamak mı tercih edilmeli bu mu?-->
+      <div class="text-center h-50">
+        <div class="row h-100 align-items-center justify-content-center mt-4">
+          <div
+            class="col-3 footer-border-gradient footer-border-gradient-gold"
+            style="height: 130px"
+          >
+            <div class="my-4">
+              <h6 class="fw-bold">ADDRESS</h6>
             </div>
-            <address class="fw-medium mb-3 fs-5">
-              Cumhuriyet Mah. Newista Residence A Blok Kat:26 No:228 Beylikdüzü
-              / İstanbul
+            <address class="mb-3">
+              Cumhuriyet Mah. Newista Residence
+              <br />
+              A Blok Kat:26 No:228 Beylikdüzü / İstanbul
             </address>
           </div>
-          <div class="col-3 border border-warning mx-5">
-            <div class="mt-3 mb-2">
-              <h5>CONTACT</h5>
+          <div
+            class="col-3 footer-border-gradient footer-border-gradient-gold mx-5"
+            style="height: 130px"
+          >
+            <div class="mt-4 mb-3">
+              <h6 class="fw-bold">CONTACT</h6>
             </div>
-            <div class="fw-medium">+90 531 272 74 46</div>
-            <div class="fw-medium">info@diamondkeyistanbul.com</div>
-            <div class="fw-medium">diamondkeyistanbul.com</div>
+            <div class="fs-6">+90 531 272 74 46</div>
+            <div class="fs-6">info@diamondkeyistanbul.com</div>
+            <div class="mb-3 fs-6">diamondkeyistanbul.com</div>
           </div>
-          <div class="col-3 border border-warning">
-            <div class="mt-3 mb-4">
-              <h5>FOLLOW US</h5>
+          <div
+            class="col-3 footer-border-gradient footer-border-gradient-gold"
+            style="height: 130px"
+          >
+            <div class="my-4">
+              <h6 class="fw-bold">FOLLOW US</h6>
             </div>
-            <img src="./img/img-index/footer-iconsVarlık 2-100.jpg" alt="" />
-          </div>
-        </div>
-      </div>
-      <!-- <div class="container-fluid h-100 d-flex flex-column justify-content-center align-items-center">
-        <div class="row">
-          <div>
-            <h1 class="display-1">Looking For More?</h1>
-          </div>
-        </div>
-        <div class="row justify-content-center">
-          <div class="col-3 border border-danger">
-            <h6>ADDRESS</h6>
-              <address class="fw-medium">Cumhuriyet Mah. Newista Residence
-                A Blok Kat:26  No:228 Beylikdüzü / İstanbul</address>
-          </div>
-          <div class="col-3 border border-danger mx-5">
-            <h6>CONTACT</h6>
-              <address class="fw-medium">Cumhuriyet Mah. Newista Residence
-                A Blok Kat:26  No:228 Beylikdüzü / İstanbul</address>
-          </div>
-          <div class="col-3 border border-danger">
-            <h6>FOLLOW US</h6>
-              <address class="fw-medium">Cumhuriyet Mah. Newista Residence
-                A Blok Kat:26  No:228 Beylikdüzü / İstanbul</address>
-          </div>
-        </div>        
-      </div> -->
-    </footer>
 
-    <!-- <footer  class="footer-bg text-white">      
-      <div class="container-fluid text-center">
-        <div class="row align-items-center">
-          <div class="col-12 footer-content d-flex justify-content-center">
-            <h1>Looking For More?</h1>
+            <div class="col-6 offset-3 d-flex justify-content-evenly">
+              <a href="#">
+                <i class="icon-gold fs-4 bi bi-instagram"></i>
+              </a>
+              <a href="#">
+                <i class="icon-gold fs-4 bi bi-facebook"></i>
+              </a>
+              <a href="#">
+                <i class="icon-gold fs-4 bi bi-linkedin"></i>
+              </a>
+            </div>
           </div>
         </div>
-        <div class="footer-communication row justify-content-center align-items-center">
-          <div class="col-3 border border-danger">
-            <h6>ADDRESS</h6>
-            <address class="fw-medium">Cumhuriyet Mah. Newista Residence
-              A Blok Kat:26  No:228 Beylikdüzü / İstanbul</address>
-          </div>
-          <div class="col-3  border border-danger mx-5">
-            <h6>CONTACT</h6>          
-            <address class="fw-medium">Cumhuriyet Mah. Newista Residence
-              A Blok Kat:26  No:228 Beylikdüzü / İstanbul
-            <address>
-          </div>
-          <div class="col-3 border border-danger ">
-            <h6>FOLLOW US</h6>
-            <address class="fw-medium">Cumhuriyet Mah. Newista Residence
-              A Blok Kat:26  No:228 Beylikdüzü / İstanbul</address>
-          </div>
-        </div>        
       </div>
-    </footer> -->
+    </footer>
 
     <!-- script codes -->
     <script
@@ -825,5 +858,25 @@
       integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
       crossorigin="anonymous"
     ></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        spaceBetween: 0,
+        centeredSlides: true,
+        initialSlide: 0,
+        loop: true,
+
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        breakpoints: {
+          640: { slidesPerView: 1 },
+          768: { slidesPerView: 2 },
+          1024: { slidesPerView: 3 },
+        },
+      });
+    </script>
   </body>
 </html>

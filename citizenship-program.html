@@ -1,0 +1,517 @@
+<!-- td img key ve tl şekli bozuk, css ile değüştürdüm ama px SORUN olur mu? Süha -->
+<!-- ctz-myswiper ile harikalar yaratılır gibi duruyor :D paddingle başım dertte :/ -->
+<!-- okların aşağı inmeme sebebini de çözemedim, ctz-swp-btn-position-bottom ile ilgilenilecek :( -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+
+    <!-- Bootstrap Icons CSS -->
+    <link rel="stylesheet" href="./css/bootstrap-icons.css" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/responsive.css" />
+
+    <!-- Documentation Extras -->
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>DK | Turkey Guide</title>
+  </head>
+  <body>
+    <header id="header" class="about-us-header-bg">
+      <div class="container">
+        <div class="row">
+          <div class="header-logo">Logo</div>
+          <div class="header-nav">
+            <nav class="navbar navbar-expand-lg">
+              <div class="container-fluid">
+                <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+                <button
+                  class="navbar-toggler"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#navbarSupportedContent"
+                  aria-controls="navbarSupportedContent"
+                  aria-expanded="false"
+                  aria-label="Toggle navigation"
+                >
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div
+                  class="collapse navbar-collapse"
+                  id="navbarSupportedContent"
+                >
+                  <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                      <a
+                        class="nav-link active"
+                        aria-current="page"
+                        href="./about-us.html"
+                        >ABOUT US</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="./turkey-guide.html"
+                        >TURKEY GUIDE</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="./real-estate-main.html"
+                        >REAL ESTATE</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="./citizenship-program.html"
+                        >CITIZENSHIP PROGRAM</a
+                      >
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a
+                        class="nav-link dropdown-toggle"
+                        href="#"
+                        role="button"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        SERVICES
+                      </a>
+                      <ul class="dropdown-menu">
+                        <li>
+                          <a
+                            class="dropdown-item"
+                            href="./services-real-estate.html"
+                            >REAL ESTATE</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            class="dropdown-item"
+                            href="./services-turkish-passport.html"
+                            >TURKISH PASSPORT</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            class="dropdown-item"
+                            href="./services-consultancy.html"
+                            >CONSULTANCY</a
+                          >
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="./property-management.html"
+                        >PROPERTY MANAGEMENT</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="./blog.html">BLOG</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="./contact.html">CONTACT</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </nav>
+            <nav class="nav-lang">
+              <a href="" class="nav-link">EN</a>
+              <a href="" class="nav-link">TR</a>
+            </nav>
+          </div>
+        </div>
+      </div>
+      <section id="header-section">
+        <div class="container">
+          <div>
+            <div class="index-header-social-links">
+              <nav>
+                <a href="">Whatsapp</a>
+                <a href="">Telephone</a>
+                <a href="">E-mail</a>
+              </nav>
+            </div>
+            <div class="index-header-content">
+              WE MAKE YOUR DREAMS COME TRUE
+            </div>
+          </div>
+          <div class="index-header-chat">Chat with us</div>
+        </div>
+      </section>
+    </header>
+    <main class="container-fluid font-poppins fw-light">
+      <section
+        class="row fs-6 lh-sm text-white text-center mt-n5 justify-content-center px-5 mx-5"
+      >
+        <div class="col-2 py-4 px-5 mx-4 citizenship-light-bg">
+          Visa-free travel to 157 countries
+        </div>
+        <div class="col-2 py-4 px-5 mx-4 citizenship-dark-bg">
+          Fast-track applications in 60 days
+        </div>
+        <div class="col-2 py-4 px-5 mx-4 citizenship-light-bg">
+          No physical residency requirement
+        </div>
+        <div class="col-2 py-4 px-5 mx-4 citizenship-dark-bg">
+          Required contribution from US$125,000
+        </div>
+      </section>
+
+      <section
+        id="description"
+        class="col-8 offset-2 fs-3 text-center text-al-jstfy lh-sm py-5 my-5"
+      >
+        <p class="py-5 mb-5">
+          St Kitts & Nevis' passport and citizenship by investment program is
+          the oldest in the world. Since 1984, foreign investors, along with
+          their immediate family members, have been able to gain citizenship and
+          a second passport by contributing a minimum of $125,000 into the
+          country's Sustainable Growth Fund or purchasing real estate.
+        </p>
+      </section>
+
+      <!-- ----------- SWIPER ----------- -->
+      <section id="ctz-swiper" class="container">
+        <div class="col-6 position-absolute z-n1">
+          <img
+            class="img-fluid"
+            src="./img/img-citizenship-program/stKitts&Nevis/ctz-stKitts-city-big.jpg"
+            alt="City"
+          />
+        </div>
+        <div class="col-6 offset-6">
+          <div class="swiper ctz-mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div
+                  class="card text-bg-dark border-5 border-white rounded-0 p-0"
+                >
+                  <a
+                    data-fancybox=""
+                    href="./img/img-citizenship-program/stKitts&Nevis/ctz-stKitts-mountain.jpg"
+                  >
+                    <img
+                      src="./img/img-citizenship-program/stKitts&Nevis/ctz-stKitts-mountain.jpg"
+                      class="card-img rounded-0"
+                      alt="mountain"
+                  /></a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div
+                  class="card text-bg-dark border-5 border-white rounded-0 p-0"
+                >
+                  <a
+                    data-fancybox=""
+                    href="./img/img-citizenship-program/stKitts&Nevis/ctz-stKitts-castle.jpg"
+                  >
+                    <img
+                      src="./img/img-citizenship-program/stKitts&Nevis/ctz-stKitts-castle.jpg"
+                      class="card-img rounded-0"
+                      alt="castle"
+                  /></a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div
+                  class="card text-bg-dark border-5 border-white rounded-0 p-0"
+                >
+                  <a
+                    data-fancybox=""
+                    href="./img/img-citizenship-program/stKitts&Nevis/ctz-stKitts-tree.jpg"
+                  >
+                    <img
+                      src="./img/img-citizenship-program/stKitts&Nevis/ctz-stKitts-tree.jpg"
+                      class="card-img rounded-0"
+                      alt="tree"
+                  /></a>
+                </div>
+              </div>
+            </div>
+            <div
+              class="swiper-button-prev icon-gold fs-2 tr-guide-position-right ctz-swp-btn-position-bottom"
+            ></div>
+            <div
+              class="swiper-button-next icon-gold fs-2"
+            ></div>
+          </div>
+        </div>
+        <h3 class="font-playfair-display fw-semibold mt-n5">Photogallery</h3>
+      </section>
+
+      <section id="photo-gallery"></section>
+      <hr class="col-8 offset-2" />
+      <section id="introducing-country" class="row">
+        <div class="col-5 text-center text-al-jstfy p-0 mt-n3">
+          <div class="col-5 position-absolute z-n1">
+            <img
+              src="./img/img-citizenship-program/stKitts&Nevis/ctz-stKitts-introducing-left.jpg"
+              alt=""
+            />
+          </div>
+          <div class="col-5 offset-6 text-white mt-5 pt-5">
+            <h1 class="font-playfair-display fw-semibold my-4 pt-5">
+              Introducing
+              <br />
+              St Kitts & Nevis
+            </h1>
+            <p>
+              The beautiful, verdant two-island state of St Kitts and Nevis is
+              located in the eastern Caribbean, to the west of Antigua and the
+              south of Anguilla. Formerly a British colony, St Kitts and Nevis
+              gained its independence in 1983 but has chosen to maintain links
+              with its colonial past by keeping Queen Elizabeth II as head of
+              state.
+              <br />
+              <br />
+              Tourism is the nation's economic mainstay, attracting more than
+              600,000 visitors every year. The government offers an accelerated
+              application process which reduces the processing period to 60 days
+              or less, making St Kitts the fastest program in the Caribbean.
+            </p>
+          </div>
+        </div>
+        <div class="col-7 text-center py-5 mt-5 pe-5 ps-0">
+          <img
+            class="mt-5 pt-5"
+            src="./img/img-citizenship-program/stKitts&Nevis/stKitts-introducing-right.jpg"
+            alt=""
+          />
+          <ul class="col-6 offset-3 fs-4 lh-lg ctz-list-gold pt-2">
+            <li>Fastest Caribbean application process</li>
+            <li>Visa-free travel to 157 countries</li>
+            <li>UK, Russia, Singapore, Hong Kong & more</li>
+            <li>Minimal processing fees</li>
+            <li>No requirement to travel to St Lucia</li>
+            <li>No physical residency requirement</li>
+            <li>No personal income tax</li>
+            <li>No business experience required</li>
+            <li>No minimum language requirement</li>
+            <li>No mandatory interviews</li>
+            <li>Tax relief benefits & export allowance</li>
+          </ul>
+        </div>
+      </section>
+      <sectiton id="benefits" class="row justify-content-end text-white my-5">
+        <div
+          class="col-9 d-flex citizenship-dark-bg py-5 my-5 justify-content-evenly align-items-center"
+        >
+          <h1
+            class="col-4 display-2 font-playfair-display fw-semibold text-wrap text-center citizenship-dark-bg"
+          >
+            St
+            <br />
+            Kitts & Nevis Citizenship Benefits
+          </h1>
+          <table class="table table-sm text-white text-bottom">
+            <tbody>
+              <tr class="align-bottom">
+                <td class="border-end">
+                  <img
+                    class="px-3 img-fluid"
+                    src="./img/img-citizenship-program/ctz-icon-geo.png"
+                    alt="location"
+                  />
+
+                  Capital City: Basseterre
+                </td>
+                <td>
+                  <img
+                    class="px-3 img-fluid"
+                    src="./img/img-citizenship-program/ctz-icon-language.png"
+                    alt="language"
+                  />
+                  Languages: English
+                </td>
+              </tr>
+
+              <tr class="align-bottom">
+                <td class="border-end">
+                  <div class="d-flex">
+                    <img
+                      class="px-3 img-fluid"
+                      src="./img/img-citizenship-program/ctz-icon-key.png"
+                      alt="key"
+                    />
+                    Visa Free Countries: 157
+                    <select
+                      class="form-select form-select-sm border-0 rounded-0 ctz-select-bg ms-5"
+                      style="width: fit-content"
+                      aria-label="Default select example"
+                    >
+                      <option selected>View All</option>
+                      <option value="1">One</option>
+                      <option value="2">Two</option>
+                      <option value="3">Three</option>
+                    </select>
+                  </div>
+                </td>
+                <td>
+                  <img
+                    class="px-3 img-fluid"
+                    src="./img/img-citizenship-program/ctz-icon-tl.png"
+                    alt="financialIcon"
+                  />Currency: Eastern Caribbean Dollar
+                </td>
+              </tr>
+              <tr class="align-bottom">
+                <td class="border-end">
+                  <img
+                    class="px-3 img-fluid"
+                    src="./img/img-citizenship-program/ctz-icon-area.png"
+                    alt="area"
+                  />
+                  Total Area: 261 km²
+                </td>
+                <td>
+                  <img
+                    class="px-3 img-fluid"
+                    src="./img/img-citizenship-program/ctz-icon-population.png"
+                    alt="Population"
+                  />
+                  Population: 54,821 (2016)
+                </td>
+              </tr>
+              <tr class="align-bottom">
+                <td class="border-end border-bottom-0">
+                  <img
+                    class="px-3 img-fluid"
+                    src="./img/img-citizenship-program/ctz-icon-plane.png"
+                    alt="plane"
+                  />
+                  Nearest Country: Antigua (100Km)
+                </td>
+                <td class="border-bottom-0">
+                  <img
+                    class="px-3 img-fluid"
+                    src="./img/img-citizenship-program/ctz-icon-clock.png"
+                    alt="clock"
+                  />
+                  Time Zone: Eastern Caribbean (UTC-04:00)
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </sectiton>
+    </main>
+
+    <!-- ----------- FOOTER ----------- -->
+    <footer
+      class="container-fluid footer-bg text-white font-poppins fw-medium fs-5 lh-sm"
+    >
+      <div class="text-center h-25">
+        <div class="row h-100 align-items-end">
+          <h1 class="display-4 font-playfair-display fw-normal">
+            Looking For More?
+          </h1>
+        </div>
+      </div>
+      <div class="text-center h-50">
+        <div class="row h-100 align-items-center justify-content-center mt-4">
+          <div
+            class="col-3 footer-border-gradient footer-border-gradient-gold"
+            style="height: 130px"
+          >
+            <div class="my-4">
+              <h6 class="fw-bold">ADDRESS</h6>
+            </div>
+            <address class="mb-3">
+              Cumhuriyet Mah. Newista Residence
+              <br />
+              A Blok Kat:26 No:228 Beylikdüzü / İstanbul
+            </address>
+          </div>
+          <div
+            class="col-3 footer-border-gradient footer-border-gradient-gold mx-5"
+            style="height: 130px"
+          >
+            <div class="mt-4 mb-3">
+              <h6 class="fw-bold">CONTACT</h6>
+            </div>
+            <div class="fs-6">+90 531 272 74 46</div>
+            <div class="fs-6">info@diamondkeyistanbul.com</div>
+            <div class="mb-3 fs-6">diamondkeyistanbul.com</div>
+          </div>
+          <div
+            class="col-3 footer-border-gradient footer-border-gradient-gold"
+            style="height: 130px"
+          >
+            <div class="my-4">
+              <h6 class="fw-bold">FOLLOW US</h6>
+            </div>
+
+            <div class="col-6 offset-3 d-flex justify-content-evenly">
+              <a href="#">
+                <i class="icon-gold fs-4 bi bi-instagram"></i>
+              </a>
+              <a href="#">
+                <i class="icon-gold fs-4 bi bi-facebook"></i>
+              </a>
+              <a href="#">
+                <i class="icon-gold fs-4 bi bi-linkedin"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- script codes -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"
+    />
+
+    <script>
+      Fancybox.bind("[data-fancybox]");
+
+      var swiper = new Swiper(".ctz-mySwiper", {
+        spaceBetween: 0,
+        centeredSlides: true,
+        initialSlide: 0,
+        loop: true,
+
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        breakpoints: {
+          640: { slidesPerView: 1 },
+          768: { slidesPerView: 2 },
+          1024: { slidesPerView: 3 },
+        },
+      });
+    </script>
+  </body>
+</html>
