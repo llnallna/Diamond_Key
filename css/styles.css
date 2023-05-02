@@ -1,5 +1,7 @@
 :root {
   --gold: #94806f;
+  --index-satisfaction-bg: #1C3161;
+  --list-style-gold: #948980;
   --light-bg: #808070;
   --dark-bg: #333333;
 }
@@ -17,6 +19,7 @@
   border-style: solid;
   border-top-width: 20px;
 }
+
 
 /* --------- FONTS --------- */
 .font-playfair-display {
@@ -47,19 +50,18 @@
   background-color: #ffffff;
 }
 
+
 /* --------- HEADER --------- */
 .header-bg-index {
-  /* margin: 0;
-  padding: 0; */
   background-image: url("../img/img-index/home-header-bg.jpg");
   background-color: #bdc94c;
   background-size: cover;
   background-position: center;
-  /* position: absolute; */
-  /* background-attachment: fixed; */
-  /* width: 1920px; */
   height: 1080px; /* burası olmazsa fotoğrafın kendi boyutunun tamamını kullanması gerekmez mi, neden kırpıyor yüksekliği sabitlemezsem? */
+
+  /* contain kullandık cover yerine mümkün olduğunca yükseklik vermeden çöz ki responsive tarafı kolay olsun */
 }
+
 
 /* --------- FOOTER --------- */
 .footer-bg {
@@ -119,6 +121,7 @@
   color: var(--gold) !important;
 }
 
+
 /* --------- 1- INDEX --------- */
 .section-about-us {
   font-family: "Poppins", sans-serif;
@@ -127,16 +130,13 @@
   font-family: "Poppins", sans-serif;
 }
 
-/* --------- INDEX SECTION ABOUT US --------- */
+/* --------- Index Section About Us --------- */
 .section-about-us-bg-diamond {
   background-image: url("../img/img-index/diamond.jpg");
-  background-size: cover;
-  height: 870px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right bottom;
 }
-
-/* #section-regions{
-  font-family: 'Poppins', sans-serif;
-} */
 
 #section-reg.ions h1 {
   font-weight: 300;
@@ -146,7 +146,7 @@
   font-weight: 100;
 }
 
-/* --------- Region Backgrounds --------- */
+/* --------- Index Section Region --------- */
 .marmara-reg-bg {
   background-image: url("../img/img-index/marmara-reg.jpg");
   background-size: cover;
@@ -184,6 +184,42 @@
   height: 950px;
 }
 
+/* --------- Index Section Favorite projects --------- */
+/* .Favorite-projects
+{
+  background : -moz-linear-gradient(12.13% 2009.87% 0deg,rgba(0, 21, 42, 1) 0%,rgba(28, 49, 97, 1) 100%);
+  background : -webkit-linear-gradient(0deg, rgba(0, 21, 42, 1) 0%, rgba(28, 49, 97, 1) 100%);
+  background : -webkit-gradient(linear,12.13% 2009.87% ,102.99% 2009.87% ,color-stop(0,rgba(0, 21, 42, 1) ),color-stop(1,rgba(28, 49, 97, 1) ));
+  background : -o-linear-gradient(0deg, rgba(0, 21, 42, 1) 0%, rgba(28, 49, 97, 1) 100%);
+  background : -ms-linear-gradient(0deg, rgba(0, 21, 42, 1) 0%, rgba(28, 49, 97, 1) 100%);
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#00152A', endColorstr='#1C3161' ,GradientType=0)";
+  background : linear-gradient(90deg, rgba(0, 21, 42, 1) 0%, rgba(28, 49, 97, 1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00152A',endColorstr='#1C3161' , GradientType=1);
+} */
+
+/* --------- Index Section Services --------- */
+.index-sec-services-bg {
+  background-color: #232428;
+}
+
+.ul-marker-removed {
+  list-style-type: none;
+}
+
+/* --------- Index Section References --------- */
+.index-references-bg {
+  background-image: url("../img/img-index/index-referances-bg.jpg");
+  background-size: cover;
+  height: 880px;
+}
+
+/* --------- Index Section Satisfaction --------- */
+.index-satisfaction-bg {
+  background-color: var(--index-satisfaction-bg);
+}
+
+
+
 /* --------- 2- ABOUT US --------- */
 .about-us-header-bg {
   background-image: url("../img/img-index/home-header-bg.jpg");
@@ -209,68 +245,45 @@
   height: 1227px;
 }
 
-/* services */
-.index-sec-services-bg {
-  background-color: #232428;
-}
 
-.ul-marker-removed {
-  list-style-type: none;
-}
-
-/* --------- BLOG --------- */
-
-/* .Favorite-projects
-{
-  background : -moz-linear-gradient(12.13% 2009.87% 0deg,rgba(0, 21, 42, 1) 0%,rgba(28, 49, 97, 1) 100%);
-  background : -webkit-linear-gradient(0deg, rgba(0, 21, 42, 1) 0%, rgba(28, 49, 97, 1) 100%);
-  background : -webkit-gradient(linear,12.13% 2009.87% ,102.99% 2009.87% ,color-stop(0,rgba(0, 21, 42, 1) ),color-stop(1,rgba(28, 49, 97, 1) ));
-  background : -o-linear-gradient(0deg, rgba(0, 21, 42, 1) 0%, rgba(28, 49, 97, 1) 100%);
-  background : -ms-linear-gradient(0deg, rgba(0, 21, 42, 1) 0%, rgba(28, 49, 97, 1) 100%);
-  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#00152A', endColorstr='#1C3161' ,GradientType=0)";
-  background : linear-gradient(90deg, rgba(0, 21, 42, 1) 0%, rgba(28, 49, 97, 1) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00152A',endColorstr='#1C3161' , GradientType=1);
-} */
-
-/* --------- TURKEY GUIDE --------- */
+/* --------- 3- TURKEY GUIDE --------- */
 .turkey-guide-bg {
   background-image: url("../img/img-turkey-guide/guide-aegean-bgVarlık\ 1-100.jpg");
   background-size: cover;
   /* height: 830px; */
 }
 
-/* .card{
-  overflow: hidden;
-} */
+.position-right {
+  left: auto;
+  right: 50px;
+}
 
 .mySwiper {
-  perspective: 1200px;
+  padding: 100px 0;
 }
 
 .mySwiper .swiper-slide {
-  transition-duration: 0ms;
-  transform: translate3d(0px, 0px, -99px) rotateX(0deg) rotateY(0deg) scale(1);
+  transform: scale(1);
   z-index: 0;
-  transform-style: preserve-3d;
   position: relative;
+  transition: all .3s ease-in;
 }
 
 .mySwiper .swiper-slide:hover {
-  transition-duration: 0ms;
-  transform: translate3d(0px, 0px, 0px) rotateX(0deg) rotateY(0deg) scale(1);
+  transform: scale(1.1);
   z-index: 1;
-  /* transform: scale(1.1);
-  transition: all .2s ease-in; */
+  transition: all .3s ease-in;
+  box-shadow: 0 0.5rem 1rem rgba(var(--bs-body-color-rgb), 0.9);
 }
+
+.pointer-events-none{
+  pointer-events: none;
+}
+
 
 /* --------- 4-REAL ESTATE MAIN --------- */
-
 .bg-gold {
   background-color: var(--gold);
-}
-
-.bg-transparent {
-  opacity: 0.5;
 }
 
 .text-gold {
@@ -311,6 +324,48 @@
   z-index: 98;
 }
 
+#select-mini > option {
+  background-color: var(--gold);
+}
+
+/* REAL ESTATE DETAIL */
+/* swiper1 */
+/* html,
+body {
+  position: relative;
+  height: 100%;
+} */
+
+/* body {
+  background: #eee;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+} */
+
+/* .swiper {
+  width: 100%;
+  height: 100%;
+} */
+
+/* .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+} */
+
 /* --------- 5- CITIZENSHIP PROGRAM --------- */
 .citizenship-light-bg {
   background-color: var(--light-bg);
@@ -320,18 +375,78 @@
   background-color: var(--dark-bg);
 }
 
-.citizenship-section-introduction-country-bg {
-  /* margin: 0;
-  padding: 0; */
-  background-image: url("../img/img-citizenship-program/tr-citizenship-bg.jpg");
+.ctz-section-int-stKitts-bg-left {
+  background-image: url("../img/img-citizenship-program/stKitts&Nevis/stKitts-introducing-bg.png");
+  background-color: #bdc94c;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: left;
+}
+
+.ctz-section-int-stKitts-bg-left-text {
+  background : -moz-linear-gradient(0% 50% 0deg,rgba(43, 37, 38, 0) 0%,rgba(52, 43, 38, 0.18) 18.43%,rgba(61, 49, 38, 0.53) 52.98%,rgba(64, 51, 38, 1) 100%);
+  background : -webkit-linear-gradient(0deg, rgba(43, 37, 38, 0) 0%, rgba(52, 43, 38, 0.18) 18.43%, rgba(61, 49, 38, 0.53) 52.98%, rgba(64, 51, 38, 1) 100%);
+  background : -webkit-gradient(linear,0% 50% ,100% 50% ,color-stop(0,rgba(43, 37, 38, 0) ),color-stop(0.1843,rgba(52, 43, 38, 0.18) ),color-stop(0.5298,rgba(61, 49, 38, 0.53) ),color-stop(1,rgba(64, 51, 38, 1) ));
+  background : -o-linear-gradient(0deg, rgba(43, 37, 38, 0) 0%, rgba(52, 43, 38, 0.18) 18.43%, rgba(61, 49, 38, 0.53) 52.98%, rgba(64, 51, 38, 1) 100%);
+  background : -ms-linear-gradient(0deg, rgba(43, 37, 38, 0) 0%, rgba(52, 43, 38, 0.18) 18.43%, rgba(61, 49, 38, 0.53) 52.98%, rgba(64, 51, 38, 1) 100%);
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#2B2526', endColorstr='#403326' ,GradientType=0)";
+  background : linear-gradient(90deg, rgba(43, 37, 38, 0) 0%, rgba(52, 43, 38, 0.18) 18.43%, rgba(61, 49, 38, 0.53) 52.98%, rgba(64, 51, 38, 1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#2B2526',endColorstr='#403326' , GradientType=1);
+}
+
+.ctz-section-int-stKitts-bg-right {
+  background-image: url("../img/img-citizenship-program/stKitts&Nevis/stKitts-introducing-right.jpg");
+  background-color: #bdc94c;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right bottom;
+}
+
+.ctz-list-gold {
+   list-style: none;
+}
+
+.ctz-list-gold  li::before {
+  content: "\f287 ";
+  font-family: bootstrap-icons !important;
+  color: var(--list-style-gold);
+  padding-right: 10px;
+  position: relative;
+  top: -2px;
+  font-size: .6rem;
+}
+
+.ctz-select-bg {
+  background-color: var(--list-style-gold);
+}
+
+td img {
+  width: 50px;
+  height: 35px;
+}
+
+
+/* --------- 6- SERVICES --------- */
+
+
+
+/* --------- BLOG --------- */
+
+
+
+/* --------- 7- PROJECT MANAGEMENT --------- */
+.prop-management-bg-input {
+  background-image: url("../img/img-propety-management/property-management-sea.jpg");
   background-color: #bdc94c;
   background-size: cover;
   background-position: center;
-  /* position: absolute; */
-  /* background-attachment: fixed; */
-  /* width: 1920px; */
-  height: 1517px; /* burası olmazsa fotoğrafın kendi boyutunun tamamını kullanması gerekmez mi, neden kırpıyor yüksekliği sabitlemezsem? */
+  height: 675px;
 }
+
+.prop-management-bg-button {
+  background-color: #0d6289;
+}
+
 
 /* --------- 8-BLOG --------- */
 .rotate-vertical {
@@ -382,68 +497,28 @@
   transform: translatex(-95px);
 }
 
-/* --------- 7- PROJECT MANAGEMENT --------- */
-.prop-management-bg-input {
-  /* margin: 0;
-  padding: 0; */
-  background-image: url("../img/img-propety-management/property-management-sea.jpg");
-  background-color: #bdc94c;
-  background-size: cover;
-  background-position: center;
-  /* position: absolute; */
-  /* background-attachment: fixed; */
-  /* width: 1920px; */
-  height: 675px; /* burası olmazsa fotoğrafın kendi boyutunun tamamını kullanması gerekmez mi, neden kırpıyor yüksekliği sabitlemezsem? */
+
+/* --------- 9- CONTACT --------- */
+.form-control::placeholder {
+  color: #000000;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  padding-left: 0px;
 }
 
-.prop-management-bg-button {
-  background-color: #0d6289;
-}
 
 /* --------- BACKGROUNDS FROM Ai ---------*/
-
 .bg-gold-gradient {
-  background: -moz-linear-gradient(
-    0% 50% 0deg,
-    rgba(148, 128, 111, 1) 0%,
-    rgba(128, 126, 94, 1) 48.85%,
-    rgba(128, 106, 77, 1) 100%
-  );
-  background: -webkit-linear-gradient(
-    0deg,
-    rgba(148, 128, 111, 1) 0%,
-    rgba(128, 126, 94, 1) 48.85%,
-    rgba(128, 106, 77, 1) 100%
-  );
-  background: --webkit-gradient(
-    linear,
-    0% 50%,
-    100% 50%,
-    color-stop(0, rgba(148, 128, 111, 1)),
-    color-stop(0.4885, rgba(128, 126, 94, 1)),
-    color-stop(1, rgba(128, 106, 77, 1))
-  );
-  background: -o-linear-gradient(
-    0deg,
-    rgba(148, 128, 111, 1) 0%,
-    rgba(128, 126, 94, 1) 48.85%,
-    rgba(128, 106, 77, 1) 100%
-  );
-  background: -ms-linear-gradient(
-    0deg,
-    rgba(148, 128, 111, 1) 0%,
-    rgba(128, 126, 94, 1) 48.85%,
-    rgba(128, 106, 77, 1) 100%
-  );
+  background : -moz-linear-gradient(0% 50% 0deg,rgba(148, 128, 111, 1) 0%,rgba(128, 126, 94, 1) 48.85%,rgba(128, 106, 77, 1) 100%);
+  background : -webkit-linear-gradient(0deg, rgba(148, 128, 111, 1) 0%, rgba(128, 126, 94, 1) 48.85%, rgba(128, 106, 77, 1) 100%);
+  background : -webkit-gradient(linear,0% 50% ,100% 50% ,color-stop(0,rgba(148, 128, 111, 1) ),color-stop(0.4885,rgba(128, 126, 94, 1) ),color-stop(1,rgba(128, 106, 77, 1) ));
+  background : -o-linear-gradient(0deg, rgba(148, 128, 111, 1) 0%, rgba(128, 126, 94, 1) 48.85%, rgba(128, 106, 77, 1) 100%);
+  background : -ms-linear-gradient(0deg, rgba(148, 128, 111, 1) 0%, rgba(128, 126, 94, 1) 48.85%, rgba(128, 106, 77, 1) 100%);
   -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#94806F', endColorstr='#806A4D' ,GradientType=0)";
-  background: linear-gradient(
-    90deg,
-    rgba(148, 128, 111, 1) 0%,
-    rgba(128, 126, 94, 1) 48.85%,
-    rgba(128, 106, 77, 1) 100%
-  );
+  background : linear-gradient(90deg, rgba(148, 128, 111, 1) 0%, rgba(128, 126, 94, 1) 48.85%, rgba(128, 106, 77, 1) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#94806F',endColorstr='#806A4D' , GradientType=1);
 }
+
 
 .real-estate-dark-blue-gradient {
   background: -moz-linear-gradient(
@@ -456,7 +531,7 @@
     rgba(0, 25, 42, 1) 0.06%,
     rgba(28, 49, 108, 1) 100%
   );
-  background: --webkit-gradient(
+  background: -webkit-gradient(
     linear,
     0% 50%,
     100% 50%,
@@ -493,7 +568,7 @@
     rgba(0, 25, 42, 1) 0.06%,
     rgba(28, 49, 108, 1) 100%
   );
-  background: --webkit-gradient(
+  background: -webkit-gradient(
     linear,
     0% 50%,
     100% 50%,
