@@ -254,11 +254,11 @@
 }
 
 .tr-guide-position-ab-top {
-  top: 91%;
+  top: -27%;
 }
 
 .tr-guide-swp-btn-position-top {
-  top: 80%
+  top:50px;
 }
 
 .tr-guide-mySwiper {
@@ -269,13 +269,24 @@
   transform: scale(1);
   z-index: 0;
   position: relative;
-  transition: all .3s ease-in;
+  transition: all .2s ease-in;
+}
+
+
+.tr-guide-mySwiper .card-desc{
+  opacity:0;
+  visibility: hidden;
+}
+
+.tr-guide-mySwiper .swiper-slide:hover .card-desc{
+  opacity:1;
+  visibility: visible;
 }
 
 .tr-guide-mySwiper .swiper-slide:hover {
-  transform: scale(1.1);
+  transform: scale(1.05);
   z-index: 1;
-  transition: all .3s ease-in;
+  transition: all .2s ease-in;
   box-shadow: 0 0.5rem 1rem rgba(var(--bs-body-color-rgb), 0.9);
 }
 
@@ -283,8 +294,11 @@
   pointer-events: none;
 }
 
-.tr-guide-list-active {
+.tr-guide-list li a{
   padding: 5% 15%;
+}
+.tr-guide-list li a:hover {
+
   background: -moz-linear-gradient(
     0% 50% 0deg,
     rgba(0, 25, 42, 1) 0.06%,
@@ -607,6 +621,7 @@ td img {
   background : linear-gradient(90deg, rgba(148, 128, 111, 1) 0%, rgba(128, 126, 94, 1) 48.85%, rgba(128, 106, 77, 1) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#94806F',endColorstr='#806A4D' , GradientType=1);
 }
+
 
 
 
