@@ -38,6 +38,7 @@
   text-align-last: center;
 }
 
+/* --------- NEGATIVE MARGIN --------- */
 .mt-n5 {
   margin-top: -50px !important;
 }
@@ -247,29 +248,31 @@
 
 
 /* --------- 3- TURKEY GUIDE --------- */
-.turkey-guide-bg {
-  background-image: url("../img/img-turkey-guide/guide-aegean-bgVarlık\ 1-100.jpg");
-  background-size: cover;
-  /* height: 830px; */
-}
-
-.position-right {
+.tr-guide-position-right {
   left: auto;
   right: 50px;
 }
 
-.mySwiper {
+.tr-guide-position-ab-top {
+  top: 91%;
+}
+
+.tr-guide-swp-btn-position-top {
+  top: 80%
+}
+
+.tr-guide-mySwiper {
   padding: 100px 0;
 }
 
-.mySwiper .swiper-slide {
+.tr-guide-mySwiper .swiper-slide {
   transform: scale(1);
   z-index: 0;
   position: relative;
   transition: all .3s ease-in;
 }
 
-.mySwiper .swiper-slide:hover {
+.tr-guide-mySwiper .swiper-slide:hover {
   transform: scale(1.1);
   z-index: 1;
   transition: all .3s ease-in;
@@ -278,6 +281,45 @@
 
 .pointer-events-none{
   pointer-events: none;
+}
+
+.tr-guide-list-active {
+  padding: 5% 15%;
+  background: -moz-linear-gradient(
+    0% 50% 0deg,
+    rgba(0, 25, 42, 1) 0.06%,
+    rgba(28, 49, 108, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    0deg,
+    rgba(0, 25, 42, 1) 0.06%,
+    rgba(28, 49, 108, 1) 100%
+  );
+  background: -webkit-gradient(
+    linear,
+    0% 50%,
+    100% 50%,
+    color-stop(0.0006, rgba(0, 25, 42, 1)),
+    color-stop(1, rgba(28, 49, 108, 1))
+  );
+  background: -o-linear-gradient(
+    0deg,
+    rgba(0, 25, 42, 1) 0.06%,
+    rgba(28, 49, 108, 1) 100%
+  );
+  background: -ms-linear-gradient(
+    0deg,
+    rgba(0, 25, 42, 1) 0.06%,
+    rgba(28, 49, 108, 1) 100%
+  );
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#00192A', endColorstr='#1C316C' ,GradientType=0)";
+  background: linear-gradient(
+    90deg,
+    rgba(0, 25, 42, 1) 0.06%,
+    rgba(28, 49, 108, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00192A',endColorstr='#1C316C' , GradientType=1);
+  color: #ffffff !important;
 }
 
 
@@ -428,13 +470,7 @@ td img {
 
 /* --------- 6- SERVICES --------- */
 
-
-
-/* --------- BLOG --------- */
-
-
-
-/* --------- 7- PROJECT MANAGEMENT --------- */
+/* --------- 7- PROPERTY MANAGEMENT --------- */
 .prop-management-bg-input {
   background-image: url("../img/img-propety-management/property-management-sea.jpg");
   background-color: #bdc94c;
@@ -557,40 +593,4 @@ td img {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00192A',endColorstr='#1C316C' , GradientType=1);
 }
 
-.list-group-item-bg-blue {
-  background: -moz-linear-gradient(
-    0% 50% 0deg,
-    rgba(0, 25, 42, 1) 0.06%,
-    rgba(28, 49, 108, 1) 100%
-  );
-  background: -webkit-linear-gradient(
-    0deg,
-    rgba(0, 25, 42, 1) 0.06%,
-    rgba(28, 49, 108, 1) 100%
-  );
-  background: -webkit-gradient(
-    linear,
-    0% 50%,
-    100% 50%,
-    color-stop(0.0006, rgba(0, 25, 42, 1)),
-    color-stop(1, rgba(28, 49, 108, 1))
-  );
-  background: -o-linear-gradient(
-    0deg,
-    rgba(0, 25, 42, 1) 0.06%,
-    rgba(28, 49, 108, 1) 100%
-  );
-  background: -ms-linear-gradient(
-    0deg,
-    rgba(0, 25, 42, 1) 0.06%,
-    rgba(28, 49, 108, 1) 100%
-  );
-  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#00192A', endColorstr='#1C316C' ,GradientType=0)";
-  background: linear-gradient(
-    90deg,
-    rgba(0, 25, 42, 1) 0.06%,
-    rgba(28, 49, 108, 1) 100%
-  );
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00192A',endColorstr='#1C316C' , GradientType=1);
-  color: #ffffff;
-}
+
