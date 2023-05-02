@@ -364,6 +364,7 @@
   right: 45px;
   content: "";
   z-index: 98;
+  pointer-events: none;
 }
 
 #select-mini > option {
