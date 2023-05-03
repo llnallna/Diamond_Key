@@ -5,380 +5,298 @@
 
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- Bootstrap CSS -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- Bootstrap Icons CSS -->
-    <link rel="stylesheet" href="./css/bootstrap-icons.css" />
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
 
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="./css/styles.css" />
-    <link rel="stylesheet" href="./css/responsive.css" />
+  <!-- Bootstrap Icons CSS -->
+  <link rel="stylesheet" href="./css/bootstrap-icons.css" />
 
-    <!-- Documentation Extras -->
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="./css/styles.css" />
+  <link rel="stylesheet" href="./css/responsive.css" />
 
-    <!-- fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap"
-      rel="stylesheet"
-    />
+  <!-- Documentation Extras -->
 
-    <title>DK | Turkey Guide</title>
-  </head>
-  <body>
-    <header id="header" class="about-us-header-bg">
-      <div class="container">
-        <div class="row">
-          <div class="header-logo">Logo</div>
-          <div class="header-nav">
-            <nav class="navbar navbar-expand-lg">
-              <div class="container-fluid">
-                <!-- <a class="navbar-brand" href="#">Navbar</a> -->
-                <button
-                  class="navbar-toggler"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#navbarSupportedContent"
-                  aria-controls="navbarSupportedContent"
-                  aria-expanded="false"
-                  aria-label="Toggle navigation"
-                >
-                  <span class="navbar-toggler-icon"></span>
-                </button>
-                <div
-                  class="collapse navbar-collapse"
-                  id="navbarSupportedContent"
-                >
-                  <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                      <a
-                        class="nav-link active"
-                        aria-current="page"
-                        href="./about-us.html"
-                        >ABOUT US</a
-                      >
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="./turkey-guide.html"
-                        >TURKEY GUIDE</a
-                      >
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="./real-estate.html"
-                        >REAL ESTATE</a
-                      >
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="./citizenship-program.html"
-                        >CITIZENSHIP PROGRAM</a
-                      >
-                    </li>
-                    <li class="nav-item dropdown">
-                      <a
-                        class="nav-link dropdown-toggle"
-                        href="#"
-                        role="button"
-                        data-bs-toggle="dropdown"
-                        aria-expanded="false"
-                      >
-                        SERVICES
-                      </a>
-                      <ul class="dropdown-menu">
-                        <li>
-                          <a
-                            class="dropdown-item"
-                            href="./services-real-estate.html"
-                            >REAL ESTATE</a
-                          >
-                        </li>
-                        <li>
-                          <a
-                            class="dropdown-item"
-                            href="./services-turkish-passport.html"
-                            >TURKISH PASSPORT</a
-                          >
-                        </li>
-                        <li>
-                          <a
-                            class="dropdown-item"
-                            href="./services-consultancy.html"
-                            >CONSULTANCY</a
-                          >
-                        </li>
-                      </ul>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="./property-management.html"
-                        >PROPERTY MANAGEMENT</a
-                      >
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="./blog.html">BLOG</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="./contact.html">CONTACT</a>
-                    </li>
-                  </ul>
-                </div>
+  <!-- fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap"
+    rel="stylesheet" />
+
+  <title>DK | Turkey Guide</title>
+</head>
+
+<body>
+  <header id="header" class="about-us-header-bg">
+    <div class="container">
+      <div class="row">
+        <div class="header-logo">Logo</div>
+        <div class="header-nav">
+          <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+              <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="./about-us.html">ABOUT US</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./turkey-guide.html">TURKEY GUIDE</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./real-estate.html">REAL ESTATE</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./citizenship-program.html">CITIZENSHIP PROGRAM</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                      aria-expanded="false">
+                      SERVICES
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li>
+                        <a class="dropdown-item" href="./services-real-estate.html">REAL ESTATE</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="./services-turkish-passport.html">TURKISH PASSPORT</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="./services-consultancy.html">CONSULTANCY</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./property-management.html">PROPERTY MANAGEMENT</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./blog.html">BLOG</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./contact.html">CONTACT</a>
+                  </li>
+                </ul>
               </div>
-            </nav>
-            <nav class="nav-lang">
-              <a href="" class="nav-link">EN</a>
-              <a href="" class="nav-link">TR</a>
-            </nav>
-          </div>
+            </div>
+          </nav>
+          <nav class="nav-lang">
+            <a href="" class="nav-link">EN</a>
+            <a href="" class="nav-link">TR</a>
+          </nav>
         </div>
       </div>
-      <section id="header-section">
-        <div class="container">
-          <div>
-            <div class="index-header-social-links">
-              <nav>
-                <a href="">Whatsapp</a>
-                <a href="">Telephone</a>
-                <a href="">E-mail</a>
-              </nav>
-            </div>
-            <div class="index-header-content">
-              WE MAKE YOUR DREAMS COME TRUE
-            </div>
+    </div>
+    <section id="header-section">
+      <div class="container">
+        <div>
+          <div class="index-header-social-links">
+            <nav>
+              <a href="">Whatsapp</a>
+              <a href="">Telephone</a>
+              <a href="">E-mail</a>
+            </nav>
           </div>
-          <div class="index-header-chat">Chat with us</div>
-        </div>
-      </section>
-    </header>
-
-    <section id="section-services">
-      <div class="container-fluid font-poppins fw-light text-center">
-        <div
-          class="swiper-button-prev icon-gold fs-2 tr-guide-position-right tr-guide-swp-btn-position-top"
-        ></div>
-        <div
-          class="swiper-button-next icon-gold fs-2 tr-guide-swp-btn-position-top"
-        ></div>
-        <div class="row align-items-center">
-          <div class="col-2 fs-5 p-0">
-            <div class="position-absolute z-n1 tr-guide-position-ab-top">
-              <img
-                src="./img/img-turkey-guide/tr-guide-diamond.jpg"
-                alt="diamond"
-              />
-            </div>
-
-            <div class="text-center">
-              <ul class="list-unstyled p-0">                
-                <li>
-                  <a href="./img/img-turkey-guide/tr-guide-marmara-opened.jpg" class="btn rounded-0 border-0 active tr-guide-list-active fw-light text-decoration-none" role="button" data-bs-toggle="button" aria-pressed="true">Marmara Region</a></li>
-                <br>
-                <li><a href="./img/img-turkey-guide/tr-guide-marmara-opened.jpg" class="btn rounded-0 border-0 active  fw-light text-decoration-none">Aegeon Region</a></li>
-                <br>
-                <li><a href="./img/img-turkey-guide/tr-guide-marmara-opened.jpg" class="btn rounded-0 border-0 active  fw-light text-decoration-none">Mediterranean Region</a></li>
-                <br>
-                <li><a href="./img/img-turkey-guide/tr-guide-marmara-opened.jpg" class="btn rounded-0 border-0 active  fw-light text-decoration-none">Central Anatolia Region</a></li>
-                <br>
-                <li><a href="./img/img-turkey-guide/tr-guide-marmara-opened.jpg" class="btn rounded-0 border-0 active  fw-light text-decoration-none">Eastern Anatolia Region</a></li>
-                <br>
-                <li><a href="./img/img-turkey-guide/tr-guide-marmara-opened.jpg" class="btn rounded-0 border-0 active  fw-light text-decoration-none">Black Sea Region</a></li>
-                <br>                
-              </ul>              
-            </div>
-          </div>
-
-          <div class="col-10 p-0">
-            <div class="swiper tr-guide-mySwiper">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                  <div class="card text-bg-dark border-0 rounded-0 p-0">
-                    <a
-                      data-fancybox=""
-                      href="./img/img-turkey-guide/tr-guide-blackSea.jpg"
-                    >
-                      <img
-                        src="./img/img-turkey-guide/tr-guide-blackSea.jpg"
-                        class="card-img rounded-0"
-                        alt="Black Sea Region"
-                    /></a>
-                    <div
-                      class="card-img-overlay pointer-events-none"
-                    >
-                      <h3 class="card-title fw-light h-50 d-flex align-items-end justify-content-center">Black Sea Region</h3>
-                      <div class="h-50 d-flex align-items-end justify-content-end">
-                        <img
-                          class="text-end"
-                          src="./img/img-icons/icon-arrow-right-white.png"
-                          alt="arrow-right"
-                        />
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="card text-bg-dark border-0 rounded-0 p-0">
-                    <a
-                      data-fancybox=""
-                      href="./img/img-turkey-guide/tr-guide-marmara-opened.jpg"
-                    >
-                      <img
-                        src="./img/img-turkey-guide/tr-guide-marmara.jpg"
-                        class="card-img rounded-0"
-                        alt="Marmara Region"
-                    /></a>
-                    <div
-                      class="card-img-overlay pointer-events-none"
-                    >
-                      <h3 class="card-title fw-light h-50 d-flex align-items-end justify-content-center">Marmara Region</h3>
-                      <div class="h-50 d-flex align-items-end justify-content-end">
-                        <img
-                          class="text-end"
-                          src="./img/img-icons/icon-arrow-right-white.png"
-                          alt="arrow-right"
-                        />
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="card text-bg-dark border-0 rounded-0 p-0">
-                    <a
-                      data-fancybox=""
-                      href="./img/img-turkey-guide/tr-guide-aegean.jpg"
-                    >
-                      <img
-                        src="./img/img-turkey-guide/tr-guide-aegean.jpg"
-                        class="card-img rounded-0"
-                        alt="Aegean Region"
-                    /></a>
-                    <div
-                      class="card-img-overlay pointer-events-none"
-                    >
-                      <h3 class="card-title fw-light h-50 d-flex align-items-end justify-content-center">Aegean Region</h3>
-                      <div class="h-50 d-flex align-items-end justify-content-end">
-                        <img
-                          class="text-end"
-                          src="./img/img-icons/icon-arrow-right-white.png"
-                          alt="arrow-right"
-                        />
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+          <div class="index-header-content">
+            WE MAKE YOUR DREAMS COME TRUE
           </div>
         </div>
+        <div class="index-header-chat">Chat with us</div>
       </div>
     </section>
+  </header>
 
-    <!-- ----------- FOOTER ----------- -->
-    <footer
-      class="container-fluid footer-bg text-white font-poppins fw-medium fs-5 lh-sm"
-    >
-      <div class="text-center h-25">
-        <div class="row h-100 align-items-end">
-          <h1 class="display-4 font-playfair-display fw-normal">
-            Looking For More?
-          </h1>
-        </div>
-      </div>
-      <div class="text-center h-50">
-        <div class="row h-100 align-items-center justify-content-center mt-4">
-          <div
-            class="col-3 footer-border-gradient footer-border-gradient-gold"
-            style="height: 130px"
-          >
-            <div class="my-4">
-              <h6 class="fw-bold">ADDRESS</h6>
-            </div>
-            <address class="mb-3">
-              Cumhuriyet Mah. Newista Residence
-              <br />
-              A Blok Kat:26 No:228 Beylikdüzü / İstanbul
-            </address>
+  <section id="section-services">
+    <div class="container-fluid font-poppins fw-light text-center position-relative">
+      <div class="swiper-button-prev icon-gold fs-2 tr-guide-position-right tr-guide-swp-btn-position-top"></div>
+      <div class="swiper-button-next icon-gold fs-2 tr-guide-swp-btn-position-top"></div>
+      <div class="row align-items-center">
+        <div class="col-2 fs-5 p-0 position-relative">
+          <div class="position-absolute z-n1 tr-guide-position-ab-top">
+            <img src="./img/img-turkey-guide/tr-guide-diamond.jpg" alt="diamond" class="w-100" />
           </div>
-          <div
-            class="col-3 footer-border-gradient footer-border-gradient-gold mx-5"
-            style="height: 130px"
-          >
-            <div class="mt-4 mb-3">
-              <h6 class="fw-bold">CONTACT</h6>
-            </div>
-            <div class="fs-6">+90 531 272 74 46</div>
-            <div class="fs-6">info@diamondkeyistanbul.com</div>
-            <div class="mb-3 fs-6">diamondkeyistanbul.com</div>
-          </div>
-          <div
-            class="col-3 footer-border-gradient footer-border-gradient-gold"
-            style="height: 130px"
-          >
-            <div class="my-4">
-              <h6 class="fw-bold">FOLLOW US</h6>
-            </div>
 
-            <div class="col-6 offset-3 d-flex justify-content-evenly">
-              <a href="#">
-                <i class="icon-gold fs-4 bi bi-instagram"></i>
-              </a>
-              <a href="#">
-                <i class="icon-gold fs-4 bi bi-facebook"></i>
-              </a>
-              <a href="#">
-                <i class="icon-gold fs-4 bi bi-linkedin"></i>
-              </a>
-            </div>
+          <div class="text-center">
+            <ul class="tr-guide-list list-unstyled p-0">
+              <li>
+                <a data-fancybox href="./img/img-turkey-guide/tr-guide-marmara-opened.jpg"
+                  class="btn rounded-0 border-0  fw-light text-decoration-none">Marmara Region</a>
+              </li>
+              <br>
+              <li><a data-fancybox href="./img/img-turkey-guide/tr-guide-marmara-opened.jpg"
+                  class="btn rounded-0 border-0  fw-light text-decoration-none">Aegeon Region</a></li>
+              <br>
+              <li><a data-fancybox href="./img/img-turkey-guide/tr-guide-marmara-opened.jpg"
+                  class="btn rounded-0 border-0  fw-light text-decoration-none">Mediterranean Region</a></li>
+              <br>
+              <li><a data-fancybox href="./img/img-turkey-guide/tr-guide-marmara-opened.jpg"
+                  class="btn rounded-0 border-0  fw-light text-decoration-none">Central Anatolia Region</a></li>
+              <br>
+              <li><a data-fancybox href="./img/img-turkey-guide/tr-guide-marmara-opened.jpg"
+                  class="btn rounded-0 border-0  fw-light text-decoration-none">Eastern Anatolia Region</a></li>
+              <br>
+              <li><a data-fancybox href="./img/img-turkey-guide/tr-guide-marmara-opened.jpg"
+                  class="btn rounded-0 border-0  fw-light text-decoration-none">Black Sea Region</a></li>
+              <br>
+            </ul>
           </div>
         </div>
+
+        <div class="col-10 p-0">
+          <div class="swiper tr-guide-mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="card text-bg-dark border-0 rounded-0 p-0">
+                  <a data-fancybox="" href="./img/img-turkey-guide/tr-guide-blackSea.jpg">
+                    <img src="./img/img-turkey-guide/tr-guide-blackSea.jpg" class="card-img rounded-0"
+                      alt="Black Sea Region" /></a>
+                  <div class="card-img-overlay pointer-events-none">
+                    <h3 class="card-title fw-light h-50 d-flex align-items-end justify-content-center">Black Sea Region
+                    </h3>
+                    <p class="card-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, adipisci
+                      voluptatum odit facilis exercitationem aperiam architecto nam voluptatibus? Odio, architecto?
+                      Minima nihil quasi temporibus vitae repellendus nulla non, accusamus possimus?</p>
+                    <div class="h-50 d-flex align-items-end justify-content-end">
+                      <img class="text-end" src="./img/img-icons/icon-arrow-right-white.png" alt="arrow-right" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="card text-bg-dark border-0 rounded-0 p-0">
+                  <a data-fancybox="" href="./img/img-turkey-guide/tr-guide-marmara-opened.jpg">
+                    <img src="./img/img-turkey-guide/tr-guide-marmara.jpg" class="card-img rounded-0"
+                      alt="Marmara Region" /></a>
+                  <div class="card-img-overlay pointer-events-none">
+                    <h3 class="card-title fw-light h-50 d-flex align-items-end justify-content-center">Marmara Region
+                    </h3>
+                    <p class="card-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, adipisci
+                      voluptatum odit facilis exercitationem aperiam architecto nam voluptatibus? Odio, architecto?
+                      Minima nihil quasi temporibus vitae repellendus nulla non, accusamus possimus?</p>
+
+                    <div class="h-50 d-flex align-items-end justify-content-end">
+                      <img class="text-end" src="./img/img-icons/icon-arrow-right-white.png" alt="arrow-right" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="card text-bg-dark border-0 rounded-0 p-0">
+                  <a data-fancybox="" href="./img/img-turkey-guide/tr-guide-aegean.jpg">
+                    <img src="./img/img-turkey-guide/tr-guide-aegean.jpg" class="card-img rounded-0"
+                      alt="Aegean Region" /></a>
+                  <div class="card-img-overlay pointer-events-none">
+                    <h3 class="card-title fw-light h-50 d-flex align-items-end justify-content-center">Aegean Region
+                    </h3>
+                    <p class="card-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, adipisci
+                      voluptatum odit facilis exercitationem aperiam architecto nam voluptatibus? Odio, architecto?
+                      Minima nihil quasi temporibus vitae repellendus nulla non, accusamus possimus?</p>
+
+                    <div class="h-50 d-flex align-items-end justify-content-end">
+                      <img class="text-end" src="./img/img-icons/icon-arrow-right-white.png" alt="arrow-right" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-    </footer>
+    </div>
+  </section>
 
-    <!-- script codes -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
-      crossorigin="anonymous"
-    ></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <!-- ----------- FOOTER ----------- -->
+  <footer class="container-fluid footer-bg text-white font-poppins fw-medium fs-5 lh-sm">
+    <div class="text-center h-25">
+      <div class="row h-100 align-items-end">
+        <h1 class="display-4 font-playfair-display fw-normal">
+          Looking For More?
+        </h1>
+      </div>
+    </div>
+    <div class="text-center h-50">
+      <div class="row h-100 align-items-center justify-content-center mt-4">
+        <div class="col-3 footer-border-gradient footer-border-gradient-gold" style="height: 130px">
+          <div class="my-4">
+            <h6 class="fw-bold">ADDRESS</h6>
+          </div>
+          <address class="mb-3">
+            Cumhuriyet Mah. Newista Residence
+            <br />
+            A Blok Kat:26 No:228 Beylikdüzü / İstanbul
+          </address>
+        </div>
+        <div class="col-3 footer-border-gradient footer-border-gradient-gold mx-5" style="height: 130px">
+          <div class="mt-4 mb-3">
+            <h6 class="fw-bold">CONTACT</h6>
+          </div>
+          <div class="fs-6">+90 531 272 74 46</div>
+          <div class="fs-6">info@diamondkeyistanbul.com</div>
+          <div class="mb-3 fs-6">diamondkeyistanbul.com</div>
+        </div>
+        <div class="col-3 footer-border-gradient footer-border-gradient-gold" style="height: 130px">
+          <div class="my-4">
+            <h6 class="fw-bold">FOLLOW US</h6>
+          </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"
-    />
+          <div class="col-6 offset-3 d-flex justify-content-evenly">
+            <a href="#">
+              <i class="icon-gold fs-4 bi bi-instagram"></i>
+            </a>
+            <a href="#">
+              <i class="icon-gold fs-4 bi bi-facebook"></i>
+            </a>
+            <a href="#">
+              <i class="icon-gold fs-4 bi bi-linkedin"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
 
-    <script>
-      Fancybox.bind("[data-fancybox]");
+  <!-- script codes -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 
-      var swiper = new Swiper(".tr-guide-mySwiper", {
-        spaceBetween: 0,
-        centeredSlides: true,
-        initialSlide: 0,
-        loop: true,
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
 
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-        breakpoints: {
-          640: { slidesPerView: 1 },
-          768: { slidesPerView: 2 },
-          1024: { slidesPerView: 3 },
-        },
-      });
-    </script>
-  </body>
+  <script>
+    Fancybox.bind("[data-fancybox]");
+
+    var swiper = new Swiper(".tr-guide-mySwiper", {
+      spaceBetween: 0,
+      centeredSlides: true,
+      initialSlide: 0,
+      loop: true,
+
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      breakpoints: {
+        640: { slidesPerView: 1 },
+        768: { slidesPerView: 2 },
+        1024: { slidesPerView: 3 },
+      },
+    });
+  </script>
+</body>
+
 </html>
