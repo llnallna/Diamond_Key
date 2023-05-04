@@ -40,6 +40,7 @@
   text-align-last: center;
 }
 
+
 .font-extralight {
   font-weight: 200;
 }
@@ -428,7 +429,7 @@
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00192A',endColorstr='#1C316C' , GradientType=1);
 }
 
-/* REAL ESTATE DETAIL */
+/* Real Estate Detail */
 
 .res-det-text-color {
   color: var(--res-det-text);
@@ -478,22 +479,29 @@ body {
 } */
 
 /* --------- res-det-swiper 2 --------- */
-.res-det-apt-inner-mySwiper {
+.res-det-inner-mySwiper {
   padding: 100px 0;
 }
 
-.res-det-apt-inner-mySwiper .swiper-slide {
+.res-det-inner-mySwiper .swiper-slide {
   transform: scale(1);
   z-index: 0;
   position: relative;
   transition: all .3s ease-in;
 }
 
-.res-det-apt-inner-mySwiper .swiper-slide:hover {
+/* .res-det-inner-mySwiper .swiper-slide:hover {
   transform: scale(1.1);
   z-index: 1;
   transition: all .3s ease-in;
   box-shadow: 0 0.5rem 1rem rgba(var(--bs-body-color-rgb), 0.9);
+} */
+
+/* --------- res-det-swiper 3 --------- */
+
+.res-det-swp-btn-position-bottom {
+  top:250px;
+  /* transform: translateY(-75%); */
 }
 
 

@@ -1,7 +1,11 @@
 <!-- Süha font regular kullanıldığında fw-normal vermeli miyiz? -->
 <!--  beyoğlu ikon w-100 bozdu img-fluid kullandım -->
 <!-- download pdf'te indirmeyi sağlamak!!! -->
-<!-- swiper3 eklenecek-buradan devam -->
+<!-- Swiper1'de mosewheel control olanı varmış bir de, onu mu kullansak? -->
+<!-- swiper2 yine nth ile çözülecek gibi duruyor Anıl, ortaya gelen fotoğraf scale 1.2 gibi -->
+<!-- swiper2'de okları değiştirmedim(fon beyaz vermiş. yerini değiştirmedim zaten görünmüyor diye. fotoğrafın tamamına vermedim tıklamayı eventini) -->
+<!-- swiper3'te css almadım ama doğru çalıştı bir yerlerde ilk aldığımız isim mi kalmıştır o zmn? -->
+ <!-- swiper3'te okların boyutunu küçültüyoruz fs,small çalışmadı image mi ki o? -->
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -38,7 +42,7 @@
       rel="stylesheet"
     />
 
-    <title>DK | Turkey Guide</title>
+    <title>DK | Real Estate Detail</title>
   </head>
   <body>
     <header id="header" class="about-us-header-bg">
@@ -203,9 +207,9 @@
 
               <span class="row row-col-2">
                 <ul class="col list-group list-group-flush p-0">
-                  <li class="list-group-item border-0 pe-0"><img class="img-fluid pe-5" src="./img/img-real-estate/real-estate-dimension.jpg" alt=""><b>120</b> m<sup>2</sup></li>
-                  <li class="list-group-item border-0 pe-0 "><img class="img-fluid" src="./img/img-real-estate/real-estate-bed.jpg" alt=""><sup><b>2</b></sup>&nbsp &nbsp&nbsp Bedrooms</li>
-                  <li class="list-group-item border-0 pe-0"><img class="img-fluid" src="./img/img-real-estate/res-det-icon-full-baths.jpg" alt=""><sup><b>2</b></sup>&nbsp &nbsp&nbsp Full Baths</li>
+                  <li class="list-group-item border-0 pe-0"><img class="img-fluid pe-4 ps-2" src="./img/img-real-estate/real-estate-dimension.jpg" alt=""><b>&nbsp 120</b> m<sup>2</sup></li>
+                  <li class="list-group-item border-0 pe-0 "><img class="img-fluid" src="./img/img-real-estate/real-estate-bed.jpg" alt=""><sup><b>2</b></sup>&nbsp &nbsp Bedrooms</li>
+                  <li class="list-group-item border-0 pe-0"><img class="img-fluid" src="./img/img-real-estate/res-det-icon-full-baths.jpg" alt=""><sup><b>2</b></sup>&nbsp &nbsp Full Baths</li>
                 </ul>
                 <ul class="col list-group list-group-flush">
                   <li class="list-group-item border-0 border-start border-2"><img class="img-fluid ps-2 pe-1" src="./img/img-real-estate/res-det-icon-garage.jpg" alt=""><sup><b>2</b></sup>&nbsp&nbsp &nbsp&nbsp &nbsp Garages</li>
@@ -255,8 +259,8 @@
         </ul>
       </section>
       <!-- SWIPER 2 -->
-      <section id="real-estate-detail-swiper" class="container-fluid">
-        <div class="swiper res-det-apt-inner-mySwiper">
+      <section id="real-estate-detail-swiper2" class="container-fluid">
+        <div class="swiper res-det-inner-mySwiper">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
               <div class="card text-bg-dark rounded-0 p-0">
@@ -286,8 +290,8 @@
               </div>
             </div>
           </div>
-          <div class="swiper-button-next"></div>
-          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next icon-gold"></div>
+          <div class="swiper-button-prev icon-gold"></div>
         </div>
       </section>
 
@@ -296,13 +300,40 @@
           <div class="row">
             <div class="col-6 res-det-text-darker px-5">
               <h1 class="font-extralight">House Plan</h1>
-              <!-- burada swiper olacak Anılcım :( -->
               <h1 class="display-4 font-extralight text-end">3+1</h1>
-              <img
-                class="col-10 img-fluid"
-                src="./img/img-real-estate/res-detail/res-det-house-plan.jpg"
-                alt="plan"
-              />
+<!-- Initialize Res Det House Plan Swiper 3-->
+              <div class="swiper res-det-house-plan-mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide"><img
+                    class="col-10 img-fluid"
+                    src="./img/img-real-estate/res-detail/res-det-house-plan.jpg"
+                    alt="plan"
+                  /></div>
+                  <div class="swiper-slide"><img
+                    class="col-10 img-fluid"
+                    src="./img/img-real-estate/res-detail/res-det-house-plan.jpg"
+                    alt="plan"
+                  /></div>
+                  <div class="swiper-slide"><img
+                    class="col-10 img-fluid"
+                    src="./img/img-real-estate/res-detail/res-det-house-plan.jpg"
+                    alt="plan"
+                  /></div>
+                  <div class="swiper-slide"><img
+                    class="col-10 img-fluid"
+                    src="./img/img-real-estate/res-detail/res-det-house-plan.jpg"
+                    alt="plan"
+                  /></div>
+                  <div class="swiper-slide"><img
+                    class="col-10 img-fluid"
+                    src="./img/img-real-estate/res-detail/res-det-house-plan.jpg"
+                    alt="plan"
+                  /></div>                
+                </div>
+                <div class="swiper-button-next icon-gold res-det-swp-btn-position-bottom"></div>
+                <div class="swiper-button-prev icon-gold tr-guide-position-right res-det-swp-btn-position-bottom"></div>
+                <div class="swiper-pagination"></div>
+              </div>            
             </div>
 
             <div class="col-5 offset-1 order-first px-0">
@@ -425,7 +456,7 @@ Lorem ipsum dolor sit amet, cons ectetuer adipiscing elit, sed diam nonummy nibh
     />
 
 
-    <!-- Initialize res-det-prj-outer Swiper -->
+    <!-- Initialize Res Det Project Outer Images Swiper -->
 
   <script>
     var swiper = new Swiper(".res-det-outer-mySwiper", {
@@ -436,9 +467,9 @@ Lorem ipsum dolor sit amet, cons ectetuer adipiscing elit, sed diam nonummy nibh
       },
     });
   </script>
-  <!-- Initialize res-det-apt-inner Swiper -->
+  <!-- Initialize Res Det Apartment Inner Images Swiper -->
     <script> 
-      var swiper = new Swiper(".res-det-apt-inner-mySwiper", {
+      var swiper = new Swiper(".res-det-inner-mySwiper", {
         spaceBetween: 0,
         centeredSlides: true,
         initialSlide: 0,
@@ -455,5 +486,19 @@ Lorem ipsum dolor sit amet, cons ectetuer adipiscing elit, sed diam nonummy nibh
         },
       });
     </script>
+
+      <!-- Initialize Res Det House Plan Swiper -->
+      <script>
+        var swiper = new Swiper(".res-det-house-plan-mySwiper", {
+          pagination: {
+            el: ".swiper-pagination",
+            type: "fraction",
+          },
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+        });
+      </script>
   </body>
 </html>

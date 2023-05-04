@@ -1,4 +1,4 @@
-03.05.2023
+04.05.2023
 + service 01 ve 03'te sayfa kenarı boşluğu alamadım :(
     ikisinde de maindeki width:100% kapatılınca düzeliyor da...
 + header eklenecek
@@ -26,6 +26,7 @@
 + beyoğlu ikon w-100 bozdu img-fluid kullandım
 + download pdf'te indirmeyi sağlamak!!!
 + **swiper3 eklenecek-buradan devam**
+<!-- swiper2 yine nth ile çözülecek gibi duruyor Anıl, ortaya gelen fotoğraf scale 1.2 gibi  -->
 
 #### 5- CITIZENSHIP PROGRAM
 + container-fluid'e p-0 verirsek yatayda scrollbar çıkıyor vermezsek de backgraoun img sağa sola sıfırlanmıyor padding olduğu için -->row ile çözdük &check;
