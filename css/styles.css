@@ -278,12 +278,14 @@
   color: var(--gold);
 }
 
+/* h kullanmayınca ayarlayamadığım için position ve z-index ile çözdüm
 .about-us-section-2-bg {
   background-image: url("../img/img-about-us/about-us-bg-family.jpg");
-  background-size: cover;
-  background-position: center center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom;
   height: 1227px;
-}
+} */
 
 /* --------- 3- TURKEY GUIDE --------- */
 .tr-guide-position-right {

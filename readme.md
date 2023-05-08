@@ -19,6 +19,7 @@
 
 #### 2-ABOUT US
 + chat with us eklenecek ve yanındaki  konuşma balonu ikonu
++ bg - h kullanmamak için bg iptal ettim; img ve z-index kullandım, 211~223 satırlarında kodlar değişti. Teslime 
 
 #### 3- TURKEY GUIDE &check;
 
