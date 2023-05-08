@@ -1,6 +1,6 @@
 :root {
   --gold: #94806f;
-  --index-satisfaction-bg: #1C3161;
+  --index-satisfaction-bg: #1c3161;
   --list-style-gold: #948980;
   --light-bg: #808070;
   --dark-bg: #333333;
@@ -22,7 +22,6 @@
   border-top-width: 20px;
 }
 
-
 /* --------- FONTS --------- */
 .font-playfair-display {
   font-family: "Playfair Display", serif;
@@ -39,7 +38,6 @@
 .text-al-last {
   text-align-last: center;
 }
-
 
 .font-extralight {
   font-weight: 200;
@@ -58,18 +56,14 @@
   background-color: #ffffff;
 }
 
-
 /* --------- HEADER --------- */
 .header-bg-index {
-  background-image: url("../img/img-index/home-header-bg.jpg");
+  background-image: url("../img/img-hero/hero-index.jpg");
   background-color: #bdc94c;
   background-size: cover;
   background-position: center;
-  height: 1080px; /* burası olmazsa fotoğrafın kendi boyutunun tamamını kullanması gerekmez mi, neden kırpıyor yüksekliği sabitlemezsem? */
-
-  /* contain kullandık cover yerine mümkün olduğunca yükseklik vermeden çöz ki responsive tarafı kolay olsun */
+  height: 1080px; 
 }
-
 
 /* --------- FOOTER --------- */
 .footer-bg {
@@ -129,13 +123,56 @@
   color: var(--gold) !important;
 }
 
-
 /* --------- 1- INDEX --------- */
-.section-about-us {
-  font-family: "Poppins", sans-serif;
-}
+
 .page-name {
   font-family: "Poppins", sans-serif;
+}
+
+/* --------- Detailed Filter --------- */
+.selection-text-dark > option {
+  color:#0b0b0b !important;
+}
+
+.index-shadow-9 {
+  box-shadow: 0 0.5rem 1rem rgba(var(--bs-body-color-rgb), 0.9);
+}
+
+.bg-dark-blue-gradient {
+  background: -moz-linear-gradient(
+    12.13% 2009.87% 0deg,
+    rgba(0, 21, 42, 1) 0%,
+    rgba(28, 49, 97, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    0deg,
+    rgba(0, 21, 42, 1) 0%,
+    rgba(28, 49, 97, 1) 100%
+  );
+  background: -webkit-gradient(
+    linear,
+    12.13% 2009.87%,
+    102.99% 2009.87%,
+    color-stop(0, rgba(0, 21, 42, 1)),
+    color-stop(1, rgba(28, 49, 97, 1))
+  );
+  background: -o-linear-gradient(
+    0deg,
+    rgba(0, 21, 42, 1) 0%,
+    rgba(28, 49, 97, 1) 100%
+  );
+  background: -ms-linear-gradient(
+    0deg,
+    rgba(0, 21, 42, 1) 0%,
+    rgba(28, 49, 97, 1) 100%
+  );
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#00152A', endColorstr='#1C3161' ,GradientType=0)";
+  background: linear-gradient(
+    90deg,
+    rgba(0, 21, 42, 1) 0%,
+    rgba(28, 49, 97, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00152A',endColorstr='#1C3161' , GradientType=1);
 }
 
 /* --------- Index Section About Us --------- */
@@ -146,64 +183,34 @@
   background-position: right bottom;
 }
 
-#section-reg.ions h1 {
-  font-weight: 300;
-}
-
-#section-regions h2 {
-  font-weight: 100;
-}
 
 /* --------- Index Section Region --------- */
-.marmara-reg-bg {
-  background-image: url("../img/img-index/marmara-reg.jpg");
-  background-size: cover;
-  height: 484px;
-}
 
-.aegean-reg-bg {
-  background-image: url("../img/img-index/aegean-reg.jpg");
-  background-size: cover;
-  height: 484px;
-}
-.meditarrenean-reg-bg {
-  background-image: url("../img/img-index/mediterranean-reg.jpg");
-  background-size: cover;
-  height: 484px;
-}
-.central-anatolia-reg-bg {
-  background-image: url("../img/img-index/central-anatolia-reg.jpg");
-  background-size: cover;
-  height: 484px;
-}
-.eastern-anatolia-reg-bg {
-  background-image: url("../img/img-index/eastern-anatolia-reg.jpg");
-  background-size: cover;
-  height: 484px;
-}
-.black-sea-reg-bg {
-  background-image: url("../img/img-index/black-sea-reg.jpg");
-  background-size: cover;
-  height: 484px;
-}
-.home-citizenship-bg {
-  background-image: url("https://picsum.photos/1920/950");
-  background-size: cover;
-  height: 950px;
-}
 
 /* --------- Index Section Favorite projects --------- */
-/* .Favorite-projects
-{
-  background : -moz-linear-gradient(12.13% 2009.87% 0deg,rgba(0, 21, 42, 1) 0%,rgba(28, 49, 97, 1) 100%);
-  background : -webkit-linear-gradient(0deg, rgba(0, 21, 42, 1) 0%, rgba(28, 49, 97, 1) 100%);
-  background : -webkit-gradient(linear,12.13% 2009.87% ,102.99% 2009.87% ,color-stop(0,rgba(0, 21, 42, 1) ),color-stop(1,rgba(28, 49, 97, 1) ));
-  background : -o-linear-gradient(0deg, rgba(0, 21, 42, 1) 0%, rgba(28, 49, 97, 1) 100%);
-  background : -ms-linear-gradient(0deg, rgba(0, 21, 42, 1) 0%, rgba(28, 49, 97, 1) 100%);
-  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#00152A', endColorstr='#1C3161' ,GradientType=0)";
-  background : linear-gradient(90deg, rgba(0, 21, 42, 1) 0%, rgba(28, 49, 97, 1) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00152A',endColorstr='#1C3161' , GradientType=1);
-} */
+.fav-prj-bg {
+    background-image: url("../img/img-index/index-fav-prj-bg.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+.index-fav-prj-swp-btn-position-bottom {
+  bottom: 150px !important;
+}
+
+.index-fav-prj-swp-btn-position {
+  position:inherit !important;
+}
+
+/* --------- Index Section Property Management --------- */
+.sec-prop-management-bg {
+  background-image: url("../img/img-propety-management/property-management-sea.jpg");
+  background-color: #bdc94c;
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: center;
+}
 
 /* --------- Index Section Services --------- */
 .index-sec-services-bg {
@@ -214,6 +221,12 @@
   list-style-type: none;
 }
 
+.sec-services:hover {
+  transform: scale(1.2);
+  z-index: 1;
+  box-shadow: 0 0.5rem 1rem rgba(var(--bs-body-color-rgb), 0.9);
+}
+
 /* --------- Index Section References --------- */
 .index-references-bg {
   background-image: url("../img/img-index/index-referances-bg.jpg");
@@ -221,12 +234,31 @@
   height: 880px;
 }
 
+.img-card {
+  height: 500px;
+}
+
+.img-card-320{
+  height: 320px;
+}
+
+.bg-white {
+  background-color: white;
+}
+
+.index-swp-btn-position-left {
+  left: 50px;
+  right: auto;
+}
+
 /* --------- Index Section Satisfaction --------- */
 .index-satisfaction-bg {
   background-color: var(--index-satisfaction-bg);
 }
 
-
+.icon-dark-blue {
+  color: var(--index-satisfaction-bg);
+}
 
 /* --------- 2- ABOUT US --------- */
 .about-us-header-bg {
@@ -253,7 +285,6 @@
   height: 1227px;
 }
 
-
 /* --------- 3- TURKEY GUIDE --------- */
 .tr-guide-position-right {
   left: auto;
@@ -265,7 +296,7 @@
 }
 
 .tr-guide-swp-btn-position-top {
-  top:50px;
+  top: 50px;
 }
 
 .tr-guide-mySwiper {
@@ -276,36 +307,35 @@
   transform: scale(1);
   z-index: 0;
   position: relative;
-  transition: all .2s ease-in;
+  transition: all 0.2s ease-in;
 }
 
-
-.tr-guide-mySwiper .card-desc{
-  opacity:0;
+.tr-guide-mySwiper .card-desc {
+  opacity: 0;
   visibility: hidden;
 }
 
-.tr-guide-mySwiper .swiper-slide:hover .card-desc{
-  opacity:1;
+.tr-guide-mySwiper .swiper-slide:hover .card-desc {
+  opacity: 1;
   visibility: visible;
 }
 
 .tr-guide-mySwiper .swiper-slide:hover {
   transform: scale(1.05);
   z-index: 1;
-  transition: all .2s ease-in;
+  transition: all 0.2s ease-in;
   box-shadow: 0 0.5rem 1rem rgba(var(--bs-body-color-rgb), 0.9);
 }
 
-.pointer-events-none{
+.pointer-events-none {
   pointer-events: none;
 }
 
-.tr-guide-list li a{
+.tr-guide-list li a {
   padding: 5% 15%;
 }
-.tr-guide-list li a:hover {
 
+.tr-guide-list li a:hover {
   background: -moz-linear-gradient(
     0% 50% 0deg,
     rgba(0, 25, 42, 1) 0.06%,
@@ -343,7 +373,6 @@
   color: #ffffff !important;
 }
 
-
 /* --------- 4-REAL ESTATE MAIN --------- */
 .bg-gold {
   background-color: var(--gold);
@@ -354,7 +383,7 @@
 }
 
 .real-est-shadow {
-  box-shadow: 0 0.5rem 1rem rgba(var(--bs-body-color-rgb), 0.4);
+  box-shadow: 0 0.5rem 1rem rgba(var(--bs-body-color-rgb), 0.8) !important;
 }
 
 .btn-dark {
@@ -388,7 +417,7 @@
   pointer-events: none;
 }
 
-#select-mini > option {
+.selection-bg > option {
   background-color: var(--gold);
 }
 
@@ -438,29 +467,9 @@
 .res-det-text-darker {
   color: var(--res-det-title);
 }
+
+
 /* swiper 1*/
-/* html,
-body {
-  position: relative;
-  height: 100%;
-}
-
-body {
-  background: #eee;
-  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-  font-size: 14px;
-  color: #000;
-  margin: 0;
-  padding: 0;
-} */
-
-/* .swiper {
-  width: 100%;
-  height: 100%;
-} */
-/* .res-det-outer-mySwiper {
-
-} */
 
 /* .res-det-outer-mySwiper .swiper-slide {
   text-align: center;
@@ -487,7 +496,7 @@ body {
   transform: scale(1);
   z-index: 0;
   position: relative;
-  transition: all .3s ease-in;
+  transition: all 0.3s ease-in;
 }
 
 /* .res-det-inner-mySwiper .swiper-slide:hover {
@@ -500,11 +509,9 @@ body {
 /* --------- res-det-swiper 3 --------- */
 
 .res-det-swp-btn-position-bottom {
-  top:250px;
+  top: 250px;
   /* transform: translateY(-75%); */
 }
-
-
 
 /* --------- 5- CITIZENSHIP PROGRAM --------- */
 .citizenship-light-bg {
@@ -537,17 +544,17 @@ body {
 }
 
 .ctz-list-gold {
-   list-style: none;
+  list-style: none;
 }
 
-.ctz-list-gold  li::before {
+.ctz-list-gold li::before {
   content: "\f287 ";
   font-family: bootstrap-icons !important;
   color: var(--list-style-gold);
   padding-right: 10px;
   position: relative;
   top: -2px;
-  font-size: .6rem;
+  font-size: 0.6rem;
 }
 
 .ctz-select-bg {
@@ -559,22 +566,20 @@ td img {
   height: 35px;
 }
 
-
 /* --------- 6- SERVICES --------- */
 
 /* --------- 7- PROPERTY MANAGEMENT --------- */
 .prop-management-bg-input {
   background-image: url("../img/img-propety-management/property-management-sea.jpg");
   background-color: #bdc94c;
-  background-size: cover;
+  background-size: auto;
+  background-repeat: no-repeat;
   background-position: center;
-  height: 675px;
 }
 
 .prop-management-bg-button {
   background-color: #0d6289;
 }
-
 
 /* --------- 8-BLOG --------- */
 .rotate-vertical {
@@ -625,7 +630,6 @@ td img {
   transform: translatex(-95px);
 }
 
-
 /* --------- 9- CONTACT --------- */
 .form-control::placeholder {
   color: #000000;
@@ -634,21 +638,46 @@ td img {
   padding-left: 0px;
 }
 
-
 /* --------- BACKGROUNDS FROM Ai ---------*/
 .bg-gold-gradient {
-  background : -moz-linear-gradient(0% 50% 0deg,rgba(148, 128, 111, 1) 0%,rgba(128, 126, 94, 1) 48.85%,rgba(128, 106, 77, 1) 100%);
-  background : -webkit-linear-gradient(0deg, rgba(148, 128, 111, 1) 0%, rgba(128, 126, 94, 1) 48.85%, rgba(128, 106, 77, 1) 100%);
-  background : -webkit-gradient(linear,0% 50% ,100% 50% ,color-stop(0,rgba(148, 128, 111, 1) ),color-stop(0.4885,rgba(128, 126, 94, 1) ),color-stop(1,rgba(128, 106, 77, 1) ));
-  background : -o-linear-gradient(0deg, rgba(148, 128, 111, 1) 0%, rgba(128, 126, 94, 1) 48.85%, rgba(128, 106, 77, 1) 100%);
-  background : -ms-linear-gradient(0deg, rgba(148, 128, 111, 1) 0%, rgba(128, 126, 94, 1) 48.85%, rgba(128, 106, 77, 1) 100%);
+  background: -moz-linear-gradient(
+    0% 50% 0deg,
+    rgba(148, 128, 111, 1) 0%,
+    rgba(128, 126, 94, 1) 48.85%,
+    rgba(128, 106, 77, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    0deg,
+    rgba(148, 128, 111, 1) 0%,
+    rgba(128, 126, 94, 1) 48.85%,
+    rgba(128, 106, 77, 1) 100%
+  );
+  background: -webkit-gradient(
+    linear,
+    0% 50%,
+    100% 50%,
+    color-stop(0, rgba(148, 128, 111, 1)),
+    color-stop(0.4885, rgba(128, 126, 94, 1)),
+    color-stop(1, rgba(128, 106, 77, 1))
+  );
+  background: -o-linear-gradient(
+    0deg,
+    rgba(148, 128, 111, 1) 0%,
+    rgba(128, 126, 94, 1) 48.85%,
+    rgba(128, 106, 77, 1) 100%
+  );
+  background: -ms-linear-gradient(
+    0deg,
+    rgba(148, 128, 111, 1) 0%,
+    rgba(128, 126, 94, 1) 48.85%,
+    rgba(128, 106, 77, 1) 100%
+  );
   -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#94806F', endColorstr='#806A4D' ,GradientType=0)";
-  background : linear-gradient(90deg, rgba(148, 128, 111, 1) 0%, rgba(128, 126, 94, 1) 48.85%, rgba(128, 106, 77, 1) 100%);
+  background: linear-gradient(
+    90deg,
+    rgba(148, 128, 111, 1) 0%,
+    rgba(128, 126, 94, 1) 48.85%,
+    rgba(128, 106, 77, 1) 100%
+  );
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#94806F',endColorstr='#806A4D' , GradientType=1);
 }
-
-
-
-
-
-

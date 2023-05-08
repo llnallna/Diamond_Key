@@ -1,13 +1,21 @@
-04.05.2023
+08.05.2023
 + service 01 ve 03'te sayfa kenarı boşluğu alamadım :(
     ikisinde de maindeki width:100% kapatılınca düzeliyor da...
 + header eklenecek
-+ backgraound img height hepsinde iptal edilecek
++ backgraound img height hepsinde iptal edilecek - bazısında kaldı çünkü h olmadan gerekli görüntüyü veremedim. :(
 
-
-+ ???????? res-det Swiper'da fotoğrafları links'ten mi almalıyım Ai'dekileri mi??????????
 
 #### 1-HOME PAGE
++ bölgeler tıklanınca o bölgeye gitsin dememiş, göndersek mi?
++ turkey guide fotoğrafları bg almışım ama contain ile yapamadığım için img ekleyip z-index ile çözdüm
++ swiper'da bullet'ı kapatamadım
++ property management poppins verilmiş normalde başlıklar diğer font!!!!!!!!!
++ sec-prop-management-bg için kullandığım ftğraf değişecek, ctrl+alt+2 çözmedi alamadım:( 
++ prop-management send button style width px - responsive olduğunda götüntüyü bozabilir
++ references bg için height haricinde çözemedim
++ swiper kaydırma okları js kodları ile ilgili olarak alt sectionda tıklayınca üsttekini de kaydırıyor. yine harikalar yarattım :D bence kalabilir bişicik olmas :)
++ satisfaction'da okları max yatayda kaydırabildim, yine yazdıklarıma beklediğim tepkiyi vermiyorlar :()
+
 
 #### 2-ABOUT US
 + chat with us eklenecek ve yanındaki  konuşma balonu ikonu
@@ -18,6 +26,7 @@
 ##### main &check;
 + select için text-color sıkıntısını #select-mini>option ile çözdüm ama açılan listede aktif seçenek mavisi değiştirilebilir - değişmeyecek. &check;
 + bir de select'te oku tıklarsak liste açılmıyor city alanını tıklamak gerekiyor.(okları class vererek kendimiz yapılandırmıştık) - pointer-events: none; ile çözdük &check;
++ main bittiyse 189-248 güncelle @Teslime
 
 
 
@@ -25,11 +34,10 @@
 <!-- Süha font regular kullanıldığında fw-normal vermeli miyiz? -->
 + beyoğlu ikon w-100 bozdu img-fluid kullandım
 + download pdf'te indirmeyi sağlamak!!!
-+ **swiper3 eklenecek-buradan devam**
++ 5.Lev swiper alınca bende farklı çalıştı.
 <!-- swiper2 yine nth ile çözülecek gibi duruyor Anıl, ortaya gelen fotoğraf scale 1.2 gibi  -->
 
-#### 5- CITIZENSHIP PROGRAM
-+ container-fluid'e p-0 verirsek yatayda scrollbar çıkıyor vermezsek de backgraoun img sağa sola sıfırlanmıyor padding olduğu için -->row ile çözdük &check;
+#### 5- CITIZENSHIP PROGRAM &check;
 
 #### 6- SERVICES  &check;
 + 3 sayfa tamamlandı,  2'sinde yatayda scrollbar çıkıyor.
