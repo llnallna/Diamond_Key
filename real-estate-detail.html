@@ -1,11 +1,8 @@
-<!-- Süha font regular kullanıldığında fw-normal vermeli miyiz? -->
 <!--  beyoğlu ikon w-100 bozdu img-fluid kullandım -->
 <!-- download pdf'te indirmeyi sağlamak!!! -->
-<!-- Swiper1'de mosewheel control olanı varmış bir de, onu mu kullansak? -->
-<!-- swiper2 yine nth ile çözülecek gibi duruyor Anıl, ortaya gelen fotoğraf scale 1.2 gibi -->
-<!-- swiper2'de okları değiştirmedim(fon beyaz vermiş. yerini değiştirmedim zaten görünmüyor diye. fotoğrafın tamamına vermedim tıklamayı eventini) -->
-<!-- swiper3'te css almadım ama doğru çalıştı bir yerlerde ilk aldığımız isim mi kalmıştır o zmn? -->
- <!-- swiper3'te okların boyutunu küçültüyoruz fs,small çalışmadı image mi ki o? -->
+
+<!-- swiper3 bottom px -->
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -20,6 +17,7 @@
       integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
       crossorigin="anonymous"
     />
+    <!-- Link Swiper's CSS -->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
@@ -168,33 +166,29 @@
     </header>
 
     <main>
-      <section
-        id="real-estate-detail-project-properties-list"
-        class="container-fluid font-poppins"
-      >
+      <section id="res-project-properties-list" class="container-fluid font-poppins">
         <div class="row mt-5">
           <div class="col-8 px-0">
             <img class="w-100" src="./img/img-real-estate/res-detail/res-det-swiper1-fromAi.jpg" alt="">
-            <!-- Swiper1 -->
-            <!-- <div class="swiper res-det-outer-mySwiper">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                  <img src="./img/img-real-estate/res-detail/res-det-apartment-outside.jpg" alt="">
+          
+                        <!-- Swiper 1-->                  
+              <!-- <div class="swiper res-det-outer-mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img class="w-100" src="./img/img-real-estate/res-detail/res-det-apartment-outside.jpg" alt="">
+                  </div>
+                  <div class="swiper-slide">
+                    <img class="w-100" src="./img/img-real-estate/res-detail/res-det-swiper1-fromAi.jpg" alt="">
+                  </div>
+                  <div class="swiper-slide">
+                    <img class="w-100" src="./img/img-real-estate/res-detail/res-det-house-plan.jpg" alt="">
+                  </div>             
+                  <div class="swiper-slide">
+                    <img class="w-100" src="./img/img-real-estate/res-detail/res-det-swiper2-center.jpg" alt="">
+                  </div>             
                 </div>
-                <div class="swiper-slide">
-                  <img src="./img/img-real-estate/res-detail/res-det-swiper1-fromAi.jpg" alt="">
-                </div>
-                <div class="swiper-slide">
-                  <img src="./img/img-real-estate/res-detail/from_links/65.jpg" alt="">
-                </div>
-                <div class="swiper-slide">
-                  <img src="./img/img-real-estate/res-detail/from_links/WhatsAppImage.jpeg" alt="">
-                </div>
-                <div class="swiper-slide">Slide 5</div>
-
-              </div>
-              <div class="swiper-pagination"></div>
-            </div> -->
+                <div class="swiper-pagination"></div>
+              </div> -->
           </div>
 
           <div class="col-4 px-5 pt-5">
@@ -258,8 +252,33 @@
           <li class="list-group-item border-0 res-det-text-color"><img class="img-fluid px-2" src="./img/img-real-estate/res-detail/res-det-icon-game-room.png" alt="">Game Room</li>
         </ul>
       </section>
-      <!-- SWIPER 2 -->
-      <section id="real-estate-detail-swiper2" class="container-fluid">
+
+      <section class="my-5">
+        <!-- SWIPER 2 -->
+        <!-- <section id="res-det-swiper2">
+          <div class="">
+              <div class="pb-5" style="left:0;right:0;position:absolute;top:55%;transform:translateY(-50%)">
+                <div class="swiper res-det-inner-mySwiper">
+                    <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <img alt="5.Levent Galeri Resim" class="img-fluid" src="./img/img-real-estate/res-detail/res-det-swiper2-left.jpg" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img alt="5.Levent Galeri Resim" class="img-fluid" src="./img/img-real-estate/res-detail/res-det-swiper2-center.jpg" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img alt="5.Levent Galeri Resim" class="img-fluid" src="./img/img-real-estate/res-detail/res-det-swiper2-right.jpg" />
+                    </div>
+                    </div>
+                    <div class="swiper-button-next">      &nbsp;    </div>
+                    <div class="swiper-button-prev">      &nbsp;      </div>
+                </div>
+                
+              </div>
+          </div>
+        </section> -->
+        <!-- Süha hani bunun pagination'ı? -->
+
         <div class="swiper res-det-inner-mySwiper">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
@@ -295,68 +314,66 @@
         </div>
       </section>
 
-      <section id="real-estate-detail-project-plan" class="container-fluid">
-        
-          <div class="row">
-            <div class="col-6 res-det-text-darker px-5">
-              <h1 class="font-extralight">House Plan</h1>
-              <h1 class="display-4 font-extralight text-end">3+1</h1>
-<!-- Initialize Res Det House Plan Swiper 3-->
-              <div class="swiper res-det-house-plan-mySwiper">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide"><img
-                    class="col-10 img-fluid"
-                    src="./img/img-real-estate/res-detail/res-det-house-plan.jpg"
-                    alt="plan"
-                  /></div>
-                  <div class="swiper-slide"><img
-                    class="col-10 img-fluid"
-                    src="./img/img-real-estate/res-detail/res-det-house-plan.jpg"
-                    alt="plan"
-                  /></div>
-                  <div class="swiper-slide"><img
-                    class="col-10 img-fluid"
-                    src="./img/img-real-estate/res-detail/res-det-house-plan.jpg"
-                    alt="plan"
-                  /></div>
-                  <div class="swiper-slide"><img
-                    class="col-10 img-fluid"
-                    src="./img/img-real-estate/res-detail/res-det-house-plan.jpg"
-                    alt="plan"
-                  /></div>
-                  <div class="swiper-slide"><img
-                    class="col-10 img-fluid"
-                    src="./img/img-real-estate/res-detail/res-det-house-plan.jpg"
-                    alt="plan"
-                  /></div>                
-                </div>
-                <div class="swiper-button-next icon-gold res-det-swp-btn-position-bottom"></div>
-                <div class="swiper-button-prev icon-gold tr-guide-position-right res-det-swp-btn-position-bottom"></div>
-                <div class="swiper-pagination"></div>
-              </div>            
-            </div>
-
-            <div class="col-5 offset-1 order-first px-0">
-              <div class="border-end border-2">
-                <h1 class="res-det-text-darker font-extralight ps-5 pb-2">About This Property</h1>
-                <p class="lh-1 fs-6 res-det-text-color px-5">
-                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te.
-<br>
-<br>
-Lorem ipsum dolor sit amet, cons ectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
-<br>
-<br>
-
-Lorem ipsum dolor sit amet, cons ectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
-                </p>
+      <section id="res-detail-house-plan" class="container-fluid">        
+        <div class="row">
+          <div class="col-6 res-det-text-darker px-5">
+            <h1 class="font-extralight">House Plan</h1>
+            <h1 class="display-4 font-extralight text-end">3+1</h1>
+            
+            <!-- Initialize Res Det House Plan Swiper 3-->
+            <div class="swiper res-det-house-plan-mySwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide"><img
+                  class="col-10 img-fluid"
+                  src="./img/img-real-estate/res-detail/res-det-house-plan.jpg"
+                  alt="plan"
+                /></div>
+                <div class="swiper-slide"><img
+                  class="col-10 img-fluid"
+                  src="./img/img-real-estate/res-detail/res-det-house-plan.jpg"
+                  alt="plan"
+                /></div>
+                <div class="swiper-slide"><img
+                  class="col-10 img-fluid"
+                  src="./img/img-real-estate/res-detail/res-det-house-plan.jpg"
+                  alt="plan"
+                /></div>
+                <div class="swiper-slide"><img
+                  class="col-10 img-fluid"
+                  src="./img/img-real-estate/res-detail/res-det-house-plan.jpg"
+                  alt="plan"
+                /></div>
+                <div class="swiper-slide"><img
+                  class="col-10 img-fluid"
+                  src="./img/img-real-estate/res-detail/res-det-house-plan.jpg"
+                  alt="plan"
+                /></div>                
               </div>
+              <div class="swiper-button-next icon-gold res-det-swp-btn-position-bottom"></div>
+              <div class="swiper-button-prev icon-gold tr-guide-position-right res-det-swp-btn-position-bottom"></div>
+              <div class="swiper-pagination pointer-events-none"></div>
+            </div>            
+          </div>
+
+          <div class="col-5 offset-1 order-first px-0">
+            <div class="border-end border-2">
+              <h1 class="res-det-text-darker font-extralight ps-5 pb-2">About This Property</h1>
+              <p class="lh-1 fs-6 res-det-text-color px-5">
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te.
+              <br>
+              <br>
+              Lorem ipsum dolor sit amet, cons ectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
+              <br>
+              <br>
+
+              Lorem ipsum dolor sit amet, cons ectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+              </p>
             </div>
           </div>
-        </section>
+        </div>
       </section>
 
-      <section id="real-estate-detail-about-area" class="container-fluid mt-5">
-       
+      <section id="real-estate-detail-about-area" class="container-fluid mt-5">       
           <div class="row">
             <div class="col-6 px-0">
               <img
@@ -364,19 +381,17 @@ Lorem ipsum dolor sit amet, cons ectetuer adipiscing elit, sed diam nonummy nibh
                 src="./img/img-real-estate/res-detail/res-det-apartment-outside.jpg"
                 alt="apartment"
               />
-            </div>
-  
+            </div>  
             <div class="col-5 ">
               <div class="px-5 pt-5 mt-3">
                 <h1 class="font-extralight res-det-text-darker text-end pb-2">About This Area</h1>
                 <p class="lh-1 fs-6 res-det-text-color text-end">
                   Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
-Lorem ipsum dolor sit amet, cons ectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+                  Lorem ipsum dolor sit amet, cons ectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
                 </p>
               </div>
             </div>
-          </div>
-        
+          </div>        
       </section>
     </main>
 
@@ -455,18 +470,21 @@ Lorem ipsum dolor sit amet, cons ectetuer adipiscing elit, sed diam nonummy nibh
       href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"
     />
 
-
     <!-- Initialize Res Det Project Outer Images Swiper -->
-
   <script>
     var swiper = new Swiper(".res-det-outer-mySwiper", {
       direction: "vertical",
+      slidesPerView: 1,
+      spaceBetween: 30,
+      mousewheel: true,
       pagination: {
         el: ".swiper-pagination",
         clickable: true,
       },
     });
   </script>
+
+
   <!-- Initialize Res Det Apartment Inner Images Swiper -->
     <script> 
       var swiper = new Swiper(".res-det-inner-mySwiper", {

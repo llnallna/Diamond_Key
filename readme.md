@@ -22,6 +22,7 @@
 + bg - h kullanmamak için bg iptal ettim; img ve z-index kullandım, 211~223 satırlarında kodlar değişti. Teslime 
 
 #### 3- TURKEY GUIDE &check;
++ hover'a sağ ok ekle Anıl
 
 #### 4- REAL ESTATE
 ##### main &check;
@@ -32,7 +33,6 @@
 
 
 ##### detail
-<!-- Süha font regular kullanıldığında fw-normal vermeli miyiz? -->
 + beyoğlu ikon w-100 bozdu img-fluid kullandım
 + download pdf'te indirmeyi sağlamak!!!
 + 5.Lev swiper alınca bende farklı çalıştı.
