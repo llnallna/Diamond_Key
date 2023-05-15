@@ -18,718 +18,568 @@
 
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- Bootstrap CSS -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
-      crossorigin="anonymous"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- Swiper CSS -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
-    />
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous" />
 
-    <!-- Bootstrap Icons CSS -->
-    <link rel="stylesheet" href="./css/bootstrap-icons.css" />
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
 
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="./css/styles.css" />
-    <link rel="stylesheet" href="./css/responsive.css" />
+  <!-- Bootstrap Icons CSS -->
+  <link rel="stylesheet" href="./css/bootstrap-icons.css" />
 
-    <!-- Documentation Extras -->
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="./css/styles.css" />
+  <link rel="stylesheet" href="./css/responsive.css" />
 
-    <!-- fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap"
-      rel="stylesheet"
-    />
+  <!-- Documentation Extras -->
 
-    <title>DIAMOND KEY</title>
-  </head>
+  <!-- fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap"
+    rel="stylesheet" />
 
-  <body>
-    <header id="header" class="header-bg-index">
-      <div class="container">
-        <div class="row">
-          <div class="header-logo">Logo</div>
-          <div class="header-nav">
-            <nav class="navbar navbar-expand-lg">
-              <div class="container-fluid">
-                <!-- <a class="navbar-brand" href="#">Navbar</a> -->
-                <button
-                  class="navbar-toggler"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#navbarSupportedContent"
-                  aria-controls="navbarSupportedContent"
-                  aria-expanded="false"
-                  aria-label="Toggle navigation"
-                >
-                  <span class="navbar-toggler-icon"></span>
-                </button>
-                <div
-                  class="collapse navbar-collapse"
-                  id="navbarSupportedContent"
-                >
-                  <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                      <a
-                        class="nav-link active"
-                        aria-current="page"
-                        href="./about-us.html"
-                        >ABOUT US</a
-                      >
+  <title>DIAMOND KEY</title>
+</head>
+
+<body>
+  <header class="header w-100 position-absolute">
+    <div class="container">
+      <nav class="navbar navbar-expand-lg" aria-label="Menü">
+        <div class="container-fluid align-items-start"><a class="navbar-brand" href="/" title="5. Levent"><img
+              src="./img/diamond-key.png" alt="Logo" width="100">
+          </a> <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar2" aria-controls="offcanvasNavbar2"><span
+              class="navbar-toggler-icon"></span></button>
+          <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasNavbar2"
+            aria-labelledby="offcanvasNavbar2Label">
+            <div class="offcanvas-header"><a class="navbar-brand" href="/" title="5. Levent"><img
+                  src="./img/diamond-key.png" alt="Logo" width="100"> </a> <button type="button"
+                class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button></div>
+            <div class="offcanvas-body">
+              <ul class="header-nav mt-1 navbar-nav justify-content-end flex-grow-1 pe-3 fw-light">
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="./about-us.html">ABOUT US</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./turkey-guide.html">TURKEY GUIDE</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./real-estate-main.html">REAL ESTATE</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./citizenship-program.html">CITIZENSHIP PROGRAM</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    SERVICES
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a class="dropdown-item" href="./services-real-estate.html">REAL ESTATE</a>
                     </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="./turkey-guide.html"
-                        >TURKEY GUIDE</a
-                      >
+                    <li>
+                      <a class="dropdown-item" href="./services-turkish-passport.html">TURKISH PASSPORT</a>
                     </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="./real-estate-main.html"
-                        >REAL ESTATE</a
-                      >
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="./citizenship-program.html"
-                        >CITIZENSHIP PROGRAM</a
-                      >
-                    </li>
-                    <li class="nav-item dropdown">
-                      <a
-                        class="nav-link dropdown-toggle"
-                        href="#"
-                        role="button"
-                        data-bs-toggle="dropdown"
-                        aria-expanded="false"
-                      >
-                        SERVICES
-                      </a>
-                      <ul class="dropdown-menu">
-                        <li>
-                          <a
-                            class="dropdown-item"
-                            href="./services-real-estate.html"
-                            >REAL ESTATE</a
-                          >
-                        </li>
-                        <li>
-                          <a
-                            class="dropdown-item"
-                            href="./services-turkish-passport.html"
-                            >TURKISH PASSPORT</a
-                          >
-                        </li>
-                        <li>
-                          <a
-                            class="dropdown-item"
-                            href="./services-consultancy.html"
-                            >CONSULTANCY</a
-                          >
-                        </li>
-                      </ul>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="./property-management.html"
-                        >PROPERTY MANAGEMENT</a
-                      >
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="./blog.html">BLOG</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="./contact.html">CONTACT</a>
+                    <li>
+                      <a class="dropdown-item" href="./services-consultancy.html">CONSULTANCY</a>
                     </li>
                   </ul>
-                </div>
-              </div>
-            </nav>
-            <nav class="nav-lang">
-              <a href="" class="nav-link">EN</a>
-              <a href="" class="nav-link">TR</a>
-            </nav>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="./property-management.html">PROPERTY MANAGEMENT</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./blog.html">BLOG</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./contact.html">CONTACT</a>
+                </li>
+                <li class="nav-item ms-4">
+                  <a class="nav-link" href="#">EN</a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
+      </nav>
+    </div>
+  </header>
+
+  <main class="font-poppins fw-light">
+    <section class="position-relative">
+      <div class="chat-box position-absolute">
+        <a class="btn-whatsapp" href="#">
+          <svg class="icon icon-whatsapp" width="40">
+            <use xlink:href="./svg/symbol-defs.svg#icon-whatsapp"></use>
+          </svg>
+        </a>
+        <a class="btn-phone" href="#">
+          <svg class="icon icon-phone" width="50">
+            <use xlink:href="./svg/symbol-defs.svg#icon-phone"></use>
+          </svg>
+        </a>
+        <a class="btn-telegram" href="#">
+          <svg class="icon icon-telegram" width="40">
+            <use xlink:href="./svg/symbol-defs.svg#icon-telegram"></use>
+          </svg>
+        </a>
+        <a class="btn-chat" href="#">
+          <div class="position-relative btn-chat-bg">
+            <span class="text">Chat with us</span>
+            <span class="circle">
+              <svg class="icon icon-chat" width="16">
+                <use xlink:href="./svg/symbol-defs.svg#icon-chat"></use>
+              </svg>
+            </span>
+          </div>
+        </a>
       </div>
-      <section id="header-section">
-        <div class="container">
+      <img src="./img/hero-bg.jpg" class="w-100" alt="">
+      <h1 class="slider-text">
+        WE MAKE YOUR DREAMS <br>
+        COME TRUE
+      </h1>
+    </section>
+    <!-- ----------- DETAILED FILTER ------------ -->
+    <section id="section-detailed-filter" class="container position-absolute z-1 ms-5 mt-n5 index-shadow-9">
+      <div class="row align-items-center bg-dark-blue-gradient p-3">
+        <div class="col res-select-col px-3">
+          <select class="res-select selection-text-dark form-select border-0 border-end border-1 text-white rounded-0"
+            aria-label="City">
+            <option class="form-select-bg" selected>City</option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+          </select>
+        </div>
+        <div class="col res-select-col px-3">
+          <select class="res-select selection-text-dark form-select border-0 border-end border-1 text-white rounded-0"
+            aria-label="District">
+            <option selected>District</option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+          </select>
+        </div>
+        <div class="col res-select-col px-3">
+          <select class="res-select selection-text-dark form-select border-0 border-end border-1 text-white rounded-0"
+            aria-label="District">
+            <option selected>Type</option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+          </select>
+        </div>
+        <div class="col res-select-col px-3">
+          <select class="res-select selection-text-dark form-select border-0 border-end border-1 text-white rounded-0"
+            aria-label="District">
+            <option selected>Room</option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+          </select>
+        </div>
+        <div class="col res-select-col px-3">
+          <select class="res-select selection-text-dark form-select border-0 text-white rounded-0"
+            aria-label="District">
+            <option selected>Price</option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+          </select>
+        </div>
+
+        <button class="btn col-1 rounded-0 bg-white d-flex align-items-center" style="width:50px;height:50px;"
+          type="submit">
+          <svg class="icon icon-magnet" width="30" height="30" fill="#000">
+            <use xlink:href="./svg/symbol-defs.svg#icon-magnet"></use>
+          </svg>
+        </button>
+      </div>
+    </section>
+
+    <!-- ----------- ABOUT US ------------ -->
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-7 p-0">
+          <img class="w-100" src="./img/about-us.jpg" alt="home-ic-mekan" />
+        </div>
+
+        <div class="col-5 px-5 pt-5 section-about-us-bg-diamond mt-5 d-flex flex-column align-items-end">
           <div>
-            <div class="index-header-social-links">
-              <nav>
-                <a href="">Whatsapp</a>
-                <a href="">Telephone</a>
-                <a href="">E-mail</a>
-              </nav>
-            </div>
-            <div class="index-header-content">
-              WE MAKE YOUR DREAMS COME TRUE
-            </div>
-          </div>
-          <div class="index-header-chat">Chat with us</div>
-        </div>
-      </section>
-    </header>
-
-    <main class="font-poppins fw-light">
-      <!-- ----------- DETAILED FILTER ------------ -->
-      <section
-        id="section-detailed-filter"
-        class="container position-absolute z-1 ms-5 mt-n5 index-shadow-9"
-      >
-        <div class="row align-items-center bg-dark-blue-gradient p-3">
-          <div class="col res-select-col px-3">
-            <select
-              class="fs-5 res-select selection-text-dark form-select border-0 border-end border-1 text-white rounded-0"
-              aria-label="City"
-            >
-              <option class="form-select-bg" selected>City</option>
-              <option value="1">One</option>
-              <option value="2">Two</option>
-              <option value="3">Three</option>
-            </select>
-          </div>
-          <div class="col res-select-col px-3">
-            <select
-              class="fs-5 res-select selection-text-dark form-select border-0 border-end border-1 text-white rounded-0"
-              aria-label="District"
-            >
-              <option selected>District</option>
-              <option value="1">One</option>
-              <option value="2">Two</option>
-              <option value="3">Three</option>
-            </select>
-          </div>
-          <div class="col res-select-col px-3">
-            <select
-              class="fs-5 res-select selection-text-dark form-select border-0 border-end border-1 text-white rounded-0"
-              aria-label="District"
-            >
-              <option selected>Type</option>
-              <option value="1">One</option>
-              <option value="2">Two</option>
-              <option value="3">Three</option>
-            </select>
-          </div>
-          <div class="col res-select-col px-3">
-            <select
-              class="fs-5 res-select selection-text-dark form-select border-0 border-end border-1 text-white rounded-0"
-              aria-label="District"
-            >
-              <option selected>Room</option>
-              <option value="1">One</option>
-              <option value="2">Two</option>
-              <option value="3">Three</option>
-            </select>
-          </div>
-          <div class="col res-select-col px-3">
-            <select
-              class="fs-5 res-select selection-text-dark form-select border-0 text-white rounded-0"
-              aria-label="District"
-            >
-              <option selected>Price</option>
-              <option value="1">One</option>
-              <option value="2">Two</option>
-              <option value="3">Three</option>
-            </select>
-          </div>
-
-          <button class="btn col-1 p-4 rounded-0" type="submit" style="background-color: white">
-            <img
-            class="img-fluid"
-            src="./img/img-index/index-icon-search.jpg"
-            alt=""
-          />
-          </button>          
-        </div>
-      </section>
-
-      <!-- ----------- ABOUT US ------------ -->
-
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-7 p-0">
-            <img
-              class="img-fluid"
-              src="./img/img-index/room-1.jpg"
-              alt="home-ic-mekan"
-            />
-          </div>
-
-          <div class="col-5 px-5 pt-5 section-about-us-bg-diamond mt-5">
-            <div class="row align-items-center mx-0 px-5 mt-4">
+            <div class="row align-items-center mx-0 mb-4">
               <div class="col-3">
                 <hr class="border border-dark opacity-75" />
               </div>
               <div class="col fs-5 p-0">ABOUT US</div>
             </div>
-            <div class="my-4 px-5">
+            <div class="mb-4">
               <h1 class="display-5 font-playfair-display fw-bold about-us-gold">
                 Diamond Key
               </h1>
             </div>
-            <div class="fs-5 lh-sm text-al-jstfy px-5">
-              <p class="pb-0">
+            <div class="lh-sm text-al-jstfy">
+              <p class="pb-5">
                 "Your dream home"; "We sell a lifestyle, not real estate." Our
                 philosophy is carried out by every member of the Diamond
                 Holdings family. We offer dream homes of the future, not just
                 brick and iron.
               </p>
               <a href="./about-us.html">
-                <img
-                  class="pt-3 img-fluid"
-                  src="./img/img-icons/icon-arrow-right-gold.png"
-                  alt="arrow"
-                />
+                <svg fill="#94806F" class="icon icon-arrow-left" width="50" height="50">
+                  <use xlink:href="./svg/symbol-defs.svg#icon-arrow-left"></use>
+                </svg>
               </a>
             </div>
-            <div
-              class="row align-items-center justify-content-end pe-3 mt-5 pt-5"
-            >
-              <div class="col-3 ps-5">
-                <hr class="border border-dark opacity-75" />
-              </div>
-              <div class="col-auto fs-5 p-0">TURKEY GUIDE</div>
+          </div>
+          <div class="row w-100 justify-content-end mt-auto pb-3">
+            <div class="col-4 ps-5">
+              <hr class="border border-dark opacity-75" />
             </div>
+            <div class="col-auto fs-5 p-0">TURKEY GUIDE</div>
           </div>
         </div>
       </div>
+    </div>
 
-      <!-- ----------- TURKEY GUIDE ------------ -->
-      <section id="section-regions" class="">
-        <div class="container-fluid text-white">
-          <div class="row row-columns-3">
-          <div class="col-4 p-0 d-flex flex-column justify-content-center align-items-center sec-services">
-            <div>
-              <img class="w-100 position-relative z-n1" src="./img/img-index/marmara-reg.jpg" alt="">
-            </div>
-            <div
-              class="position-absolute"
-            >              
-              <h1 class="fw-light ">Marmara Region</h1>
-              <h2 class="fw-lighter text-center">İstanbul</h2>
-            </div>
+    <!-- ----------- TURKEY GUIDE ------------ -->
+    <section id="section-regions" class="">
+      <div class="container-fluid text-white">
+        <div class="row row-columns-3">
+          <div class="col-4 sec-services">
+            <a href="#" class="d-flex flex-column justify-content-center">
+              <img class="region-img" src="./img/img-index/marmara-reg.jpg" alt="Marmara Region">
+              <div class="d-flex flex-column">
+                <span class="fw-light fs-5">Marmara Region</span>
+                <span class="fw-lighter text-center fs-6">İstanbul</span>
+              </div>
+            </a>
           </div>
-          <div class="col-4 p-0 d-flex flex-column justify-content-center align-items-center sec-services">
-            <div>
-              <img class="w-100 position-relative z-n1" src="./img/img-index/aegean-reg.jpg" alt="">
-            </div>
-            <div
-              class="position-absolute"
-            >              
-              <h1 class="fw-light ">Aegean Region</h1>
-              <h2 class="fw-lighter text-center">Bodrum</h2>
-            </div>
+          <div class="col-4 sec-services">
+            <a href="#" class="d-flex flex-column justify-content-center">
+              <img class="region-img" src="./img/img-index/aegean-reg.jpg" alt="Aegean Region">
+              <div class="d-flex flex-column">
+                <span class="fw-light fs-5">Aegean Region</span>
+                <span class="fw-lighter text-center fs-6">Bodrum</span>
+              </div>
+            </a>
           </div>
-          <div class="col-4 p-0 d-flex flex-column justify-content-center align-items-center sec-services">
-            <div>
-              <img class="w-100 position-relative z-n1" src="./img/img-index/mediterranean-reg.jpg" alt="">
-            </div>
-            <div
-              class="position-absolute"
-            >              
-              <h1 class="fw-light ">Mediterranean Region</h1>
-              <h2 class="fw-lighter text-center">Antalya</h2>
-            </div>
+          <div class="col-4 sec-services">
+            <a href="#" class="d-flex flex-column justify-content-center">
+              <img class="region-img" src="./img/img-index/mediterranean-reg.jpg" alt="Mediterranean Region">
+              <div class="d-flex flex-column">
+                <span class="fw-light fs-5">Mediterranean Region</span>
+                <span class="fw-lighter text-center fs-6">Antalya</span>
+              </div>
+            </a>
           </div>
 
-          <div class="col-4 p-0 d-flex flex-column justify-content-center align-items-center sec-services">
-            <div>
-              <img class="w-100 position-relative z-n1" src="./img/img-index/central-anatolia-reg.jpg" alt="">
-            </div>
-            <div
-              class="position-absolute"
-            >              
-              <h1 class="fw-light ">Central Anatolia Region</h1>
-              <h2 class="fw-lighter text-center">Nevşehir</h2>
-            </div>
+          <div class="col-4 sec-services">
+            <a href="#" class="d-flex flex-column justify-content-center">
+              <img class="region-img" src="./img/img-index/central-anatolia-reg.jpg" alt="Central Anatolia Region">
+              <div class="d-flex flex-column">
+                <span class="fw-light fs-5">Central Anatolia Region</span>
+                <span class="fw-lighter text-center fs-6">Nevşehir</span>
+              </div>
+            </a>
+          </div>
+          <div class="col-4 sec-services">
+            <a href="#" class="d-flex flex-column justify-content-center">
+              <img class="region-img" src="./img/img-index/eastern-anatolia-reg.jpg" alt="Eastern Anatolia Region">
+              <div class="d-flex flex-column">
+                <span class="fw-light fs-5">Eastern Anatolia Region</span>
+                <span class="fw-lighter text-center fs-6">Erzurum</span>
+              </div>
+            </a>
+          </div>
+          <div class="col-4 sec-services">
+            <a href="#" class="d-flex flex-column justify-content-center">
+              <img class="region-img" src="./img/img-index/black-sea-reg.jpg" alt="Black Sea Region">
+              <div class="d-flex flex-column">
+                <span class="fw-light fs-5">Black Sea Region</span>
+                <span class="fw-lighter text-center fs-6">Rize</span>
+              </div>
+            </a>
+          </div>
+    </section>
 
+    <!-- -----------FAVORITE PROJECTS ------------ -->
+    <section id="section-projects" class="container-fluid fav-prj-bg">
+      <div class="container">
+        <div class="row align-items-center mt-5 mb-3">
+          <div class="col-1">
+            <hr class="border border-dark opacity-75" />
           </div>
-          <div class="col-4 p-0 d-flex flex-column justify-content-center align-items-center sec-services">
-            <div>
-              <img class="w-100 position-relative z-n1" src="./img/img-index/eastern-anatolia-reg.jpg" alt="">
-            </div>
-            <div
-              class="position-absolute"
-            >              
-              <h1 class="fw-light ">Eastern Anatolia Region</h1>
-              <h2 class="fw-lighter text-center">Erzurum</h2>
-            </div>
-          </div>
-          <div class="col-4 p-0 d-flex flex-column justify-content-center align-items-center sec-services">
-            <div>
-              <img class="w-100 position-relative z-n1" src="./img/img-index/black-sea-reg.jpg" alt="">
-            </div>
-            <div
-              class="position-absolute"
-            >              
-              <h1 class="fw-light ">Black Sea Region</h1>
-              <h2 class="fw-lighter text-center">Rize</h2>
-            </div>
-          </div>
-      </section>
-
-      <!-- -----------FAVORITE PROJECTS ------------ -->
-      <section id="section-projects" class="container-fluid fav-prj-bg">
-        <div class="container">
-          <div class="row align-items-center mt-5 mb-3">
-            <div class="col-1">
-              <hr class="border border-dark opacity-75" />
-            </div>
-            <div class="col fs-2 p-0">Favorite Projects</div>
-          </div>
-          <div class="row justify-content-center mb-5">
-            <div
-              id="index-mini-selection-area"
-              class="row justify-content-center"
-            >
-              <div class="col-4 d-flex bg-gold-gradient p-3">
-                <div
-                  class="col-2 d-flex align-items-center justify-content-center"
-                >
-                  <i class="bi bi-sliders text-white"></i>
-                </div>
-                <div class="col-5 res-select-col px-3">
-                  <select
-                    class="fs-5 res-select selection-bg form-select border-0 border-end border-2 text-white rounded-0"
-                    aria-label="City"
-                  >
-                    <option class="form-select-bg" selected>City</option>
-                    <option value="1">One</option>
-                    <option value="2">Two</option>
-                    <option value="3">Three</option>
-                  </select>
-                </div>
-                <div class="col-5 res-select-col px-3">
-                  <select
-                    class="fs-5 res-select selection-bg form-select border-0 text-white rounded-0"
-                    aria-label="District"
-                  >
-                    <option selected>District</option>
-                    <option value="1">One</option>
-                    <option value="2">Two</option>
-                    <option value="3">Three</option>
-                  </select>
-                </div>
+          <div class="col fs-4 p-0">Favorite Projects</div>
+        </div>
+        <div class="row justify-content-center mb-5">
+          <div id="index-mini-selection-area" class="row justify-content-center">
+            <div class="col-4 d-flex justify-content-between align-items-center bg-gold-gradient p-3">
+              <div>
+                <i class="bi bi-sliders text-white"></i>
+              </div>
+              <div class="col-5 res-select-col">
+                <select class="res-select selection-bg form-select border-0 border-end border-2 text-white rounded-0"
+                  aria-label="City">
+                  <option class="form-select-bg" selected>City</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </select>
+              </div>
+              <div class="col-5 res-select-col">
+                <select class="res-select selection-bg form-select border-0 text-white rounded-0" aria-label="District">
+                  <option selected>District</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </select>
               </div>
             </div>
-          </div>
-
-          <!-- Swiper 1-->
-          <div #swiperRef="" class="swiper index-fav-prj-mySwiper">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <div class="p-4">
-                  <a
-                    class="card rounded-0 real-est-shadow text-decoration-none text-dark"
-                    href="./real-estate-detail.html"
-                  >
-                    <img
-                      src="https://picsum.photos/400"
-                      class="card-img-top rounded-0"
-                      alt="..."
-                    />
-                    <div class="card-img-overlay res-overlay">
-                      <span
-                        class="card-title bg-gold-gradient text-white fs-5 px-4 py-2 mt-2 real-est-shadow"
-                        >DIAMOND 01</span
-                      >
-                    </div>
-                    <div class="card-body p-3">
-                      <h5 class="card-title res-det-text-color fw-medium p-2">
-                        <img
-                          src="./img/img-icons/index-icon-location.png"
-                          alt=""
-                        />
-                        ISTANBUL, FLORYA
-                      </h5>
-                      <div
-                        class="d-flex justify-content-between fw-medium my-4"
-                      >
-                        <div class="d-flex">
-                          <div class="p-1">
-                            <img
-                              src="./img/img-real-estate/real-estate-bed.jpg"
-                              alt="bed"
-                            />
-                          </div>
-                          <div class="p-1">3+1</div>
-                        </div>
-                        <div class="d-flex">
-                          <div class="p-1">
-                            <img
-                              src="./img/img-real-estate/real-estate-apartment.jpg"
-                              alt="apartment"
-                            />
-                          </div>
-                          <div class="p-1">Apartment</div>
-                        </div>
-                        <div class="d-flex">
-                          <div class="p-1">
-                            <img
-                              src="./img/img-real-estate/real-estate-dimension.jpg"
-                              alt="dimension"
-                            />
-                          </div>
-                          <div class="p-1">120 m2</div>
-                        </div>
-                      </div>
-                      <div
-                        class="d-flex justify-content-between align-items-center m-1"
-                      >
-                        <span class="btn btn-dark rounded-0 px-5 py-3 fs-6"
-                          >More Info</span
-                        >
-                        <span class="fw-bold fs-4">$ 1.200.000</span>
-                      </div>
-                    </div>
-                  </a>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="p-4">
-                  <a
-                    class="card rounded-0 real-est-shadow text-decoration-none text-dark"
-                    href="./real-estate-detail.html"
-                  >
-                    <img
-                      src="https://picsum.photos/400"
-                      class="card-img-top rounded-0"
-                      alt="..."
-                    />
-                    <div class="card-img-overlay res-overlay">
-                      <span
-                        class="card-title bg-gold-gradient text-white fs-5 px-4 py-2 mt-2 real-est-shadow"
-                        >DIAMOND 01</span
-                      >
-                    </div>
-                    <div class="card-body p-3">
-                      <h5 class="card-title res-det-text-color fw-medium p-2">
-                        <img
-                          src="./img/img-icons/index-icon-location.png"
-                          alt=""
-                        />
-                        ISTANBUL, FLORYA
-                      </h5>
-                      <div
-                        class="d-flex justify-content-between fw-medium my-4"
-                      >
-                        <div class="d-flex">
-                          <div class="p-1">
-                            <img
-                              src="./img/img-real-estate/real-estate-bed.jpg"
-                              alt="bed"
-                            />
-                          </div>
-                          <div class="p-1">3+1</div>
-                        </div>
-                        <div class="d-flex">
-                          <div class="p-1">
-                            <img
-                              src="./img/img-real-estate/real-estate-apartment.jpg"
-                              alt="apartment"
-                            />
-                          </div>
-                          <div class="p-1">Apartment</div>
-                        </div>
-                        <div class="d-flex">
-                          <div class="p-1">
-                            <img
-                              src="./img/img-real-estate/real-estate-dimension.jpg"
-                              alt="dimension"
-                            />
-                          </div>
-                          <div class="p-1">120 m2</div>
-                        </div>
-                      </div>
-                      <div
-                        class="d-flex justify-content-between align-items-center m-1"
-                      >
-                        <span class="btn btn-dark rounded-0 px-5 py-3 fs-6"
-                          >More Info</span
-                        >
-                        <span class="fw-bold fs-4">$ 1.200.000</span>
-                      </div>
-                    </div>
-                  </a>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="p-4">
-                  <a
-                    class="card rounded-0 real-est-shadow text-decoration-none text-dark"
-                    href="./real-estate-detail.html"
-                  >
-                    <img
-                      src="https://picsum.photos/400"
-                      class="card-img-top rounded-0"
-                      alt="..."
-                    />
-                    <div class="card-img-overlay res-overlay">
-                      <span
-                        class="card-title bg-gold-gradient text-white fs-5 px-4 py-2 mt-2 real-est-shadow"
-                        >DIAMOND 01</span
-                      >
-                    </div>
-                    <div class="card-body p-3">
-                      <h5 class="card-title res-det-text-color fw-medium p-2">
-                        <img
-                          src="./img/img-icons/index-icon-location.png"
-                          alt=""
-                        />
-                        ISTANBUL, FLORYA
-                      </h5>
-                      <div
-                        class="d-flex justify-content-between fw-medium my-4"
-                      >
-                        <div class="d-flex">
-                          <div class="p-1">
-                            <img
-                              src="./img/img-real-estate/real-estate-bed.jpg"
-                              alt="bed"
-                            />
-                          </div>
-                          <div class="p-1">3+1</div>
-                        </div>
-                        <div class="d-flex">
-                          <div class="p-1">
-                            <img
-                              src="./img/img-real-estate/real-estate-apartment.jpg"
-                              alt="apartment"
-                            />
-                          </div>
-                          <div class="p-1">Apartment</div>
-                        </div>
-                        <div class="d-flex">
-                          <div class="p-1">
-                            <img
-                              src="./img/img-real-estate/real-estate-dimension.jpg"
-                              alt="dimension"
-                            />
-                          </div>
-                          <div class="p-1">120 m2</div>
-                        </div>
-                      </div>
-                      <div
-                        class="d-flex justify-content-between align-items-center m-1"
-                      >
-                        <span class="btn btn-dark rounded-0 px-5 py-3 fs-6"
-                          >More Info</span
-                        >
-                        <span class="fw-bold fs-4">$ 1.200.000</span>
-                      </div>
-                    </div>
-                  </a>
-                </div>
-              </div>
-
-              <div class="swiper-slide">
-                <div class="p-4">
-                  <a
-                    class="card rounded-0 real-est-shadow text-decoration-none text-dark"
-                    href="./real-estate-detail.html"
-                  >
-                    <img
-                      src="https://picsum.photos/400"
-                      class="card-img-top rounded-0"
-                      alt="..."
-                    />
-                    <div class="card-img-overlay res-overlay">
-                      <span
-                        class="card-title bg-gold-gradient text-white fs-5 px-4 py-2 mt-2 real-est-shadow"
-                        >DIAMOND 01</span
-                      >
-                    </div>
-                    <div class="card-body p-3">
-                      <h5 class="card-title res-det-text-color fw-medium p-2">
-                        <img
-                          src="./img/img-icons/index-icon-location.png"
-                          alt=""
-                        />
-                        ISTANBUL, FLORYA
-                      </h5>
-                      <div
-                        class="d-flex justify-content-between fw-medium my-4"
-                      >
-                        <div class="d-flex">
-                          <div class="p-1">
-                            <img
-                              src="./img/img-real-estate/real-estate-bed.jpg"
-                              alt="bed"
-                            />
-                          </div>
-                          <div class="p-1">3+1</div>
-                        </div>
-                        <div class="d-flex">
-                          <div class="p-1">
-                            <img
-                              src="./img/img-real-estate/real-estate-apartment.jpg"
-                              alt="apartment"
-                            />
-                          </div>
-                          <div class="p-1">Apartment</div>
-                        </div>
-                        <div class="d-flex">
-                          <div class="p-1">
-                            <img
-                              src="./img/img-real-estate/real-estate-dimension.jpg"
-                              alt="dimension"
-                            />
-                          </div>
-                          <div class="p-1">120 m2</div>
-                        </div>
-                      </div>
-                      <div
-                        class="d-flex justify-content-between align-items-center m-1"
-                      >
-                        <span class="btn btn-dark rounded-0 px-5 py-3 fs-6"
-                          >More Info</span
-                        >
-                        <span class="fw-bold fs-4">$ 1.200.000</span>
-                      </div>
-                    </div>
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-pagination"></div>
           </div>
         </div>
-        <div
-          class="d-flex justify-content-between index-fav-prj-swp-btn-position-bottom position-relative"
-        >
-          <div
-            class="swiper-button-prev icon-gold index-fav-prj-swp-btn-position"
-          ></div>
-          <div
-            class="swiper-button-next icon-gold index-fav-prj-swp-btn-position"
-          ></div>
-        </div>
-      </section>
 
-      <!-- ----------- CITIZENSHIP PROGRAM ------------ -->
-      <section id="section-citizenship">
-        <div class="container">
-          <div class="col-7 offset-3">
+        <!-- Swiper 1-->
+        <div #swiperRef="" class="swiper index-fav-prj-mySwiper ">
+          <div class="swiper-wrapper mb-5">
+
+            <div class="swiper-slide">
+              <div class="p-3">
+                <a class="card rounded-0 real-est-shadow text-decoration-none text-dark"
+                  href="./real-estate-detail.html">
+                  <img src="https://picsum.photos/300" class="card-img-top rounded-0" alt="..." />
+                  <div class="card-img-overlay res-overlay">
+                    <span class="card-title bg-gold-gradient text-white fs-6 px-4 py-2 mt-2 real-est-shadow">DIAMOND
+                      01</span>
+                  </div>
+                  <div class="card-body p-3">
+                    <h5 class="card-title res-det-text-color fw-medium p-2 fs-6">
+                      <svg class="icon icon-location" width="20" height="20">
+                        <use xlink:href="./svg/symbol-defs.svg#icon-location"></use>
+                      </svg>
+                      ISTANBUL, FLORYA
+                    </h5>
+                    <div class="d-flex justify-content-between fw-medium my-4">
+                      <div class="d-flex">
+                        <div class="p-1">
+                          <svg class="icon icon-bed" width="30" height="30">
+                            <use xlink:href="./svg/symbol-defs.svg#icon-bed"></use>
+                          </svg>
+                        </div>
+                        <div class="p-1">3+1</div>
+                      </div>
+                      <div class="d-flex">
+                        <div class="p-1">
+                          <svg class="icon icon-apartment" width="25" height="25">
+                            <use xlink:href="./svg/symbol-defs.svg#icon-apartment"></use>
+                          </svg>
+                        </div>
+                        <div class="p-1">apartment</div>
+                      </div>
+                      <div class="d-flex">
+                        <div class="p-1">
+                          <svg class="icon icon-size" width="20" height="20">
+                            <use xlink:href="./svg/symbol-defs.svg#icon-size"></use>
+                          </svg>
+                        </div>
+                        <div class="p-1">120 m2</div>
+                      </div>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center m-1">
+                      <span class="btn btn-dark rounded-0 px-4 py-2 fs-6">More Info</span>
+                      <span class="fw-bold fs-5">$ 1.200.000</span>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="p-3">
+                <a class="card rounded-0 real-est-shadow text-decoration-none text-dark"
+                  href="./real-estate-detail.html">
+                  <img src="https://picsum.photos/300" class="card-img-top rounded-0" alt="..." />
+                  <div class="card-img-overlay res-overlay">
+                    <span class="card-title bg-gold-gradient text-white fs-6 px-4 py-2 mt-2 real-est-shadow">DIAMOND
+                      01</span>
+                  </div>
+                  <div class="card-body p-3">
+                    <h5 class="card-title res-det-text-color fw-medium p-2 fs-6">
+                      <svg class="icon icon-location" width="20" height="20">
+                        <use xlink:href="./svg/symbol-defs.svg#icon-location"></use>
+                      </svg>
+                      ISTANBUL, FLORYA
+                    </h5>
+                    <div class="d-flex justify-content-between fw-medium my-4">
+                      <div class="d-flex">
+                        <div class="p-1">
+                          <svg class="icon icon-bed" width="30" height="30">
+                            <use xlink:href="./svg/symbol-defs.svg#icon-bed"></use>
+                          </svg>
+                        </div>
+                        <div class="p-1">3+1</div>
+                      </div>
+                      <div class="d-flex">
+                        <div class="p-1">
+                          <svg class="icon icon-apartment" width="25" height="25">
+                            <use xlink:href="./svg/symbol-defs.svg#icon-apartment"></use>
+                          </svg>
+                        </div>
+                        <div class="p-1">apartment</div>
+                      </div>
+                      <div class="d-flex">
+                        <div class="p-1">
+                          <svg class="icon icon-size" width="20" height="20">
+                            <use xlink:href="./svg/symbol-defs.svg#icon-size"></use>
+                          </svg>
+                        </div>
+                        <div class="p-1">120 m2</div>
+                      </div>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center m-1">
+                      <span class="btn btn-dark rounded-0 px-4 py-2 fs-6">More Info</span>
+                      <span class="fw-bold fs-5">$ 1.200.000</span>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="p-3">
+                <a class="card rounded-0 real-est-shadow text-decoration-none text-dark"
+                  href="./real-estate-detail.html">
+                  <img src="https://picsum.photos/300" class="card-img-top rounded-0" alt="..." />
+                  <div class="card-img-overlay res-overlay">
+                    <span class="card-title bg-gold-gradient text-white fs-6 px-4 py-2 mt-2 real-est-shadow">DIAMOND
+                      01</span>
+                  </div>
+                  <div class="card-body p-3">
+                    <h5 class="card-title res-det-text-color fw-medium p-2 fs-6">
+                      <svg class="icon icon-location" width="20" height="20">
+                        <use xlink:href="./svg/symbol-defs.svg#icon-location"></use>
+                      </svg>
+                      ISTANBUL, FLORYA
+                    </h5>
+                    <div class="d-flex justify-content-between fw-medium my-4">
+                      <div class="d-flex">
+                        <div class="p-1">
+                          <svg class="icon icon-bed" width="30" height="30">
+                            <use xlink:href="./svg/symbol-defs.svg#icon-bed"></use>
+                          </svg>
+                        </div>
+                        <div class="p-1">3+1</div>
+                      </div>
+                      <div class="d-flex">
+                        <div class="p-1">
+                          <svg class="icon icon-apartment" width="25" height="25">
+                            <use xlink:href="./svg/symbol-defs.svg#icon-apartment"></use>
+                          </svg>
+                        </div>
+                        <div class="p-1">apartment</div>
+                      </div>
+                      <div class="d-flex">
+                        <div class="p-1">
+                          <svg class="icon icon-size" width="20" height="20">
+                            <use xlink:href="./svg/symbol-defs.svg#icon-size"></use>
+                          </svg>
+                        </div>
+                        <div class="p-1">120 m2</div>
+                      </div>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center m-1">
+                      <span class="btn btn-dark rounded-0 px-4 py-2 fs-6">More Info</span>
+                      <span class="fw-bold fs-5">$ 1.200.000</span>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="p-3">
+                <a class="card rounded-0 real-est-shadow text-decoration-none text-dark"
+                  href="./real-estate-detail.html">
+                  <img src="https://picsum.photos/300" class="card-img-top rounded-0" alt="..." />
+                  <div class="card-img-overlay res-overlay">
+                    <span class="card-title bg-gold-gradient text-white fs-6 px-4 py-2 mt-2 real-est-shadow">DIAMOND
+                      01</span>
+                  </div>
+                  <div class="card-body p-3">
+                    <h5 class="card-title res-det-text-color fw-medium p-2 fs-6">
+                      <svg class="icon icon-location" width="20" height="20">
+                        <use xlink:href="./svg/symbol-defs.svg#icon-location"></use>
+                      </svg>
+                      ISTANBUL, FLORYA
+                    </h5>
+                    <div class="d-flex justify-content-between fw-medium my-4">
+                      <div class="d-flex">
+                        <div class="p-1">
+                          <svg class="icon icon-bed" width="30" height="30">
+                            <use xlink:href="./svg/symbol-defs.svg#icon-bed"></use>
+                          </svg>
+                        </div>
+                        <div class="p-1">3+1</div>
+                      </div>
+                      <div class="d-flex">
+                        <div class="p-1">
+                          <svg class="icon icon-apartment" width="25" height="25">
+                            <use xlink:href="./svg/symbol-defs.svg#icon-apartment"></use>
+                          </svg>
+                        </div>
+                        <div class="p-1">apartment</div>
+                      </div>
+                      <div class="d-flex">
+                        <div class="p-1">
+                          <svg class="icon icon-size" width="20" height="20">
+                            <use xlink:href="./svg/symbol-defs.svg#icon-size"></use>
+                          </svg>
+                        </div>
+                        <div class="p-1">120 m2</div>
+                      </div>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center m-1">
+                      <span class="btn btn-dark rounded-0 px-4 py-2 fs-6">More Info</span>
+                      <span class="fw-bold fs-5">$ 1.200.000</span>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+      <div class="d-flex justify-content-between index-fav-prj-swp-btn-position-bottom position-relative">
+        <div class="swiper-button-prev icon-gold index-fav-prj-swp-btn-position"></div>
+        <div class="swiper-button-next icon-gold index-fav-prj-swp-btn-position"></div>
+      </div>
+    </section>
+
+    <!-- ----------- CITIZENSHIP PROGRAM ------------ -->
+    <section id="section-citizenship">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-8">
             <div class="row align-items-center justify-content-end my-5 pt-5">
               <div class="col-2">
                 <hr class="border border-dark opacity-75" />
               </div>
-              <div class="col fs-2">CITIZENSHIP PROGRAM</div>
+              <div class="col fs-4">CITIZENSHIP PROGRAM</div>
             </div>
-            <div class="row mb-4 font-playfair-display fw-medium text-al-jstfy">
-              <h1 class="display-5">How To Get Turkish Citizenship?</h1>
+            <div class="row mb-4 font-playfair-display fw-medium text-center">
+              <h2 class="fs-1">How To Get Turkish Citizenship?</h2>
             </div>
-            <div class="fs-4 lh-1 text-al-jstfy text-al-last mb-5 pe-5">
+            <div class="fs-5 text-center mb-5 pe-5">
               <p>
                 Foreigners can obtain Turkish citizenship after the amendment to
                 the naturalization laws in Turkey in 2018 through several
@@ -739,679 +589,483 @@
             </div>
           </div>
         </div>
+      </div>
 
-        <div class="container-fluid p-0">
-          <hr class="col-4 offset-4 my-0 border-4 icon-gold opacity-100" />
-          <a href="./citizenship-program.html">
-            <img
-              class="w-100"
-              src="./img/img-index/index-sec-ctz-intro.png"
-              alt="citizenship-program"
-            />
-          </a>
-        </div>
-      </section>
-      <!-- ----------- PROPERTY MANAGEMENT ------------ -->
-      <section id="section-property-management">
-        <div class="container-fluid">
-          <div
-            id="input-area"
-            class="row sec-prop-management-bg text-white align-items-center py-5"
-          >
-            <div class="col-5 p-5 ps-4 ms-2 me-5 d-flex flex-column">
-              <div class="">
-                <div
-                  class="col-2 d-flex align-items-end border-bottom border-white border-2 opacity-100"
-                >
-                  <hr />
-                </div>
-                <div class="col offset-1 pt-2">
-                  <h1 class="display-4 fw-bold lh-sm">PROPERTY MANAGEMENT</h1>
-                </div>
+      <div class="container-fluid p-0">
+        <hr class="col-4 offset-4 my-0 border-4 icon-gold opacity-100" />
+        <a href="./citizenship-program.html">
+          <img class="w-100" src="./img/passport-bg.jpg
+          " alt="citizenship-program" />
+        </a>
+      </div>
+    </section>
+    <!-- ----------- PROPERTY MANAGEMENT ------------ -->
+    <section id="section-property-management">
+      <div class="container-fluid pt-6">
+        <div id="input-area" class="row text-white align-items-center py-5">
+          <div class="col-4 p-5 ps-4 ms-2 me-5 d-flex flex-column">
+            <div class="">
+              <div class="col-2 d-flex align-items-end border-bottom border-white border-2 opacity-100">
+                <hr />
               </div>
-            </div>
-            <div class="col-5 text-center ps-5 ms-5 mt-3">
-              <form>
-                <fieldset class="d-flex justify-content-center">
-                  <div class="mb-3 mx-1">
-                    <label
-                      for="InputMessage1"
-                      class="form-label m-0 d-flex justify-content-start d-flex justify-content-start"
-                      >How can we help you?</label
-                    >
-                    <input
-                      type="text"
-                      class="form-control rounded-0"
-                      id="InputMessage1"
-                    />
-                  </div>
-                  <div class="mb-3 mx-1">
-                    <label
-                      for="InputFirstName"
-                      class="form-label m-0 d-flex justify-content-start"
-                      >First Name</label
-                    >
-                    <input
-                      type="text"
-                      class="form-control rounded-0"
-                      id="InputFirstName"
-                    />
-                  </div>
-                  <div class="mb-3 mx-1">
-                    <label
-                      for="InputLastName"
-                      class="form-label m-0 d-flex justify-content-start"
-                      >Last Name</label
-                    >
-                    <input
-                      type="text"
-                      class="form-control rounded-0"
-                      id="InputLastName"
-                    />
-                  </div>
-                </fieldset>
-                <fieldset class="d-flex justify-content-center">
-                  <div class="mb-3 mx-1">
-                    <label
-                      for="InputEmail"
-                      class="form-label m-0 d-flex justify-content-start"
-                      >Email</label
-                    >
-                    <input
-                      type="email"
-                      class="form-control rounded-0"
-                      id="InputEmail"
-                    />
-                  </div>
-                  <div class="mb-3 mx-1">
-                    <label
-                      for="InputTel"
-                      class="form-label m-0 d-flex justify-content-start"
-                      >Phone Number</label
-                    >
-                    <input
-                      type="tel"
-                      class="form-control rounded-0"
-                      id="InputTel"
-                    />
-                  </div>
-                  <div class="mx-1 mt-3 pt-2">
-                    <button
-                      type="submit"
-                      class="btn prop-management-bg-button text-white rounded-0"
-                      style="width: 183px"
-                    >
-                      Send
-                    </button>
-                  </div>
-                </fieldset>
-              </form>
-            </div>
-            <div class="col-auto ms-4">
-              <a href="./property-management.html">
-                <img
-                  class="img-fluid"
-                  src="./img/img-icons/icon-arrow-right-white.png"
-                  alt="Arrow Right"
-                />
-              </a>
+              <div class="col offset-1 pt-2">
+                <h1 class="display-5 fw-bold lh-sm" style="text-shadow: 3px 2px 20px rgba(0,0,0,.6);">PROPERTY MANAGEMENT</h1>
+              </div>
             </div>
           </div>
+          <div class="col-6 text-center ps-5 ms-5 mt-3">
+            <form>
+              <fieldset class="d-flex justify-content-center">
+                <div class="mb-3 mx-1">
+                  <label for="InputMessage1"
+                    class="form-label small m-0 d-flex justify-content-start d-flex justify-content-start">How can we help
+                    you?</label>
+                  <input type="text" class="form-control rounded-0" id="InputMessage1" />
+                </div>
+                <div class="mb-3 mx-1">
+                  <label for="InputFirstName" class="form-label small m-0 d-flex justify-content-start">First Name</label>
+                  <input type="text" class="form-control rounded-0" id="InputFirstName" />
+                </div>
+                <div class="mb-3 mx-1">
+                  <label for="InputLastName" class="form-label small m-0 d-flex justify-content-start">Last Name</label>
+                  <input type="text" class="form-control rounded-0" id="InputLastName" />
+                </div>
+              </fieldset>
+              <fieldset class="d-flex justify-content-center align-items-end">
+                <div class="mb-3 mx-1">
+                  <label for="InputEmail" class="form-label small m-0 d-flex justify-content-start">Email</label>
+                  <input type="email" class="form-control rounded-0" id="InputEmail" />
+                </div>
+                <div class="mb-3 mx-1">
+                  <label for="InputTel" class="form-label small m-0 d-flex justify-content-start">Phone Number</label>
+                  <input type="tel" class="form-control rounded-0" id="InputTel" />
+                </div>
+                <div class="mb-3 mx-1">
+                  <button type="submit" class="btn prop-management-bg-button text-white rounded-0" style="width: 183px">
+                    Send
+                  </button>
+                </div>
+              </fieldset>
+            </form>
+          </div>
+          <div class="col-auto ms-4">
+            <a href="./property-management.html">
+              <svg fill="#fff" class="icon icon-arrow-left" width="50" height="50">
+                <use xlink:href="./svg/symbol-defs.svg#icon-arrow-left"></use>
+              </svg>
+            </a>
+          </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <!-- ----------- SERVICES ------------ -->
-      <section id="section-services">
-        <div class="container-fluid">
-          <div class="row">
-            <div class="col-4 index-sec-services-bg text-white">
-              <div class="row h-100">
-                <div
-                  class="col-2 offset-1 d-flex align-items-end border-bottom border-white border-2 opacity-100"
-                >
-                  <hr />
-                </div>
+    <!-- ----------- SERVICES ------------ -->
+    <section id="section-services position-relative">
+      <div class="container-fluid">
+        <div class="row  vh-100">
+          <div
+            class="col-4 index-sec-services-bg position-relative text-white d-flex justify-content-center flex-column ps-6">
+            <h2 class="services-title font-playfair-display fw-semibold position-relative z-1">Services</h2>
+            <p class="mt-5">
+              We can help you discover the incredibly exclusive
+              architecture and some of Istanbul's most desirable
+              features.
+            </p>
+            <a class="mt-5" href="#">
+              <svg fill="#fff" class="icon icon-arrow-left" width="50" height="50">
+                <use xlink:href="./svg/symbol-defs.svg#icon-arrow-left"></use>
+              </svg>
+            </a>
+          </div>
 
-                <div class="container offset-3">
-                  <div class="row align-items-center">
-                    <div
-                      class="col ps-5 font-playfair-display fw-semibold position-relative z-1"
-                    >
-                      <h1 class="" style="font-size: 150px">Services</h1>
-                    </div>
-                    <div class="col-9 p-5 fw-lighter fs-3 lh-1 text-al-jstfy">
-                      <p>
-                        We can help you discover the incredibly exclusive
-                        architecture and some of Istanbul's most desirable
-                        features.
-                      </p>
-                    </div>
-                    <div class="ps-5">
-                      <a href="#">
-                        <img
-                          class="img-fluid"
-                          src="./img/img-icons/icon-arrow-right-white.png"
-                          alt="Arrow Right"
-                        />
-                      </a>
-                    </div>
+          <div class="col-8">
+            <div class="row row-cols-3 h-100">
+              <div class="card text-bg-dark rounded-0 p-0" style="background-image: url(./img/services-real-estate.jpg);">
+                <a href="#" class="text-decoration-none px-5 text-white card-img-overlay d-flex flex-column justify-content-end p-0">
+                  <div class="mb-3">
+                    <span class="border-start border-1 p-4 d-block"></span>
                   </div>
-                </div>
+                  <h4 class="card-title fw-light py-2 fs-6">01</h4>
+                 <div style="height: 200px;">
+                  <h1 class="card-title font-playfair-display fs-3 lh-1 my-5 pb-5">
+                    Real <br> Estate
+                  </h1>
+                 </div>
+                </a>
               </div>
-            </div>
-
-            <div class="col-8">
-              <div class="row row-cols-3">
-                <div class="card text-bg-dark rounded-0 p-0">
-                  <img
-                    src="./img/img-index/index-sec-services-real-estate.jpg"
-                    class="card-img rounded-0 w-100 sec-services"
-                    alt="Real Estate"
-                  />
-                  <div
-                    class="col-5 offset-2 card-img-overlay d-flex flex-column justify-content-end p-0"
-                  >
-                    <div class="mb-4">
-                      <span class="border-start border-2 p-5 d-block"></span>
-                    </div>
-                    <h4 class="card-title fw-light py-2">01</h4>
-                    <h1
-                      class="card-title font-playfair-display display-5 lh-1 my-5 pb-5"
-                    >
-                      Real Estate
-                    </h1>
+              <div class="card text-bg-dark rounded-0 p-0" style="background-image: url(./img/services-turkish-passport.jpg);">
+                <a href="#" class="text-decoration-none px-5 text-white card-img-overlay d-flex flex-column justify-content-end p-0">
+                  <div class="mb-3">
+                    <span class="border-start border-1 p-4 d-block"></span>
                   </div>
-                </div>
-                <div class="card text-bg-dark rounded-0 p-0">
-                  <img
-                    src="./img/img-index/index-sec-services-passaport.jpg"
-                    class="card-img rounded-0 w-100 sec-services"
-                    alt="passport"
-                  />
-                  <div
-                    class="col-6 offset-2 card-img-overlay d-flex flex-column justify-content-end p-0"
-                  >
-                    <div class="mb-4">
-                      <span class="border-start border-2 p-5 d-block"></span>
-                    </div>
-                    <h4 class="card-title fw-light py-2">02</h4>
-                    <h1
-                      class="card-title font-playfair-display display-5 lh-1 my-5 pb-5"
-                    >
+                  <h4 class="card-title fw-light py-2 fs-6">02</h4>
+                  <div style="height: 200px;">
+                    <h1 class="card-title font-playfair-display fs-3 lh-1 my-5 pb-5">
                       Turkish Passport
                     </h1>
                   </div>
-                </div>
-                <div class="card text-bg-dark rounded-0 p-0">
-                  <img
-                    src="./img/img-index/index-sec-services-consultansy.jpg"
-                    class="card-img rounded-0 w-100 sec-services"
-                    alt="consultansy"
-                  />
-                  <div
-                    class="col-8 offset-2 card-img-overlay d-flex flex-column justify-content-end p-0"
-                  >
-                    <div class="mb-4">
-                      <span class="border-start border-2 p-5 d-block"></span>
-                    </div>
-                    <h4 class="card-title fw-light py-2">03</h4>
-                    <h1
-                      class="card-title font-playfair-display display-5 lh-1 mt-5"
-                    >
-                      Consultancy
-                    </h1>
-                    <ul
-                      class="ul-marker-removed fs-5 fw-light lh-sm mb-0 pt-3 pb-5 ps-2"
-                    >
-                      <li>- Trade</li>
-                      <li>- Education</li>
-                      <li>- Health</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- ----------- BLOG ------------ -->
-      <section id="section-blog">
-        <div class="container-fluid my-5 py-5">
-          <div class="row p-5 align-items-center">
-            <div class="col-1">
-              <hr class="border border-dark opacity-75" />
-            </div>
-            <div class="col fs-2">BLOG</div>
-          </div>
-          <div class="container-fluid mb-5">
-            <div class="row justify-content-evenly">
-              <div class="col-5 d-flex flex-column p-0 mx-4">
-                <img
-                  class="img-fluid"
-                  src="./img/img-index/index-sec-blog-flag.jpg"
-                  alt="TR Flag"
-                />
-
-                <div class="col d-flex flex-column justify-content-between">
-                  <div class="mt-4">
-                    <h1 class="fw-bold display-5 mb-4">
-                      What is Tapu in Turkey, and Why Do You Need It?
-                    </h1>
-                    <p class="fs-4 lh-1 text-al-jstfy">
-                      Any purchase of real estate is associated with the issuing
-                      of title documents. In Turkey, the owner receives a TAPU -
-                      a certificate of ownership. What is this document, what
-                      the registration procedure involves, and what has changed
-                      in the legislation in 2022 regarding the receipt of TAPU -
-                      read in our today's review.
-                    </p>
-                  </div>
-                  <div class="fs-3 fw-medium text-secondary mb-4">
-                    Oct 19, 2023
-                  </div>
-                </div>
-              </div>
-              <div class="col-5 d-flex flex-column p-0 mx-4">
-                <div class="row">
-                  <div class="col-6 mb-4">
-                    <img
-                      class="img-fluid"
-                      src="./img/img-index/index-sec-blog-writing.jpg"
-                      alt="writing"
-                    />
-                  </div>
-                  <div
-                    class="col-6 d-flex flex-column justify-content-between mb-4"
-                  >
-                    <div class="d-flex flex-column">
-                      <h2 class="fw-bold lh-1 mb-3">
-                        Iskan: A Technical Passport for Real Estate in Turkey
-                      </h2>
-                      <p class="fs-5 lh-1 text-al-jstfy">
-                        Iskan in Turkey is a document confirming that the
-                        building has been completed, meets all project
-                        requirements, cadastral plan, and technical
-                        requirements, and is suitable for living.
-                      </p>
-                    </div>
-                    <div class="fs-5 fw-medium text-secondary">
-                      Oct 20, 2023
-                    </div>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col-6 mb-4">
-                    <img
-                      class="img-fluid"
-                      src="./img/img-index/index-sec-blog-reit.jpg"
-                      alt="writing"
-                    />
-                  </div>
-                  <div
-                    class="col-6 d-flex flex-column justify-content-between mb-4"
-                  >
-                    <div class="d-flex flex-column">
-                      <h2 class="fw-bold lh-1 mb-3">
-                        Reasons and Benefits of Investing in Turkish Property
-                        with Diamond Key Real Estate
-                      </h2>
-
-                      <p class="fs-5 lh-1 text-al-jstfy">
-                        The Turkish real estate market has recently entered the
-                        international investment platform hence real estate
-                        prices in Turkey remain still at a fairly low level.
-                      </p>
-                    </div>
-                    <div class="fs-5 fw-medium text-secondary">
-                      Oct 20, 2023
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div
-                class="col-1 d-flex justify-content-center align-items-center p-0 ps-5"
-              >
-                <a href="./blog.html">
-                  <img
-                    class="img-fluid"
-                    src="./img/img-icons/icon-arrow-right-gold.png"
-                    alt="arrow-right-gold"
-                  />
                 </a>
               </div>
-            </div>
-          </div>
-        </div>
-      </section>
 
-      <!-- ----------- REFERENCES ------------ -->
-      <section id="section-references" class="container-fluid index-references-bg text-white pt-5">
-        <div class="row pt-5">
-          <div class="col-4 ps-5 pt-3">
-            <div class="d-flex">
-              <div class="col-2">
-                <hr class="border opacity-75" />
+              <div class="card text-bg-dark rounded-0 p-0" style="background-image: url(./img/services-consultancy.jpg);">
+                <a href="#" class="text-decoration-none px-5 text-white card-img-overlay d-flex flex-column justify-content-end p-0">
+                  <div class="mb-3">
+                    <span class="border-start border-1 p-4 d-block"></span>
+                  </div>
+                  <h4 class="card-title fw-light py-2 fs-6">03</h4>
+                 <div style="height: 200px;">
+                  <h1 class="card-title font-playfair-display fs-3 lh-1 mt-5">
+                    Consultancy
+                  </h1>
+                  <ul class="ul-marker-removed fs-6 fw-light lh-sm mb-0 pt-3 pb-5 ps-2">
+                    <li>- Trade</li>
+                    <li>- Education</li>
+                    <li>- Health</li>
+                  </ul>
+                 </div>
+                </a>
               </div>
-              <div class="col-auto fs-3 ps-3">REFERENCES</div>
-            </div>
-            <div class="col-10">
-              <h1 class="font-playfair-display fw-medium py-5 my-5">
-                The Brands We Work With.
-              </h1>
-              <p class="text-al-jstfy pe-5">
-                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
-                diam nonummy nibh tincidunt ut laoreet dolore magna erat
-                volutpat.
-              </p>
+
             </div>
           </div>
 
-          <!-- Swiper 2 - references-->
-          <div class="col-8">
-            <div #swiperRef="" class="swiper index-ref-mySwiper">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                  <div
-                    class="img-card px-4 py-5 bg-white d-flex align-items-center"
-                  >
-                    <img
-                      class="img-fluid"
-                      src="./img/img-index/index-logo-nef.png"
-                      alt="..."
-                    />
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div
-                    class="img-card px-4 py-5 bg-white d-flex align-items-center"
-                  >
-                    <img
-                      class="img-fluid"
-                      src="./img/img-index/index-logo-kiler.png"
-                      alt="..."
-                    />
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div
-                    class="img-card px-4 py-5 bg-white d-flex align-items-center"
-                  >
-                    <img
-                      class="img-fluid"
-                      src="./img/img-index/index-logo-torunlar.png"
-                      alt="..."
-                    />
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div
-                    class="img-card px-4 py-5 bg-white d-flex align-items-center"
-                  >
-                    <img
-                      class="img-fluid"
-                      src="./img/img-index/index-logo-kiler.png"
-                      alt="..."
-                    />
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-pagination"></div>
-            </div>
-          </div>
         </div>
-        <div class="position-relative h-50">
-          <div class="swiper-button-prev text-white ps-5"></div>
-          <div
-            class="swiper-button-next text-white index-swp-btn-position-left ps-5"
-          ></div>
-        </div>
-      </section>
+      </div>
+    </section>
 
-      <!-- ----------- SATISFACTION ------------ -->
-      <section id="section-satisfaction" class="container-fluid my-5 py-5">
-        <div class="row p-5 align-items-center justify-content-center">
+    <!-- ----------- BLOG ------------ -->
+    <section id="section-blog">
+      <div class="container-fluid my-5 py-5">
+        <div class="row p-5 align-items-center">
           <div class="col-1">
             <hr class="border border-dark opacity-75" />
           </div>
-          <div class="col-2 fs-2">SATISFACTION</div>
+          <div class="col fs-4">BLOG</div>
         </div>
+        <div class="container-fluid mb-5">
+          <div class="row justify-content-evenly">
+            <div class="col-5 d-flex flex-column p-0 mx-4">
+              <img class="img-fluid" src="./img/img-index/index-sec-blog-flag.jpg" alt="TR Flag" />
 
-        <div class="row">
-          <!-- Swiper 3 - satisfaction -->
-          <div class="col-8 p-0">
-            <div #swiperRef="" class="swiper index-satis-mySwiper">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide" style="transform: translateX(-70%)">
-                  <div
-                    class="index-satisfaction-bg text-white text-al-jstfy fs-6 lh-sm img-card-320"
-                  >
-                    <img
-                      class="pb-3"
-                      src="./img/img-index/index-satisfaction-icon-quotation.png"
-                      alt=""
-                    />
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetuer sed diam nonummy
-                      nibh euismod
-                    </p>
-                    <div class="fw-medium">
-                      <img
-                      class="pe-3"
-                      src="./img/img-index/index-satisfaction-icon-man.png"
-                      alt=""
-                    />Ahmed Velhazır
-                    </div>
-                  </div>
+              <div class="col d-flex flex-column justify-content-between">
+                <div class="mt-4">
+                  <h2 class="fw-bold fs-3 mb-4">
+                    What is Tapu in Turkey, <br>
+                    and Why Do You Need It?
+                  </h2>
+                  <p class="fs-6 text-al-jstfy">
+                    Any purchase of real estate is associated with the issuing
+                    of title documents. In Turkey, the owner receives a TAPU -
+                    a certificate of ownership. What is this document, what
+                    the registration procedure involves, and what has changed
+                    in the legislation in 2022 regarding the receipt of TAPU -
+                    read in our today's review.
+                  </p>
+                  <span class="fw-medium text-secondary">Oct 19, 2023</span>
                 </div>
-
-                <div class="swiper-slide" style="transform: translateX(-70%)">
-                  <div
-                    class="index-satisfaction-bg text-white text-al-jstfy fs-6 lh-sm p-4 img-card-320"
-                  >
-                    <img
-                      class="pb-3"
-                      src="./img/img-index/index-satisfaction-icon-quotation.png"
-                      alt=""
-                    />
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
-                      sed diam nonummy nibh euismod tincidunt ut laoreet dolore
-                      magna aliquam erat volutpat. Ut wisi enim ad minim veniam,
-                      quis nostrud exerci tation ullamcorper suscipit lobortis
-                      nisl ut aliquip ex ea commodo consequat.
-                    </p>
-                    <div class="fw-medium">
-                      <img
-                      class="pe-3"
-                      src="./img/img-index/index-satisfaction-icon-man.png"
-                      alt=""
-                    />Ahmed Velhazır
-                    </div>
-                  </div>
+              </div>
+            </div>
+            <div class="col-5 d-flex flex-column p-0 mx-4">
+              <div class="row">
+                <div class="col-6 mb-4">
+                  <img class="img-fluid" src="./img/img-index/index-sec-blog-writing.jpg" alt="writing" />
                 </div>
-
-                <div class="swiper-slide" style="transform: translateX(-70%)">
-                  <div
-                    class="index-satisfaction-bg text-white text-al-jstfy fs-6 lh-sm p-4 img-card-320"
-                  >
-                    <img
-                      class="pb-3"
-                      src="./img/img-index/index-satisfaction-icon-quotation.png"
-                      alt=""
-                    />
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
-                      sed diam nonummy nibh euismod tincidunt ut laoreet dolore
-                      magna aliquam erat volutpat.
+                <div class="col-6 d-flex flex-column justify-content-between mb-4">
+                  <div class="d-flex flex-column">
+                    <h2 class="fw-bold fs-5 mb-3">
+                      Iskan: A Technical Passport for Real Estate in Turkey
+                    </h2>
+                    <p class="small text-al-jstfy">
+                      Iskan in Turkey is a document confirming that the
+                      building has been completed, meets all project
+                      requirements, cadastral plan, and technical
+                      requirements, and is suitable for living.
                     </p>
-                    <div class="fw-medium">
-                      <img
-                      class="pe-3"
-                      src="./img/img-index/index-satisfaction-icon-man.png"
-                      alt=""
-                    />Davud Hapito
-                    </div>
-                  </div>
-                </div>
-                <div class="swiper-slide" style="transform: translateX(-70%)">
-                  <div
-                    class="index-satisfaction-bg text-white text-al-jstfy fs-6 lh-sm p-4 img-card-320"
-                  >
-                    <img
-                      class="pb-3"
-                      src="./img/img-index/index-satisfaction-icon-quotation.png"
-                      alt=""
-                    />
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
-                      sed diam nonummy nibh euismod tincidunt ut laoreet dolore
-                      magna aliquam erat volutpat.
-                    </p>
-                    <div class="fw-medium">
-                      <img
-                      class="pe-3"
-                      src="./img/img-index/index-satisfaction-icon-man.png"
-                      alt=""
-                    />Ahmed Velhazır
-                    </div>
+                    <span class="fw-medium text-secondary"> Oct 20, 2023</span>
                   </div>
                 </div>
               </div>
-              <div class="swiper-pagination"></div>
-            </div>
-          </div>
-          <div class="col-4 position-relative d-flex">
-            <div class="col-1 swiper-button-prev icon-dark-blue"></div>
-            <div class="col-1 swiper-button-next icon-dark-blue"></div>
-          </div>
-        </div>
-      </section>
-    </main>
+              <div class="row">
+                <div class="col-6 mb-4">
+                  <img class="img-fluid" src="./img/img-index/index-sec-blog-reit.jpg" alt="writing" />
+                </div>
+                <div class="col-6 d-flex flex-column justify-content-between mb-4">
+                  <div class="d-flex flex-column">
+                    <h2 class="fw-bold fs-5 mb-3">
+                      Reasons and Benefits of Investing in Turkish Property
+                      with Diamond Key Real Estate
+                    </h2>
 
-    <!-- ----------- FOOTER ----------- -->
-    <footer class="container-fluid footer-bg text-white fw-medium fs-5 lh-sm">
-      <div class="text-center h-25">
-        <div class="row h-100 align-items-end">
-          <h1 class="display-4 font-playfair-display fw-normal">
-            Looking For More?
-          </h1>
-        </div>
-      </div>
-      <div class="text-center h-50">
-        <div class="row h-100 align-items-center justify-content-center mt-4">
-          <div
-            class="col-3 footer-border-gradient footer-border-gradient-gold"
-            style="height: 130px"
-          >
-            <div class="my-4">
-              <h6 class="fw-bold">ADDRESS</h6>
+                    <p class="small text-al-jstfy">
+                      The Turkish real estate market has recently entered the
+                      international investment platform hence real estate
+                      prices in Turkey remain still at a fairly low level.
+                    </p>
+                  </div>
+                  <span class="fw-medium text-secondary">Oct 20, 2023</span>
+                </div>
+              </div>
             </div>
-            <address class="mb-3">
-              Cumhuriyet Mah. Newista Residence
-              <br />
-              A Blok Kat:26 No:228 Beylikdüzü / İstanbul
-            </address>
-          </div>
-          <div
-            class="col-3 footer-border-gradient footer-border-gradient-gold mx-5"
-            style="height: 130px"
-          >
-            <div class="mt-4 mb-3">
-              <h6 class="fw-bold">CONTACT</h6>
-            </div>
-            <div class="fs-6">+90 531 272 74 46</div>
-            <div class="fs-6">info@diamondkeyistanbul.com</div>
-            <div class="mb-3 fs-6">diamondkeyistanbul.com</div>
-          </div>
-          <div
-            class="col-3 footer-border-gradient footer-border-gradient-gold"
-            style="height: 130px"
-          >
-            <div class="my-4">
-              <h6 class="fw-bold">FOLLOW US</h6>
-            </div>
-
-            <div class="col-6 offset-3 d-flex justify-content-evenly">
-              <a href="#">
-                <i class="icon-gold fs-4 bi bi-instagram"></i>
-              </a>
-              <a href="#">
-                <i class="icon-gold fs-4 bi bi-facebook"></i>
-              </a>
-              <a href="#">
-                <i class="icon-gold fs-4 bi bi-linkedin"></i>
+            <div class="col-1 d-flex justify-content-center align-items-center p-0 ps-5">
+              <a href="./blog.html">
+                <svg fill="#94806F" class="icon icon-arrow-left" width="50" height="50">
+                  <use xlink:href="./svg/symbol-defs.svg#icon-arrow-left"></use>
+                </svg>
               </a>
             </div>
           </div>
         </div>
       </div>
-    </footer>
+    </section>
 
-    <!-- script codes -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
-      crossorigin="anonymous"
-    ></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <!-- ----------- REFERENCES ------------ -->
+    <section id="section-references" class="container-fluid index-references-bg text-white py-5 pb-6">
+      <div class="row pt-5">
+        <div class="col-4 ps-5 pt-3">
+          <div class="d-flex">
+            <div class="col-2">
+              <hr class="border opacity-75" />
+            </div>
+            <div class="col-auto fs-4 ps-3">REFERENCES</div>
+          </div>
+          <div class="col-10">
+            <h2 class="font-playfair-display fw-medium py-5 my-5 fs-3">
+              The Brands We <br> Work With.
+            </h2>
+            <p class="text-al-jstfy pe-5">
+              Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
+              diam nonummy nibh tincidunt ut laoreet dolore magna erat
+              volutpat.
+            </p>
+          </div>
+        </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"
-    />
+        <!-- Swiper 2 - references-->
+        <div class="col-8">
+          <div #swiperRef="" class="swiper index-ref-mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="img-card px-4 py-5 bg-white d-flex align-items-center">
+                  <img class="img-fluid" src="./img/img-index/index-logo-nef.png" alt="..." />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="img-card px-4 py-5 bg-white d-flex align-items-center">
+                  <img class="img-fluid" src="./img/img-index/index-logo-kiler.png" alt="..." />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="img-card px-4 py-5 bg-white d-flex align-items-center">
+                  <img class="img-fluid" src="./img/img-index/index-logo-torunlar.png" alt="..." />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="img-card px-4 py-5 bg-white d-flex align-items-center">
+                  <img class="img-fluid" src="./img/img-index/index-logo-kiler.png" alt="..." />
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </div>
+      <div class="position-relative">
+        <div class="swiper-button-prev text-white ps-5"></div>
+        <div class="swiper-button-next text-white index-swp-btn-position-left ps-5"></div>
+      </div>
+    </section>
 
-    <!-- Initialize Swiper Favorite Projects -->
-    <script>
-      var swiper = new Swiper(".index-fav-prj-mySwiper", {
-        slidesPerView: 3,
-        spaceBetween: 20,
-        // freeMode: true,
-        pagination: {
-          el: ".swiper-pagination",
-          // clickable: true,
-        },
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-      });
-    </script>
+    <!-- ----------- SATISFACTION ------------ -->
+    <section id="section-satisfaction" class="container-fluid my-5 py-5">
+      <div class="row p-5 align-items-center justify-content-center">
+        <div class="col-1">
+          <hr class="border border-dark opacity-75" />
+        </div>
+        <div class="col-2 fs-2">SATISFACTION</div>
+      </div>
 
-    <!-- Initialize Swiper References  -->
-    <script>
-      var swiper = new Swiper(".index-ref-mySwiper", {
-        slidesPerView: 3,
-        spaceBetween: 20,
-        // freeMode: true,
-        pagination: {
-          el: ".swiper-pagination",
-          // clickable: true,
-        },
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-      });
-    </script>
+      <div class="row">
+        <!-- Swiper 3 - satisfaction -->
+        <div class="col-8 p-0">
+          <div #swiperRef="" class="swiper index-satis-mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide" style="transform: translateX(-70%)">
+                <div class="index-satisfaction-bg text-white text-al-jstfy fs-6 lh-sm img-card-320">
+                  <img class="pb-3" src="./img/img-index/index-satisfaction-icon-quotation.png" alt="" />
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetuer sed diam nonummy
+                    nibh euismod
+                  </p>
+                  <div class="fw-medium">
+                    <img class="pe-3" src="./img/img-index/index-satisfaction-icon-man.png" alt="" />Ahmed Velhazır
+                  </div>
+                </div>
+              </div>
 
-    <!-- Initialize Swiper Satisfaction -->
-    <script>
-      var swiper = new Swiper(".index-satis-mySwiper", {
-        slidesPerView: 3,
-        spaceBetween: 30,
-        // freeMode: true,
-        pagination: {
-          el: ".swiper-pagination",
-          // clickable: true,
-        },
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-      });
-    </script>
+              <div class="swiper-slide" style="transform: translateX(-70%)">
+                <div class="index-satisfaction-bg text-white text-al-jstfy fs-6 lh-sm p-4 img-card-320">
+                  <img class="pb-3" src="./img/img-index/index-satisfaction-icon-quotation.png" alt="" />
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+                    sed diam nonummy nibh euismod tincidunt ut laoreet dolore
+                    magna aliquam erat volutpat. Ut wisi enim ad minim veniam,
+                    quis nostrud exerci tation ullamcorper suscipit lobortis
+                    nisl ut aliquip ex ea commodo consequat.
+                  </p>
+                  <div class="fw-medium">
+                    <img class="pe-3" src="./img/img-index/index-satisfaction-icon-man.png" alt="" />Ahmed Velhazır
+                  </div>
+                </div>
+              </div>
 
-  </body>
+              <div class="swiper-slide" style="transform: translateX(-70%)">
+                <div class="index-satisfaction-bg text-white text-al-jstfy fs-6 lh-sm p-4 img-card-320">
+                  <img class="pb-3" src="./img/img-index/index-satisfaction-icon-quotation.png" alt="" />
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+                    sed diam nonummy nibh euismod tincidunt ut laoreet dolore
+                    magna aliquam erat volutpat.
+                  </p>
+                  <div class="fw-medium">
+                    <img class="pe-3" src="./img/img-index/index-satisfaction-icon-man.png" alt="" />Davud Hapito
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide" style="transform: translateX(-70%)">
+                <div class="index-satisfaction-bg text-white text-al-jstfy fs-6 lh-sm p-4 img-card-320">
+                  <img class="pb-3" src="./img/img-index/index-satisfaction-icon-quotation.png" alt="" />
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+                    sed diam nonummy nibh euismod tincidunt ut laoreet dolore
+                    magna aliquam erat volutpat.
+                  </p>
+                  <div class="fw-medium">
+                    <img class="pe-3" src="./img/img-index/index-satisfaction-icon-man.png" alt="" />Ahmed Velhazır
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+        <div class="col-4 position-relative d-flex">
+          <div class="col-1 swiper-button-prev icon-dark-blue"></div>
+          <div class="col-1 swiper-button-next icon-dark-blue"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ----------- FOOTER ----------- -->
+  <footer class="container-fluid footer-bg text-white fw-medium fs-5 lh-sm">
+    <div class="text-center h-25">
+      <div class="row h-100 align-items-end">
+        <h1 class="display-4 font-playfair-display fw-normal">
+          Looking For More?
+        </h1>
+      </div>
+    </div>
+    <div class="text-center h-50">
+      <div class="row h-100 align-items-center justify-content-center mt-4">
+        <div class="col-3 footer-border-gradient footer-border-gradient-gold" style="height: 130px">
+          <div class="my-4">
+            <h6 class="fw-bold">ADDRESS</h6>
+          </div>
+          <address class="mb-3">
+            Cumhuriyet Mah. Newista Residence
+            <br />
+            A Blok Kat:26 No:228 Beylikdüzü / İstanbul
+          </address>
+        </div>
+        <div class="col-3 footer-border-gradient footer-border-gradient-gold mx-5" style="height: 130px">
+          <div class="mt-4 mb-3">
+            <h6 class="fw-bold">CONTACT</h6>
+          </div>
+          <div class="fs-6">+90 531 272 74 46</div>
+          <div class="fs-6">info@diamondkeyistanbul.com</div>
+          <div class="mb-3 fs-6">diamondkeyistanbul.com</div>
+        </div>
+        <div class="col-3 footer-border-gradient footer-border-gradient-gold" style="height: 130px">
+          <div class="my-4">
+            <h6 class="fw-bold">FOLLOW US</h6>
+          </div>
+
+          <div class="col-6 offset-3 d-flex justify-content-evenly">
+            <a href="#">
+              <i class="icon-gold fs-4 bi bi-instagram"></i>
+            </a>
+            <a href="#">
+              <i class="icon-gold fs-4 bi bi-facebook"></i>
+            </a>
+            <a href="#">
+              <i class="icon-gold fs-4 bi bi-linkedin"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- script codes -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
+  <script src="./js/svgxuse.js"></script>
+  <!-- Initialize Swiper Favorite Projects -->
+  <script>
+    var swiper = new Swiper(".index-fav-prj-mySwiper", {
+      slidesPerView: 3,
+      spaceBetween: 0,
+      // freeMode: true,
+      pagination: {
+        el: ".swiper-pagination",
+        // clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
+
+  <!-- Initialize Swiper References  -->
+  <script>
+    var swiper = new Swiper(".index-ref-mySwiper", {
+      slidesPerView: 3,
+      spaceBetween: 20,
+      // freeMode: true,
+      pagination: {
+        el: ".swiper-pagination",
+        // clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
+
+  <!-- Initialize Swiper Satisfaction -->
+  <script>
+    var swiper = new Swiper(".index-satis-mySwiper", {
+      slidesPerView: 3,
+      spaceBetween: 30,
+      // freeMode: true,
+      pagination: {
+        el: ".swiper-pagination",
+        // clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
+
+</body>
+
 </html>
